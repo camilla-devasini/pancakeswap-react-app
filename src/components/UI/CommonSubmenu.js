@@ -1,5 +1,4 @@
-
-
+import "./style/CommonSubmenu.scss";
 const CommonSubmenu = (props) => {
 
 
