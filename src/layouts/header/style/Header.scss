@@ -1,0 +1,46 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid rgb(231, 227, 235);
+    
+
+}
+
+.main-menu-nav {
+    display: flex;
+    max-width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(122, 110, 170);
+    background-color: #fff;
+    height: 56px;
+
+}
+
+.pancake-logo  {
+    height: 32px;
+    width: 32px;
+
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    & > button {
+        margin-left: 20px;
+    }
+   
+}
+
+
+@media screen and (min-width: 968px) {
+    .pancake-logo  {
+        height: 25px;
+        width: 160px;
+    }
+} 

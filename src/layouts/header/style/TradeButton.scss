@@ -1,0 +1,28 @@
+.trade-value-wrapper {
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+
+    & > div > span {
+        font-size: 16px;
+        text-decoration: none;
+        color: #7a6eaa;
+        margin: 0 8px;
+        font-weight: 600;
+        line-height: 1.5;
+        vertical-align: middle;
+
+    }
+
+    & .trade-logo-img {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.2s;
+
+            &:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2); 
+            }
+    }
+}

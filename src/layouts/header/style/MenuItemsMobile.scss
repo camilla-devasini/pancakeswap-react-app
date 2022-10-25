@@ -1,0 +1,49 @@
+.menu-items-mobile-wrap {
+    list-style: none;
+
+}
+
+.menu-items-mobile-wrap:first-child > div > .dropdown{
+    display: none;
+
+}
+
+.menu-items-mobile-wrap:nth-child(2) > div > .dropdown {
+    position: absolute;
+    left: 1%;
+}
+
+.menu-items-mobile-wrap:nth-child(3) > div > .dropdown {
+    position: absolute;
+    left: 5%;
+}
+
+.menu-items-mobile-wrap:nth-child(4) > div > .dropdown, .menu-items-mobile-wrap:nth-child(5) > div > .dropdown {
+    position: absolute;
+    right: 2%;
+}
+
+.menu-items-mobile-wrap:last-child .dropdown > .dropdown-item:nth-child(4) {
+    border-top: 1px solid rgb(231, 227, 235);
+    border-bottom: 1px solid rgb(231, 227, 235);
+}
+
+.menu-item-mobile {
+    display: flex;
+    flex-direction: column;
+
+
+    & > span {
+        font-size: 10px;
+    }
+
+    & > img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+
+   
