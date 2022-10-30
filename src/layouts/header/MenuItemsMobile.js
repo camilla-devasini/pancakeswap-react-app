@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./style/MenuItemsMobile.scss";
 import Dropdown from "./Dropdown";
 
@@ -34,8 +35,20 @@ const MenuItemsMobile = (props) => {
             {props.items && 
             <div>
                 <div className="menu-item-mobile" onClick={dropDownHandler}>
-                   {props.items.img ? <img src={props.items.img}></img> : null}
-                   <span>{props.items.title}</span>
+                       
+                            
+                                <Link to={props.items.url}>
+                                <div className="text-icons-mobile-menu">
+                                <div>
+                                    {props.items.img ? <img src={props.items.img}></img> : null}
+                                </div>
+                                <div>
+                                    <span>{props.items.title}</span>
+                                </div>
+                                </div>
+                                </Link>
+                            
+                     
                 </div>
                 <Dropdown submenuLabels={props.items.submenu} dropdown={dropdownIsVisible}/>
             </div>

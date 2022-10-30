@@ -1,11 +1,12 @@
+img, span {
+    display: block;
+}
 .menu-items-mobile-wrap {
     list-style: none;
-
 }
 
 .menu-items-mobile-wrap:first-child > div > .dropdown{
     display: none;
-
 }
 
 .menu-items-mobile-wrap:nth-child(2) > div > .dropdown {
@@ -32,18 +33,28 @@
     display: flex;
     flex-direction: column;
 
+    & > a > .text-icons-mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 3px;  
+    }
 
-    & > span {
+    & a {
+        text-decoration: none;
         font-size: 10px;
+        color:rgb(122 110 170);
     }
 
     & > img {
         width: 20px;
         height: 20px;
     }
-
 }
 
+
+
+   
 
 
    

@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./style/MenuItems.scss";
 import Dropdown from "./Dropdown";
 
@@ -34,7 +35,15 @@ const MenuItems = (props) => {
         <li className="menu-items" ref={menuRef}>
             {props.items && 
             <div>
-                <div onClick={dropDownHandler}>{props.items.title}</div>
+                <div className="menu-labels">
+                    <Link to={props.items.url} onClick={dropDownHandler}>
+                        {   props.items.title ?
+                            props.items.title :
+                            <img src={props.items.img}></img> 
+                            
+                        }
+                    </Link>
+                </div>
                 <Dropdown submenuLabels={props.items.submenu} dropdown={dropdownIsVisible}/>
             </div>
             }

@@ -2,6 +2,7 @@ import tradeIcon from "../../assets/images/trade-menu-icon-mobile-active.svg";
 import earnIcon from "../../assets/images/earn-menu-icon-mobile.svg";
 import winIcon from "../../assets/images/win-menu-icon-mobile.svg";
 import nftIcon from "../../assets/images/nft-menu-icon-mobile.svg";
+import moreIcon from "../../assets/images/menu-more.svg";
 
 
 export const menuItemsObj =
@@ -14,7 +15,7 @@ export const menuItemsObj =
         submenu: [
             {
                 title: 'Swap',
-                url: 'swap'  // dynamic nested route
+                url: 'swap'  // dynamic nested route without slash
             },
             {
                 title: 'Limit',
@@ -26,14 +27,14 @@ export const menuItemsObj =
             },
             {
                 title: 'Perpetual',
-                url: 'perpetual'
+               
             }
         
         ]
     },
     {
         title: 'Earn',
-        url: '/earn',
+        url: '/farms',
         img: earnIcon,
         submenu: [
             {
@@ -48,7 +49,7 @@ export const menuItemsObj =
     },
     {
         title: 'Win',
-        url: '/win',
+        url: '/prediction',
         img: winIcon,
         submenu: [
             {
@@ -67,7 +68,7 @@ export const menuItemsObj =
     },
     {
         title: 'NFT',
-        url: '/nft',
+        url: '/overview',
         img: nftIcon,
         submenu: [
             {
@@ -84,8 +85,8 @@ export const menuItemsObj =
             }
         ]
     }, {
-        title: '...',
-        url: '/info',
+        img: moreIcon,
+        url: '/blog',
   
         submenu: [
             {
