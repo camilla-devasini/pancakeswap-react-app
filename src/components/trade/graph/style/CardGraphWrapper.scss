@@ -1,0 +1,13 @@
+.card-graph-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--colors-cardBorder);
+    border-radius: 16px;
+    min-width: fit-content;
+    max-width: 70%;
+    height: 516px;
+    position: relative;
+   
+  }

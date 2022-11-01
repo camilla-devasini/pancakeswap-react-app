@@ -1,0 +1,66 @@
+.conversion-link {
+    width: fit-content;
+    display: flex;
+    margin: 20px 0px 8px;
+
+    & > a {
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    }
+
+    & > img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+.trade-help-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100%;
+
+& .trade-bubble-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+    & > a {
+        height: 48px;
+        padding: 0px 24px;
+        background-color: rgb(122, 110, 170);
+        color: rgb(255, 255, 255);
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+        white-space: nowrap;
+        border-radius: 16px;
+        border: 0px;
+        outline: 0px;
+        line-height: 48px;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & > img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+& .trade-help-bunny > img {
+    max-width: 160px;
+    max-height: 108px;
+}
+}

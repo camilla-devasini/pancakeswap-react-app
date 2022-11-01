@@ -2,8 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./layouts/layout/Layout";
 import PageNotFound from "./routes/PageNotFound";
 import Home from "./routes/Home";
-import Trade from "./routes/Trade";
-import Swap from "./routes/Swap";
+import TradeSwap from "./routes/TradeSwap";
 import Limit from "./routes/Limit";
 import Liquidity from "./routes/Liquidity";
 import Farms from "./routes/Farms";
@@ -22,8 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>} />
-            <Route path="/trade" element={<Trade/>} /> 
-            <Route path="/swap" element={<Swap/>} />
+            <Route path="/swap" element={<TradeSwap/>} />
             <Route path="/limit" element={<Limit/>} />
             <Route path="/liquidity" element={<Liquidity/>} /> 
             <Route path="/farms" element={<Farms/>} /> 

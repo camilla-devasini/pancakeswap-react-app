@@ -10,7 +10,7 @@ export const menuItemsObj =
 [
     {
         title: 'Trade',
-        url: '/trade',
+        url: '/swap',
         img: tradeIcon,
         submenu: [
             {
