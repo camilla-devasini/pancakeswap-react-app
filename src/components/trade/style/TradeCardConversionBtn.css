@@ -1,6 +1,6 @@
 .value-conversion {
   border-radius: 50px;
-  background: rgb(238, 234, 244) url("../../assets/images/down-arrow-blue.svg") no-repeat center;
+  background: rgb(238, 234, 244) url("../../../assets/images/down-arrow-blue.svg") no-repeat center;
   width: 32px;
   height: 32px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
@@ -9,5 +9,5 @@
   margin-top: 20px;
 }
 .value-conversion:hover {
-  background: rgba(31, 199, 212, 0.6) url("../../assets/images//switch-arrows.svg") no-repeat center;
+  background: rgba(31, 199, 212, 0.6) url("../../../assets/images//switch-arrows.svg") no-repeat center;
 }/*# sourceMappingURL=TradeCardConversionBtn.css.map */

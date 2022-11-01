@@ -1,1 +1,1 @@
-{"version":3,"sources":["TradeCardConversionBtn.scss","TradeCardConversionBtn.css"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,8FAAA;EACA,WAAA;EACA,YAAA;EACA,iDAAA;EACA,kBAAA;EACA,aAAA;EACA,gBAAA;ACCJ;ADEI;EACI,kGAAA;ACAR","file":"TradeCardConversionBtn.css"}
+{"version":3,"sources":["TradeCardConversionBtn.scss","TradeCardConversionBtn.css"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,iGAAA;EACA,WAAA;EACA,YAAA;EACA,iDAAA;EACA,kBAAA;EACA,aAAA;EACA,gBAAA;ACCJ;ADEI;EACI,qGAAA;ACAR","file":"TradeCardConversionBtn.css"}

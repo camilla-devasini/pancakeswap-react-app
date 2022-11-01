@@ -8,6 +8,9 @@ import LanguagePicker from "./LanguagePicker";
 import Settings from "./Settings";
 import MainButton from "../../components/UI/MainButton";
 import TradeButton from "./TradeButton";
+import Wallet from "../../components/wallet/Wallet";
+
+
 
 
 const Header = () => {
@@ -29,8 +32,20 @@ const Header = () => {
 
     }, [screenSize])
 
+
+    const [walletShown, setWalletShown] = useState(false);
+    
+    const showWalletHandler = () => {
+        setWalletShown(true);
+    }
+
+    const hideWalletHandler = () => {
+        setWalletShown(false);
+    }
+
     return (
         <Fragment>
+            {walletShown && <Wallet onClose={hideWalletHandler}/>}
             <div className="header-wrapper">
                 <nav className="main-menu-nav">
                     <HeaderLogo />
@@ -42,7 +57,7 @@ const Header = () => {
                     {window.innerWidth > 851 ? <TradeButton value="$4.443"/> : null }
                     <LanguagePicker langList={languageListObj} />
                     <Settings />
-                    {window.innerWidth > 851 ? <MainButton label="Connect Wallet"/> : <MainButton label="Connect"/>  }
+                    {window.innerWidth > 851 ? <MainButton onShowWallet={showWalletHandler} label="Connect Wallet"/> :  <MainButton onShowWallet={showWalletHandler} label="Connect"/>  }
     
                     
                 </div>

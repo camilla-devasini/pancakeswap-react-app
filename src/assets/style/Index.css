@@ -111,6 +111,7 @@
     font-family: "Kanit", sans-serif;
   }
 
+
   .hover-active-class:hover {
     opacity: 0.65;
     transition: 0.2s;

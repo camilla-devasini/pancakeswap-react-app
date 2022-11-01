@@ -4,4 +4,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 0;
+}
+.trade-content > button {
+  margin-top: 45px;
 }/*# sourceMappingURL=TradeCard.css.map */
