@@ -122,4 +122,7 @@
   .hover-active-class:focus {
     outline: none;
   }
-  
+  .company-icons {
+    width: 24px;
+    height: 24px;
+  }
