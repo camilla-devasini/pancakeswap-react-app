@@ -9,7 +9,29 @@ import blueLogo from "../../assets/images/light-blue-logo.svg";
 import MainButton from "../UI/MainButton";
 import TradeCardConversionBtn from "./TradeCardConversionBtn";
 
+// .filter(data => moment(data.close).month() === moment().month())
+// data series data di chiusura del giorno.
 
+// sdk.exchange_rates_get_specific_rate("BTC", "USD", t).then(function (Exchange_rates_get_specific_rate) {
+//     console.log('Exchange_rates_get_specific_rate:')
+//     console.log(Exchange_rates_get_specific_rate) 
+
+//   });
+// sdk.ohlcv_list_all_periods().then(function (Ohlcv_list_all_periods) {
+//     console.log('Ohlcv_list_all_periods:')
+//     console.log('number: ', Ohlcv_list_all_periods.length)
+//     Ohlcv_list_all_periods.forEach(x=> { console.log(x) })
+
+//   });
+// Patrizio Esposito09:20
+// {
+// open: 13080123,
+// high: 23123939,
+// low: 12238383,
+// close: 31289398213, questo
+// volume: 113.03029392,
+// timestamp: 128913123
+// }
 function TradeCard(props) {
 
     const [amount1, setAmount1] = useState(1);
