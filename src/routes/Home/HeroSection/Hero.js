@@ -4,13 +4,12 @@ import starR from "../../../assets/images/homepage/star-r@2x.webp";
 import starT from "../../../assets/images/homepage/star-top-r@2x.webp";
 import { PurpleDiv } from "./PurpleDiv";
 
-
 export function Hero() {
   return (
     <>
       <div className="hero-content">
         <div className="background-hero"></div>
-        <PurpleDiv/>
+        <PurpleDiv />
         <div className="hero-container">
           <div className="container-1">
             <h2 className="h2-hero">The moon is made of pancakes.</h2>
