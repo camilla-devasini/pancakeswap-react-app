@@ -8,6 +8,7 @@ import iconCore from "../../assets/images/iconCore.svg"
 import iconBoosted from "../../assets/images/iconBoosted.svg"
 
 
+
 function FarmsAccordion() {
   return (
     <Accordion>
@@ -344,9 +345,8 @@ function FarmsAccordion() {
      </Accordion.Body>
    </Accordion.Item>
    </Accordion>
-   
-   
-    
+ 
+
   );
 }
 
