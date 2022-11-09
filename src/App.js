@@ -1,7 +1,8 @@
+import './routes/Home/homepage.scss';
 import { Routes, Route } from "react-router-dom";
 import Layout from "./layouts/layout/Layout";
 import PageNotFound from "./routes/PageNotFound";
-import Home from "./routes/Home";
+import Home from "./routes/Home/Home";
 import TradeSwap from "./routes/TradeSwap";
 import Limit from "./routes/Limit";
 import Liquidity from "./routes/Liquidity";
@@ -14,6 +15,7 @@ import Overview from "./routes/Overview";
 import Collections from "./routes/Collections";
 import Activity from "./routes/Activity";
 import Blog from "./routes/Blog";
+import ConnectWallet from './components/wallet/ConnectWallet';
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
             <Route path="/collections" element={<Collections/>} /> 
             <Route path="/activity" element={<Activity/>} /> 
             <Route path="/blog" element={<Blog/>} /> 
+            <Route path="/connect-wallet" element={<ConnectWallet/>}></Route>
 
             <Route path="*" element ={<PageNotFound/>} />
         </Route>
