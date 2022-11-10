@@ -139,6 +139,7 @@
 .svg-border {
   fill: rgb(118, 69, 217, 30%);
   width: 100vw;
+  height: 29px;
 }
 
 // ---------------------------- MEDIA QUERIES -----------------------------//
@@ -149,7 +150,6 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 980px;
     background: linear-gradient(white, rgb(118, 69, 217, 30%));
     
 
