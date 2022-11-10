@@ -1,0 +1,60 @@
+.card {
+  width: 100%;
+}
+
+.card .card-body > .card-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(40, 13, 95);
+}
+
+.card .card-body > .card-text {
+  color: grey;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.card .article-footer {
+  display: flex;
+}
+
+.card .article-footer > a > img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.card .article-footer .footer-description {
+  padding-left: 10px;
+}
+
+.card .article-footer .footer-description a {
+  text-decoration: none;
+}
+
+.card .article-footer .footer-description a > h5 {
+  font-size: 16px;
+  color: #00838F;
+}
+
+.card .article-footer .author-details {
+  display: flex;
+  font-size: 15px;
+  color: grey;
+}
+
+.card .article-footer .author-details span {
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    min-width: 227px;
+    max-width: 287px;
+  }
+} /*# sourceMappingURL=blog-card.css.map *//*# sourceMappingURL=BlogCard.css.map */

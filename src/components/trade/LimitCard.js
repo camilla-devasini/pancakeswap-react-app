@@ -32,7 +32,7 @@ import TradeCardConversionBtn from "./TradeCardConversionBtn";
 // volume: 113.03029392,
 // timestamp: 128913123
 // }
-function TradeCard(props) {
+function LimitCard(props) {
 
     const [amount1, setAmount1] = useState(1);
     const [amount2, setAmount2] = useState(1);
@@ -106,8 +106,8 @@ function TradeCard(props) {
                <TradeCardHeader 
                     iconsSwap={tradeImages}
                     onToggleGraph={props.onToggleGraph}
-                    cardTitle="Swap"
-                    cardSubtitle="Trade tokens in an instant"
+                    cardTitle="Limit"
+                    cardSubtitle="Place a limit order to trade at a set price"
                 />
                 <div className="trade-content">
                     <TradeCardInput 
@@ -137,4 +137,4 @@ function TradeCard(props) {
             </TradeCardWrapper> 
     )
 }
-export default TradeCard;
+export default LimitCard;
