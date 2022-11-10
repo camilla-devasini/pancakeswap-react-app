@@ -24,8 +24,12 @@ button {
                 }
             }
             .title-icon {
-                img {
-                    width: 25px;
+                .icon-acc2 {
+                    border: 1px solid;
+                    border-radius: 50%;
+                    img {
+                        width: 32px;
+                    }
                 }
             }
         }
