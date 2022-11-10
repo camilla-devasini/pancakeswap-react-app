@@ -1,0 +1,34 @@
+.farms_header {
+    background-color: rgb(233, 249, 255);
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    .first_title_cont {
+        display: flex;
+        color: rgb(118, 69, 217);
+        flex-direction: column;
+        justify-content: space-around;
+        font-weight: bold;
+        width: 40%;
+        h1 {
+            font-size: 70px;
+            font-weight: bolder;
+        }
+        .btn-title {}
+    }
+    .first_title_cont h3 {
+        color: rgb(40, 13, 95);
+        font-weight: bold;
+    }
+    .first_title_cont button {
+        width: 200px;
+        border: none;
+        color: rgb(31, 199, 212);
+        font-weight: bold;
+        background-color: rgb(233, 249, 255);
+    }
+}

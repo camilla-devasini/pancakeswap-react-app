@@ -1,15 +1,14 @@
 
 import Accordion from "react-bootstrap/Accordion";
-import MainButton from "../UI/MainButton";
-import "./style/farmsAccordion.scss";
+
+import "./style/accordionPool.scss";
 import iconFarm1 from "../../assets/images/iconFarm1.png" ;
 
-import iconCore from "../../assets/images/iconCore.svg"
-import iconBoosted from "../../assets/images/iconBoosted.svg"
 
 
 
-function FarmsAccordion() {
+
+function AccordionPool() {
   return (
     <Accordion>
       <Accordion.Item eventKey="0">
@@ -17,59 +16,65 @@ function FarmsAccordion() {
         <div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>CAKE-BNB</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
-            <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="cont-core-boosted2">
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">40x</div>
-            </div>
+           
           </div>
         </Accordion.Header>
         <Accordion.Body>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                           <div className="accordion-body">
-  <div className="left-link">
-    <a href="#">Get CAKE-BNB LP
-      <svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" className="sc-8a800401-0 ennPYv"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z" /></svg></a>
-    <a href="#">View Contract<svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" className="sc-8a800401-0 ennPYv"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z" /></svg></a>
-    <a href="#">See Pair Info<svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" className="sc-8a800401-0 ennPYv"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z" /></svg></a>
+                           <div className="accordion-body2">
+  <div className="left-cont">
+   <div className="cont-total">
+    <div>Total locked:</div>
+    <div>198,171,208 CAKE</div>
+   </div>
+   <div className="cont-ave">
+    <div>Average lock duration:</div>
+    <div>40 weeks</div>
+   </div>
+   <div className="cont-perf">
+    <div>Performance Fee</div>
+    <div>0~2%</div>
+   </div>
+   <div className="cont-a">
+    <a/>
+    <a/>
+    <a/>
+   </div>
+   <div>Auto</div>
+  
+
   </div>
   <div className="cont-coll">
     <div className="double-cont">
@@ -88,10 +93,7 @@ function FarmsAccordion() {
         </div>
       </div>
     </div>
-    {/* <div className="cont-btn">
-      <div className="title-cont-btn"> START FARMING</div>
-      <button> <MainButton label="Connect Wallet"/></button>
-    </div> */}
+   
   </div>
 </div>
 </div>
@@ -101,49 +103,39 @@ function FarmsAccordion() {
         <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>CAKE-BUSD</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">2.5x</div>
-            </div>
+           
           </div></Accordion.Header>
         <Accordion.Body>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -171,10 +163,7 @@ function FarmsAccordion() {
         </div>
       </div>
     </div>
-    <div className="cont-btn">
-      <div className="title-cont-btn"> START FARMING</div>
-      <button> <MainButton label="Connect Wallet"/></button>
-    </div>
+   
   </div>
 </div>
 </div>
@@ -185,49 +174,39 @@ function FarmsAccordion() {
      <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>CAKE-USDT</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">2x</div>
-            </div>
+           
           </div></Accordion.Header>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -255,10 +234,7 @@ function FarmsAccordion() {
         </div>
       </div>
     </div>
-    <div className="cont-btn">
-      <div className="title-cont-btn"> START FARMING</div>
-      <button> <MainButton label="Connect Wallet"/></button>
-    </div>
+   
   </div>
 </div>
 </div>
@@ -268,49 +244,39 @@ function FarmsAccordion() {
      <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>XCAD-CAKE</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted boosted2">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc ">
-                  <div className="up-to up-to2 ">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc perc2">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">0.5x</div>
-            </div>
+           
           </div></Accordion.Header>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -348,49 +314,39 @@ function FarmsAccordion() {
      <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>BUSD-BNB</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted boosted2">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to up-to2">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc perc2">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">11x</div>
-            </div>
+           
           </div></Accordion.Header>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -428,49 +384,39 @@ function FarmsAccordion() {
      <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>MGP-BUSD</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted boosted2">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to up-to2">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc perc2">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">11x</div>
-            </div>
+           
           </div></Accordion.Header>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -508,49 +454,39 @@ function FarmsAccordion() {
      <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>WMX-BUSD</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted boosted2">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to up-to2">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc perc2">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">11x</div>
-            </div>
+           
           </div></Accordion.Header>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -588,49 +524,39 @@ function FarmsAccordion() {
      <Accordion.Header><div className="accordion-table">
             <div className="title-accordion">
               <div className="title-icon">
-                <img src={iconFarm1} alt="" />
+                <img src={iconFarm1}  alt="" />
                 <img src="" alt="" />
               </div>
-              <h2>KRS-BUSD</h2>
+              <div className="cont-title-p">
+              <div className="title-p">Stake-CAKE</div>
+              <div className="title-p2">Stake, Earn – And more!</div>
+              </div>
             </div>
             <div className="cont-core-boosted">
-            <div className="core">
-                <img src={iconCore} alt=""/>   
-                   Core</div>
-              <div className="boosted boosted2">
-                <img src={iconBoosted} alt=""/>
-                Boosted</div>
+            <div className="p1">CAKE Staked</div>
+            <div className="p2">0.0</div>
+            <div className="p3">0 USD</div>
                 </div>
 
             <div className="cont-earned">
-              <div className="earned">Earned</div>
-              <div className="earned-perc">0</div>
+              <div className="earned">Flexible APY</div>
+              <div className="earned-perc">2,79%</div>
             </div>
             <div className="cont-apr-up">
               <div className="cont-apr">
-              <div className="apr">apr</div>
+              <div className="apr">Locked APY</div>
+                <div className="number">Up to
+59.84%</div>
+                </div>
               
-                <div className="number">24%</div>
-                </div>
-                <div className="cont-n-up-to">
-                <div className="up-to-perc">
-                  <div className="up-to up-to2">
-                    <img src={iconBoosted} alt="icon"/>
-                    up-to</div>
-                  <div className="perc perc2">42%</div>
-                </div>
-              </div>
             </div>
             <div className="cont-liqui">
-              <div className="liquidity">Liquidity</div>
+              <div className="liquidity">Total staked</div>
               <div className="price-cont">
-              <div className="cash-svg">199999999</div>
+              <div className="cash-svg">244,762,974 CAKE</div>
               </div>
             </div>
-            <div className="cont-multi">
-              <div className="multi">multiplier</div>
-              <div className="n-x-svg">11x</div>
-            </div>
+           
           </div></Accordion.Header>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -670,4 +596,4 @@ function FarmsAccordion() {
   );
 }
 
-export default FarmsAccordion;
+export default AccordionPool;
