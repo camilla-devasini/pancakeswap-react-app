@@ -94,9 +94,10 @@ section.container-6 {
                 display: flex;
                 align-items: center;
                 overflow: hidden;
+                align-self: flex-start;
 
                 button {
-                    // width: 125px;
+                    width: 125px;
                     height: 48px;
                     background-color: rgb(31, 199, 212);
                     border: 0px;
@@ -197,7 +198,7 @@ section.container-6 {
 
         .wrapper-6 {
             padding: 48px 24px;
-            width: 70%;
+            width: 80%;
             height: 750px;
             justify-content: center;
 

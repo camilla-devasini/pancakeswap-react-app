@@ -29,8 +29,10 @@ export function Win() {
                 <div className="box-wrapper">
                     <div className="box-prizes">
                         <h2><span>Win</span> millions in prizes</h2>
-                        <p>Probably fair, on-chain games</p>
-                        <p>Win big with PancakeSwap</p>
+                        <div className='paragraphs'>
+                            <p>Probably fair, on-chain games</p>
+                            <p>Win big with PancakeSwap</p>
+                        </div>
                     </div>
                     <div className="millions-in-prizes-cards">
                         <div className="card-million yellow">
