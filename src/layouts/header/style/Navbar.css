@@ -6,12 +6,14 @@
 }
 
 .nav-mobile-wrap {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100vw;
+  z-index: 20;
 }
 .nav-mobile-wrap > ul {
-  border-top: 1px solid rgb(231, 227, 235);
+  background: var(--colors-backgroundAlt);
+  border-top: 1px solid var(--colors-cardBorder);
   padding: 10px 20px;
   width: 100vw;
 }/*# sourceMappingURL=Navbar.css.map */
