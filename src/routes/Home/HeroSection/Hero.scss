@@ -89,9 +89,11 @@ button:hover {
           background-clip: text;
           -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
           margin-bottom: 8px;
+          font-weight: 600;
         }
 
         .mbt-a2 {
+          font-weight: 600;
           font-size: 40px;
           margin-bottom: 16px;
           text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
@@ -213,26 +215,36 @@ button:hover {
           text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
           margin-bottom: 10px;
           margin-top: 5px;
+          font-weight: 600;
         }
 
         .counter-container {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 195px;
+          width: 205px;
           height: 45px;
           margin-bottom: 20px;
-          background-color: rgba(59, 23, 117, 0.5);
+          background-color: rgba(45, 16, 87, 0.5);
           border-radius: 10px;
 
-          .mbt-a2 {
+
+          .mbt-a2  {
+            
+            
             margin-top: 12px;
             font-size: 28px;
             background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+            -webkit-background-clip: text; 
+
+            span {
+              display: inline;
+              font-size: 20px;
+            }
           }
+          
         }
 
         .link-aquagreen {
@@ -327,12 +339,14 @@ button:hover {
         font-size: 64px;
         color: rgb(118, 69, 217);
         margin-bottom: 20px;
+        font-weight: 600;
       }
 
       .h3-hero {
         margin-bottom: 20px;
         font-size: 20px;
         color: rgb(40, 13, 95);
+        font-weight: 600;
       }
 
       .connect-wallet {

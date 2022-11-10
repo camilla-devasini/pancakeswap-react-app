@@ -34,6 +34,7 @@
       width: 500px;
 
       span {
+        display: inline;
         color: rgb(118, 69, 217);
       }
 
@@ -41,6 +42,7 @@
         color: rgb(40, 13, 95);
         line-height: 1.1;
         font-size: 45px;
+        font-weight: 600;
       }
 
       h4 {
