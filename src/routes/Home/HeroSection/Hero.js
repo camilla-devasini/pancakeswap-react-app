@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import lunarbunny from "../../../assets/images/homepage/bunny@2x.webp";
 import starL from "../../../assets/images/homepage/star-l@2x.webp";
 import starR from "../../../assets/images/homepage/star-r@2x.webp";

@@ -58,10 +58,10 @@ export function TopTraders() {
       <div className="background-content-data" >
         <div className="container-data">
           <div className="title">
-          <h2><span>{textContent[index].titleBlack}</span> </h2>
+          
             <h2>
             
-               {textContent[index].titlePurple}
+               <span>{textContent[index].titleBlack}</span>  {textContent[index].titlePurple}
                
             </h2>
             
