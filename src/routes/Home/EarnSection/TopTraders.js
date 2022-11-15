@@ -46,9 +46,9 @@ export function TopTraders() {
   const [index, setIndex] = useState(0);
 
   const handleSetIndex = () => {
-
-    setIndex(1)
-
+    const nextIndex = index + 1;
+    if(nextIndex === textContent.length)setIndex(0)
+    else setIndex(nextIndex)
   }
 
 
