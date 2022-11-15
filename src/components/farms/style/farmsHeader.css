@@ -1,0 +1,76 @@
+.farms_header {
+  background-color: rgb(233, 249, 255);
+  max-width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.farms_header .first_title_cont {
+  display: flex;
+  color: rgb(118, 69, 217);
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: bold;
+  width: 100%;
+}
+.farms_header .first_title_cont h1 {
+  font-size: 70px;
+  font-weight: bolder;
+}
+.farms_header .first_title_cont h2 {
+  color: rgb(40, 13, 95);
+  font-weight: bold;
+}
+.farms_header .first_title_cont button {
+  width: 200px;
+  border: none;
+  color: rgb(31, 199, 212);
+  font-weight: bold;
+  background-color: rgb(233, 249, 255);
+}
+
+.second-title-cont {
+  display: flex;
+  align-items: center;
+}
+.second-title-cont .second-title {
+  height: 150px;
+  width: 300px;
+  background-color: aliceblue;
+  text-align: center;
+}
+.second-title-cont .second-title .mini-title {
+  color: rgb(40, 13, 95);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.second-title-cont .second-title .mini-title p {
+  color: rgb(123, 111, 171);
+  font-size: small;
+}
+.second-title-cont .second-title .mini-title button {
+  width: 240px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: rgb(122, 110, 170);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .farms_header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .farms_header .second-title-cont .img-second-title {
+    display: none;
+  }
+  .farms_header .second-title-cont .second-title {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=farmsHeader.css.map */

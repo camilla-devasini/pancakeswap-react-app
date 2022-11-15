@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TradeCardWrapper from "./TradeCardWrapper";
 import TradeCardHeader from "./TradeCardHeader";
 import "./style/TradeCard.scss";
-import tradeImages from "./tradeImages";
+import { tradeImages, tradeImagesClose } from "./tradeImages";
 import TradeCardInput from "./TradeCardInput";
 import bnbIcon from "../../assets/images/bnb-icon.svg";
 import blueLogo from "../../assets/images/light-blue-logo.svg";
@@ -36,43 +36,43 @@ function TradeCard(props) {
 
     const [amount1, setAmount1] = useState(1);
     const [amount2, setAmount2] = useState(1);
-    const [currency1, setCurrency1] = useState("BNB");
-    const [currency2, setCurrency2] = useState("BNB");
+    const [currency1, setCurrency1] = useState(); // => questa da dove la passi?
+    const [currency2, setCurrency2] = useState();
     const [rates, setRates] = useState([]);
     const [error, setError] = useState(null);
 
-
+   
 
     // COMMENTATO PER LIMITARE LE CHIAMATE API (MAX 100/MONTH)
-    // useEffect( () => {
-    //     fetch(`http://api.coinlayer.com/api/live?access_key=6164605467866c721bae4409da0de194`)
-    //     .then(response => {
-    //         if (response.status !== 200) {
-    //             setError(new Error("error occurred"))
-    //         } 
-    //         return response.json();
+    useEffect( () => {
+        fetch(`http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`)
+        .then(response => {
+            if (response.status !== 200) {
+                setError(new Error("error occurred"))
+            } 
+            return response.json();
             
-    //     })
-    //     .then(json => {
+        })
+        .then(json => {
             
-    //         setRates(json.rates);
-    //         console.log(json.rates);
-    //         console.log(Object.keys(rates));
-    //     })
-    //     .catch(error => {
-    //         setError(error)
-    //     })
+            setRates(json.rates);
+            console.log(json.rates);
+            console.log(Object.keys(rates));
+        })
+        .catch(error => {
+            setError(error)
+        })
 
-    // }, [])
+    }, [])
 
-    // useEffect(() => {
-    //     if (!!rates) {
-    //       function init() {
-    //         handleAmount1Change(1);
-    //       }
-    //       init();
-    //     }
-    //   }, [rates]);
+    useEffect(() => {
+        if (!!rates) {
+          function init() {
+            handleAmount1Change(1);
+          }
+          init();
+        }
+      }, [rates]);
 
     function format(number) {
         return number.toFixed(4);
@@ -85,7 +85,9 @@ function TradeCard(props) {
 
     const handleCurrency1Change = (currency1)  => {
         setCurrency1(currency1);
+        console.log('CURRENCY', currency1);
         setAmount2(format((amount1 * rates[currency1]) / rates[currency2]))
+        console.log(rates[currency1]);
     }
     const handleAmount2Change = (amount2) => {
         setAmount2(amount2);
@@ -97,12 +99,10 @@ function TradeCard(props) {
         setAmount1(format((amount2 * rates[currency2]) / rates[currency1]))
     }
 
-
-
+   
     return (
        
             <TradeCardWrapper>
-        
                <TradeCardHeader 
                     iconsSwap={tradeImages}
                     onToggleGraph={props.onToggleGraph}
@@ -112,11 +112,12 @@ function TradeCard(props) {
                 <div className="trade-content">
                     <TradeCardInput 
                         curr="bnb" currImage={bnbIcon}
-                        currencies={Object.keys(rates)} 
+                        currencies={Object.keys(rates)}
                         amount={amount1}
                         currency={currency1}
                         onAmountChange={handleAmount1Change}
                         onCurrencyChange={handleCurrency1Change}
+                        
                     />
                     
                     <TradeCardConversionBtn />

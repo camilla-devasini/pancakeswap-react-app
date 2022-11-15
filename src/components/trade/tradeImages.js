@@ -5,4 +5,9 @@ const tradeImages = {
     loop: require("../../assets/images/loop.svg").default
 }
 
-export default tradeImages;
+const tradeImagesClose = {
+    graph: require("../../assets/images/hide-graph-icon.svg").default,
+}
+
+
+export { tradeImages, tradeImagesClose };

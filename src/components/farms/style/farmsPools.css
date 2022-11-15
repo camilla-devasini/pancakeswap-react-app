@@ -1,0 +1,10 @@
+.cont {
+  align-items: center;
+}
+.cont .farms_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}/*# sourceMappingURL=farmsPools.css.map */

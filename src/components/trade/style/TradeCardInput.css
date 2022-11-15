@@ -4,39 +4,46 @@
   justify-content: space-between;
   row-gap: 8px;
 }
+.trade-info .currency-select-ext {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.trade-info .currency-select-ext .currency-label {
+  display: flex;
+}
 .trade-info .currency-select-container {
+  overflow-y: scroll;
+  height: 300px;
+  width: 100px;
+  z-index: 50;
+  position: absolute;
+  background-color: #fff;
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 5px;
-  padding: 0 8px;
+  flex-direction: column;
+  border: 1px solid rgb(238, 234, 244);
+  border-radius: 16px;
 }
-.trade-info .currency-select-container .currency-select {
-  outline: none;
-  display: flex;
+.trade-info .currency-select-container .curr-list {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  box-sizing: border-box;
+  color: rgb(122, 110, 170);
+  font-size: 15px;
+  font-weight: 500;
 }
-.trade-info .currency-select-container .currency-select > span {
-  margin-left: 8px;
-  color: rgb(40, 13, 95);
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
+.trade-info .currency-select-container .curr-list .curr-list-item {
+  list-style: none;
+  cursor: pointer;
+  padding: 2px 5px;
+  text-align: center;
 }
-.trade-info .currency-select-container .currency-select > img {
-  width: 20px;
-  height: 20px;
+.trade-info .currency-select-container .curr-list .curr-list-item:active, .trade-info .currency-select-container .curr-list .curr-list-item:focus {
+  font-weight: 800;
 }
-.trade-info .currency-select-container .curr-selector {
-  border: none;
-  color: rgb(40, 13, 95);
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-.trade-info .currency-select-container .curr-selector:focus-visible {
-  outline: none;
-}
-
-.currency-insert > input {
+.trade-info .currency-insert > input {
   font-size: 16px;
   text-align: right;
   height: 60px;
@@ -47,4 +54,5 @@
   background-color: rgb(238, 234, 244);
   box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
   outline: none;
+  overflow-y: scroll;
 }/*# sourceMappingURL=TradeCardInput.css.map */

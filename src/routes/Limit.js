@@ -12,31 +12,27 @@ function Limit() {
     const [showGraph, setShowGraph] = useState(false);
     const [graphOpen, setGraphOpen] = useState(true);
 
+   
+
     const handlToggleGraph = () => {
-        setShowGraph((prevState) => !prevState)
+        setShowGraph((prevState) => !prevState);
+        setGraphOpen((prevState) => !prevState);
 
     }
 
-    const HandleCloseGraph = () => {
-       setGraphOpen(false);
-    }
  
     
     return (
         <PageWrapper>
             <div className="card-plus-graph-wrapper">
-                {showGraph && 
-                    <GraphOrderContainer>
-                        <OrderCard className="positioned"/>
-                        <CardGraph onHandleCloseGraph={HandleCloseGraph} className={!graphOpen ? "hide-graph" : "show-graph"}/>
-                        </GraphOrderContainer>
-                }
-                
-                
+                <GraphOrderContainer>
+                    <OrderCard className="positioned"/>
+                        {showGraph && 
+                            <CardGraph onHandleCloseGraph={handlToggleGraph} className={!graphOpen ? "hide-graph" : "show-graph"}/>    
+                        }
+                </GraphOrderContainer> 
                 <LimitCard onToggleGraph={handlToggleGraph}/>
-               
-            </div>
-           
+            </div>  
             <TradeFooter />
         </PageWrapper>
     )
