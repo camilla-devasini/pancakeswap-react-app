@@ -6,9 +6,12 @@ function TradeCardHeader(props) {
     <header className="trade-card-header">
         <div className="trade-icons">
             <div className="trade-item">
-                <button className="hover-active-class" onClick={props.onToggleGraph}>
-                    <img src={props.iconsSwap.graph}></img>
-                </button>
+                { props.iconsTrade?.graph ? (
+                    <button className="hover-active-class" onClick={props.onToggleGraph}>
+                        <img src={props.iconsTrade.graph}></img>
+                    </button>
+                    ): null }
+              
             </div>
             
             <div className="trade-item-2">
@@ -16,15 +19,21 @@ function TradeCardHeader(props) {
             </div>
           
             <div className="trade-icons-right">
+                {props.iconsTrade?.settings ? (
+                    <button className="hover-active-class">
+                        <img src={props.iconsTrade.settings} alt="setting icon"/>
+                    </button>
+                ) : null }
+                
                 <button className="hover-active-class">
-                    <img src={props.iconsSwap.settings} alt="setting icon"/>
+                    <img src={props.iconsTrade.clock} alt="reload clock icon"/>
                 </button>
-                <button className="hover-active-class">
-                    <img src={props.iconsSwap.clock} alt="reload clock icon"/>
-                </button>
-                <button className="hover-active-class">
-                    <img src={props.iconsSwap.loop} alt="reload icon"/>
-                </button>
+                {props.iconsTrade?.loop ? (
+                    <button className="hover-active-class">
+                        <img src={props.iconsTrade.loop} alt="reload icon"/>
+                    </button>
+                    ) : null }
+                
             </div>
         </div>
         <h3>{props.cardSubtitle}</h3>

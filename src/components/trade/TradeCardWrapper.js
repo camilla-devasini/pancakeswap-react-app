@@ -1,11 +1,12 @@
 
 import "./style/TradeCardWrapper.scss";
 
+
 const TradeCardWrapper= (props) => {
+    const wrapperClasses= 'trade-card-wrapper ' + props.className;
 
     return (
-
-            <section className="trade-card-wrapper">
+            <section className={wrapperClasses}>
                 {props.children}
             </section>
 
