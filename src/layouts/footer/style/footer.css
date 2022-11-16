@@ -1,0 +1,87 @@
+.main-footer {
+  padding: 40px 0 0 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(39, 38, 44);
+}
+.main-footer .container .row {
+  color: white;
+}
+.main-footer .container .row .col {
+  margin: 10px;
+}
+.main-footer .container .row .col .list {
+  list-style-type: none;
+}
+.main-footer .container .row .col .list li {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.main-footer .container .row .col .list .about {
+  color: rgb(154, 106, 255);
+}
+.main-footer .container .row .col .list .contact {
+  color: rgb(223, 157, 53);
+}
+.main-footer .container .row .col .list .help {
+  color: rgb(154, 106, 255);
+}
+.main-footer .container .row .col .list .developers {
+  color: rgb(154, 106, 255);
+}
+.main-footer .container .icon {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+}
+.main-footer .container .icon img {
+  margin-right: 20px;
+}
+.main-footer .container .cont-down {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.main-footer .container .cont-down .down {
+  display: flex;
+  margin-top: 10px;
+}
+.main-footer .container .cont-down .down .switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.main-footer .container .cont-down .down .switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background: var(--colors-textDisabled);
+  border-radius: 100px;
+  position: relative;
+  transition: background-color;
+}
+.main-footer .container .cont-down .down .switch-label .switch-button {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 25px;
+  height: 25px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: var(--colors-white);
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.main-footer .container .cont-down .down .switch-checkbox:checked + .switch-label .switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.main-footer .container .cont-down .down .switch-label:active .switch-button {
+  width: 60px;
+}/*# sourceMappingURL=footer.css.map */

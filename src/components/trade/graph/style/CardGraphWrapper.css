@@ -1,14 +1,53 @@
-.card-graph-container {
+.card-graph-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 15px 15px 15px;
+  background-color: var(--colors-backgroundAlt);
   border: 1px solid var(--colors-cardBorder);
   border-radius: 16px;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  max-width: 70%;
-  height: 516px;
   position: relative;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  -webkit-animation: 350ms ease 0s 1 normal forwards running graph-up;
+          animation: 350ms ease 0s 1 normal forwards running graph-up;
+  position: fixed;
+  bottom: 17%;
+  margin-bottom: 30px;
+  animation: 350ms ease 0s 1 normal forwards running graph-up;
+  height: 69vh;
+  width: 100vw;
+}
+@-webkit-keyframes graph-up {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes graph-up {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card-graph-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 15px 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--colors-cardBorder);
+    border-radius: 16px;
+    height: 516px;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-animation: none;
+            animation: none;
+  }
 }/*# sourceMappingURL=CardGraphWrapper.css.map */

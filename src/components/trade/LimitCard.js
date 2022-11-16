@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TradeCardWrapper from "./TradeCardWrapper";
 import TradeCardHeader from "./TradeCardHeader";
 import "./style/TradeCard.scss";
-import tradeImages from "./tradeImages";
+import { tradeImages, tradeImagesClose } from "./tradeImages";
 import TradeCardInput from "./TradeCardInput";
 import bnbIcon from "../../assets/images/bnb-icon.svg";
 import blueLogo from "../../assets/images/light-blue-logo.svg";

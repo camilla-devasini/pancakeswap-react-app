@@ -1,23 +1,56 @@
 
 import "./style/CardGraph.scss";
-
+import { useState, useEffect } from "react";
+import Modal from "../../UI/Modal";
 import CardGraphContent from './CardGraphContent';
 import CardGraphWrapper from './CardGraphWrapper';
-import GraphOrderContainer from "./GraphOrderContainer";
-import OrderCard from "../OrderCard";
 
 
 
 const CardGraph = props => {
+   
+   const [screenSize, setScreenSize] = useState({
+      dynamicWidth: window.innerWidth
+   });
 
-   
+   const screenSizeHandler = () => {
+         setScreenSize({dynamicWidth: window.innerWidth})
+   }
+
+   useEffect(() => {
+         window.addEventListener("resize", screenSizeHandler);
+         
+         return () => {
+            window.removeEventListener("resize", screenSizeHandler);
+         }
+
+   }, [screenSize])
+
    return (
-    
-         <CardGraphWrapper>
-            <CardGraphContent onHandleCloseGraph={props.onHandleCloseGraph} />
-         </CardGraphWrapper>
+      <>
+      {window.innerWidth < 575 ? (
+         
+            <Modal onClose={props.onHandleCloseGraph}>
+               <div>
+                  <CardGraphWrapper>
+                     <CardGraphContent onHandleCloseGraph={props.onHandleCloseGraph} />
+                     </CardGraphWrapper>
+                  </div>
+            </Modal>
+     
+
+         ) :
+         (
+            <>
+                  <CardGraphWrapper>
+                     <CardGraphContent onHandleCloseGraph={props.onHandleCloseGraph} />
+                     </CardGraphWrapper>
+            </>
+         )
+      }
+      </>
        
-   
+      
    )
 }
 

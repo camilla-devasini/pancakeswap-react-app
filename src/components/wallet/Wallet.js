@@ -9,7 +9,7 @@ const Wallet = props => {
        <Modal onClose={props.onClose}>
           <div>
             <ConnectWallet wallets={wallets} />
-            </div>
+          </div>
     
         </Modal>
 
