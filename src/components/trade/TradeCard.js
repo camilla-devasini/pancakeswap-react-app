@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Wallet from "../wallet/Wallet";
 import TradeCardWrapper from "./TradeCardWrapper";
 import TradeCardHeader from "./TradeCardHeader";
 import "./style/TradeCard.scss";
@@ -98,10 +99,21 @@ function TradeCard(props) {
         setCurrency2(currency2);
         setAmount1(format((amount2 * rates[currency2]) / rates[currency1]))
     }
+    const [walletShown, setWalletShown] = useState(false);
+    
+    const showWalletHandler = () => {
+        setWalletShown(true);
+    }
+
+    const hideWalletHandler = () => {
+        setWalletShown(false);
+    }
+
 
    
     return (
-       
+        <>
+        {walletShown && <Wallet onClose={hideWalletHandler}/>}
             <TradeCardWrapper>
                <TradeCardHeader 
                     iconsTrade={tradeImages}
@@ -132,10 +144,10 @@ function TradeCard(props) {
                         onCurrencyChange={handleCurrency2Change}
                     />
                     
-                    <MainButton label="Connect Wallet" theme="secondary secondary-trade" />
+                    <MainButton onShowWallet={showWalletHandler} label="Connect Wallet" theme="secondary secondary-trade" />
                 </div>
-
             </TradeCardWrapper> 
+        </>
     )
 }
 export default TradeCard;

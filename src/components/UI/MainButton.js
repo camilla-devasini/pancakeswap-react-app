@@ -5,7 +5,7 @@ const MainButton = (props) => {
     const { theme='primary', label= 'Connect', ...restProps } = props;
     
     return (
-        <button onClick={props.onShowWallet}className={`main-btn hover-active-class btn-${theme}`} {...restProps}>
+        <button onClick={props.onShowWallet} className={`main-btn hover-active-class btn-${theme}`} {...restProps}>
            {props.children}
            <span>{label}</span>
         </button>

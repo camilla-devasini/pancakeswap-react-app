@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import TradeCardWrapper from "./TradeCardWrapper";
 import TradeCardHeader from "./TradeCardHeader";
+import Wallet from "../wallet/Wallet";
 import "./style/TradeCard.scss";
 import { limitImages } from "./tradeImages";
 import TradeCardInput from "./TradeCardInput";
@@ -98,11 +99,19 @@ function LimitCard(props) {
     }
 
 
-
+    const [walletShown, setWalletShown] = useState(false);
+    
+    const showWalletHandler = () => {
+        setWalletShown(true);
+    }
+    const hideWalletHandler = () => {
+        setWalletShown(false);
+    }
+   
     return (
-       
+        <>
+        {walletShown && <Wallet onClose={hideWalletHandler}/>}
             <TradeCardWrapper>
-        
                <TradeCardHeader 
                     iconsTrade={limitImages}
                     onToggleGraph={props.onToggleGraph}
@@ -131,10 +140,11 @@ function LimitCard(props) {
                         onCurrencyChange={handleCurrency2Change}
                     />
                     
-                    <MainButton label="Connect Wallet" theme="secondary secondary-trade" />
+                    <MainButton onShowWallet={showWalletHandler} label="Connect Wallet" theme="secondary secondary-trade" />
                 </div>
 
             </TradeCardWrapper> 
+        </>
     )
 }
 export default LimitCard;

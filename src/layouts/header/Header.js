@@ -50,7 +50,6 @@ const Header = () => {
                 <nav className="main-menu-nav">
                     <HeaderLogo />
                     {window.innerWidth > 575 ? <Navbar /> : <NavbarMobile />}
-                
                 </nav>
 
                 <div className="icons-container">
@@ -58,8 +57,6 @@ const Header = () => {
                     <LanguagePicker langList={languageListObj} />
                     <Settings />
                     {window.innerWidth > 851 ? <MainButton onShowWallet={showWalletHandler} label="Connect Wallet"/> :  <MainButton onShowWallet={showWalletHandler} label="Connect"/>  }
-    
-                    
                 </div>
             </div>
            
