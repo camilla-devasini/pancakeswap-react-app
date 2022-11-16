@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TradeCardWrapper from "./TradeCardWrapper";
 import TradeCardHeader from "./TradeCardHeader";
 import "./style/TradeCard.scss";
-import { tradeImages, tradeImagesClose } from "./tradeImages";
+import { limitImages } from "./tradeImages";
 import TradeCardInput from "./TradeCardInput";
 import bnbIcon from "../../assets/images/bnb-icon.svg";
 import blueLogo from "../../assets/images/light-blue-logo.svg";
@@ -104,7 +104,7 @@ function LimitCard(props) {
             <TradeCardWrapper>
         
                <TradeCardHeader 
-                    iconsSwap={tradeImages}
+                    iconsTrade={limitImages}
                     onToggleGraph={props.onToggleGraph}
                     cardTitle="Limit"
                     cardSubtitle="Place a limit order to trade at a set price"

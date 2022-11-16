@@ -6,8 +6,8 @@ const MainButton = (props) => {
     
     return (
         <button onClick={props.onShowWallet}className={`main-btn hover-active-class btn-${theme}`} {...restProps}>
-           <span>{label}</span>
            {props.children}
+           <span>{label}</span>
         </button>
     )
 

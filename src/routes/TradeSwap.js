@@ -22,7 +22,6 @@ function TradeSwap() {
             <div className="card-plus-graph-wrapper">
                 {showGraph && <CardGraph onHandleCloseGraph={handlToggleGraph} className={!graphOpen ? "hide-graph" : "show-graph"}/> }
                 <TradeCard iconsSwap={tradeImages} onToggleGraph={handlToggleGraph}/>
-               
             </div>
             <TradeFooter />
         </PageWrapper>

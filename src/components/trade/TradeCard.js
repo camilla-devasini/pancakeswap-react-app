@@ -104,7 +104,7 @@ function TradeCard(props) {
        
             <TradeCardWrapper>
                <TradeCardHeader 
-                    iconsSwap={tradeImages}
+                    iconsTrade={tradeImages}
                     onToggleGraph={props.onToggleGraph}
                     cardTitle="Swap"
                     cardSubtitle="Trade tokens in an instant"
