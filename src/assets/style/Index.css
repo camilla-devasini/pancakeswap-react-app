@@ -110,6 +110,15 @@
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
   }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #9a9fd0;
+    border-radius: 8px;
+  }
 
 
   .hover-active-class:hover {
