@@ -14,9 +14,8 @@ function TradeSwap() {
     const handlToggleGraph = () => {
         setShowGraph((prevState) => !prevState);
         setGraphOpen((prevState) => !prevState);
-
     }
-   
+
 
     return (
         <PageWrapper>

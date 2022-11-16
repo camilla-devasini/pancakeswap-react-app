@@ -1,5 +1,5 @@
 .trade-card-wrapper {
-  width: 326px;
+  min-width: 326px;
   height: 516px;
   border: 1px solid var(--colors-cardBorder);
   background-color: var(--colors-backgroundAlt);

@@ -1,5 +1,8 @@
 .trade-orders-card {
-    width: 326px;
+    // min-width: 326px;
+    // max-width: 376px;
+    box-sizing: border-box;
+    width: 100%;
     border: 1px solid rgb(231, 227, 235);
     background-color: #fff;
     border-radius: 16px;
@@ -10,12 +13,9 @@
     margin-top: 0px;
     align-self: flex-start;
     border-top-left-radius: 16px;
-    min-width: 376px;
     height: fit-content;
-
-
-
-
+    
+    
 
     & header {
         display: flex;

@@ -6,8 +6,13 @@ import closeicon from "../../../assets/images/close-icon.svg";
 import { SingleCoin } from "../../../api/api";
 import { HistoricalChart } from "../../../api/api";
 import { Line } from "react-chartjs-2";
+import { CircularProgress } from "@mui/material";
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
+
+
+
+
 
 
 function CardGraphContent(props) {
@@ -85,25 +90,49 @@ function CardGraphContent(props) {
             {
                 data: historicData && historicData.map((item) => item[1]),
                 label: `USD Price in the last ${days} days`,
-                borderColor: "#1fc7d4",
+                borderColor: "rgb(31, 199, 212)",
+                fill: true,
+                backgroundColor: "rgb(31, 199, 212, 0.1)" 
             }
         ]
 
     }
     const options = {
-
+        type: "line",
         elements: {
               point: {
-                radius: 1,
+                radius: 0,
               },
         },
+      
+        scales: {
+            x: {
+                grid: {
+                display: false      
+                }
+            },
+            y: {
+                grid: {
+                display: false      
+                }
+            }
+        },
+        animations: {
+            tension: {
+              duration: 3000,
+              easing: 'linear',
+              from: 1,
+              to: 0,
+              loop: true
+            }
+        }
+          
     }
+   
     
- 
-
 
     return (
-        <div>
+        <div className="content-external">
             <header>
                 <button className="close-btn hover-active-class">
                         <img src={closeicon} onClick={props.onHandleCloseGraph}  alt="close icon"></img>
@@ -112,23 +141,22 @@ function CardGraphContent(props) {
             <div className="values-content">
                 <div className="mkt-value-updates">
                     <input className="search-input-currency" type="text"
-                           placeholder="Type a CryptoCurrency..."
+                           placeholder="Type a CryptoCurrency"
                            value={searchInput}
                            onChange={e => setSearchInput(e.target.value)}>
                     </input>
-                    <MainButton style={{width: 100, marginLeft: 10}} label="Search" onClick={fetchCoin}></MainButton>
+                    <MainButton style={{width: 80, marginLeft: 10}} label="Search" onClick={fetchCoin}></MainButton>
                     
-                        {error && <p>{error.message}</p>} 
-                        {coin && 
-                            <div className="coin-details">
-                                <h2 className="coin-title">{coin.id}</h2>
-                                <img src={coin.image.thumb}></img>
-                            </div>
-                        }
+                    {error && <p>{error.message}</p>} 
+                    {coin && 
+                        <div className="coin-details"> 
+                            <img src={coin.image.thumb}></img>
+                        </div>
+                    }
                 </div>
 
                 <div className="graph">
-                        {loading && <p>Loading Chart Data</p>}
+                        {loading && <CircularProgress color="secondary" variant="indeterminate" size="30px"  />}
                         {error && <p>{error.message}</p>}
                         {historicData && 
                         <>
@@ -146,7 +174,10 @@ function CardGraphContent(props) {
                             <div className="date">
                                 <span>{datetime.toLocaleString()}</span> 
                             </div>
-                            <Line data={data} options={options} /> 
+                            
+                            <Line  className="graph-canva" data={data} options={options} /> 
+                         
+                            
                         </>
                     }
 
