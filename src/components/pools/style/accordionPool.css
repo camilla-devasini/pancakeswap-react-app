@@ -1,0 +1,256 @@
+.accordion,
+button {
+  width: 95%;
+  margin: auto;
+  align-items: center;
+}
+.accordion .accordion-table,
+button .accordion-table {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  align-items: center;
+}
+.accordion .accordion-table .title-accordion,
+button .accordion-table .title-accordion {
+  display: flex;
+  gap: 5px;
+  width: 200px;
+  margin-top: 5px;
+}
+.accordion .accordion-table .title-accordion .cont-title-p .title-p,
+button .accordion-table .title-accordion .cont-title-p .title-p {
+  color: rgb(40, 13, 95);
+  font-weight: bold;
+  font-size: large;
+}
+.accordion .accordion-table .title-accordion .cont-title-p .title-p2,
+button .accordion-table .title-accordion .cont-title-p .title-p2 {
+  font-size: 10px;
+}
+.accordion .accordion-table .title-accordion .title-icon .icon-acc2,
+button .accordion-table .title-accordion .title-icon .icon-acc2 {
+  border: 1px solid;
+  border-radius: 50%;
+}
+.accordion .accordion-table .title-accordion .title-icon .icon-acc2 img,
+button .accordion-table .title-accordion .title-icon .icon-acc2 img {
+  width: 32px;
+}
+.accordion .accordion-table .cont-core-boosted2,
+button .accordion-table .cont-core-boosted2 {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  gap: 0px;
+}
+.accordion .accordion-table .cont-core-boosted2 .p1,
+button .accordion-table .cont-core-boosted2 .p1 {
+  font-size: 12px;
+  color: rgb(126, 121, 173);
+}
+.accordion .accordion-table .cont-core-boosted2 .p2,
+button .accordion-table .cont-core-boosted2 .p2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(189, 194, 198);
+}
+.accordion .accordion-table .cont-core-boosted2 .p3,
+button .accordion-table .cont-core-boosted2 .p3 {
+  font-size: 12px;
+  color: rgb(189, 194, 198);
+}
+.accordion .accordion-table .cont-earned2,
+button .accordion-table .cont-earned2 {
+  color: rgb(138, 127, 180);
+  width: 150px;
+}
+.accordion .accordion-table .cont-earned2 .earned2,
+button .accordion-table .cont-earned2 .earned2 {
+  font-size: 12px;
+}
+.accordion .accordion-table .cont-earned2 .earned-perc2,
+button .accordion-table .cont-earned2 .earned-perc2 {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+}
+.accordion .accordion-table .cont-apr-up2,
+button .accordion-table .cont-apr-up2 {
+  display: flex;
+  width: 150px;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-apr2,
+button .accordion-table .cont-apr-up2 .cont-apr2 {
+  display: flex;
+  flex-direction: column;
+  color: rgb(40, 13, 95);
+  gap: 0px;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-apr2 .apr2,
+button .accordion-table .cont-apr-up2 .cont-apr2 .apr2 {
+  display: flex;
+  color: rgb(138, 127, 180);
+  font-size: 12px;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-apr2 .number2,
+button .accordion-table .cont-apr-up2 .cont-apr2 .number2 {
+  font-weight: 600;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2,
+button .accordion-table .cont-apr-up2 .cont-n-up-to2 {
+  display: flex;
+  flex-direction: row;
+  color: rgb(64, 212, 176);
+  font-weight: bold;
+  margin-top: 23px;
+  width: 200px;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2,
+button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 {
+  display: flex;
+  gap: 5px;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2,
+button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2 {
+  display: flex;
+  width: 65px;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2,
+button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2 {
+  display: none;
+}
+.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .perc2,
+button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .perc2 {
+  display: none;
+}
+.accordion .accordion-table .cont-liqui2,
+button .accordion-table .cont-liqui2 {
+  width: 150px;
+}
+.accordion .accordion-table .cont-liqui2 .liquidity2,
+button .accordion-table .cont-liqui2 .liquidity2 {
+  color: rgb(138, 127, 180);
+  font-size: 12px;
+}
+.accordion .accordion-table .cont-liqui2 .price-cont2,
+button .accordion-table .cont-liqui2 .price-cont2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: rgb(40, 13, 95);
+  font-weight: bold;
+}
+.accordion .accordion-table .cont-multi2,
+button .accordion-table .cont-multi2 {
+  width: 150px;
+  color: rgb(138, 127, 180);
+  font-weight: bold;
+}
+.accordion .accordion-table .cont-multi2 .n-x-svg2,
+button .accordion-table .cont-multi2 .n-x-svg2 {
+  color: rgb(40, 13, 95);
+}
+.accordion .accordion-collapse,
+button .accordion-collapse {
+  height: 200px;
+  background-color: rgb(246, 246, 246);
+}
+.accordion .accordion-collapse .accordion-body2,
+button .accordion-collapse .accordion-body2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.accordion .accordion-collapse .accordion-body2 .left-cont2,
+button .accordion-collapse .accordion-body2 .left-cont2 {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  font-size: 12px;
+}
+.accordion .accordion-collapse .accordion-body2 .left-cont2 .cont-total2,
+button .accordion-collapse .accordion-body2 .left-cont2 .cont-total2 {
+  display: flex;
+  justify-content: space-around;
+}
+.accordion .accordion-collapse .accordion-body2 .left-cont2 .cont-ave,
+button .accordion-collapse .accordion-body2 .left-cont2 .cont-ave {
+  display: flex;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll,
+button .accordion-collapse .accordion-body2 .cont-coll {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont,
+button .accordion-collapse .accordion-body2 .cont-coll .double-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont,
+button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont {
+  margin-top: 8px;
+  width: 48%;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 110%;
+  padding: 10px;
+  color: rgb(125, 113, 172);
+  font-weight: bold;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2,
+button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest,
+button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest {
+  text-decoration: none;
+  border: none;
+  background-color: gray;
+  border-radius: 15px;
+  width: 100px;
+  font-weight: bold;
+  color: lightgrey;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost,
+button .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 8px;
+  height: 110%;
+  width: 49%;
+  color: rgb(136, 125, 179);
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn,
+button .accordion-collapse .accordion-body2 .cont-coll .cont-btn {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 90px;
+  gap: 5px;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn .title-cont-btn,
+button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .title-cont-btn {
+  padding-left: 10px;
+}
+.accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-coll,
+button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-coll {
+  width: 98%;
+  align-self: center;
+  background-color: rgb(31, 199, 212);
+  height: 45px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}/*# sourceMappingURL=accordionPool.css.map */

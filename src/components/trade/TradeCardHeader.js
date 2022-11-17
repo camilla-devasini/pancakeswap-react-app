@@ -21,16 +21,16 @@ function TradeCardHeader(props) {
             <div className="trade-icons-right">
                 {props.iconsTrade?.settings ? (
                     <button className="hover-active-class">
-                        <img src={props.iconsTrade.settings} alt="setting icon"/>
+                        <img src={props.iconsTrade.settings} alt="setting icon"></img>
                     </button>
                 ) : null }
                 
                 <button className="hover-active-class">
-                    <img src={props.iconsTrade.clock} alt="reload clock icon"/>
+                    <img src={props.iconsTrade.clock} alt="reload clock icon"></img>
                 </button>
                 {props.iconsTrade?.loop ? (
                     <button className="hover-active-class">
-                        <img src={props.iconsTrade.loop} alt="reload icon"/>
+                        <img src={props.iconsTrade.loop} alt="reload icon"></img>
                     </button>
                     ) : null }
                 

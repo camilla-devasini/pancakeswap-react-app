@@ -1,0 +1,103 @@
+.farms_caption2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.farms_caption2 .farms_caption_order2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 2px;
+  left: 0px;
+  background-color: white;
+  transition: 0.4s;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked input:checked + .slider {
+  background-color: rgb(49, 208, 170);
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked input:focus + .slider {
+  box-shadow: 0 0 1px rgb(49, 208, 170);
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked .slider.round {
+  border-radius: 34px;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_staked .slider.round:before {
+  border-radius: 50%;
+}
+.farms_caption2 .farms_caption_order2 .farms_caption_live {
+  display: flex;
+}
+.farms_caption2 .cont-input {
+  display: flex;
+  gap: 15px;
+}
+.farms_caption2 .cont-input .farms_caption_sort {
+  display: flex;
+  flex-direction: column;
+}
+.farms_caption2 .cont-input .farms_caption_search {
+  display: flex;
+  flex-direction: column;
+}
+.farms_caption2 .cont-input #sort {
+  border-radius: 15px;
+  width: 130px;
+  height: 35px;
+  background-color: rgb(238, 234, 244);
+  color: rgb(40, 13, 95);
+  font-weight: bold;
+  border: 1px solid lightgray;
+}
+.farms_caption2 .cont-input #search {
+  border-radius: 15px;
+  width: 200px;
+  height: 35px;
+  background-color: rgb(238, 234, 244);
+  font-weight: bold;
+  color: rgb(123, 111, 171);
+  border: 1px solid lightgray;
+}
+
+@media (max-width: 768px) {
+  .farms_caption {
+    display: flex;
+    width: 100%;
+  }
+}/*# sourceMappingURL=poolsnav.css.map */

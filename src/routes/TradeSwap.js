@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TradeCard from "../components/trade/TradeCard";
 import CardGraph from "../components/trade/graph/CardGraph";
 import TradeFooter from "../components/trade/TradeFooter";
@@ -16,6 +16,11 @@ function TradeSwap() {
         setGraphOpen((prevState) => !prevState);
     }
 
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = showGraph ? 'hidden' : 'auto';
+      }, [showGraph])
 
     return (
         <PageWrapper>

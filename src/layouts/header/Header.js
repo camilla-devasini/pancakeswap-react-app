@@ -43,6 +43,11 @@ const Header = () => {
         setWalletShown(false);
     }
 
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = walletShown ? 'hidden' : 'auto';
+      }, [walletShown])
+
     return (
         <Fragment>
             {walletShown && <Wallet onClose={hideWalletHandler}/>}

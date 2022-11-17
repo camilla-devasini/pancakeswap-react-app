@@ -1,6 +1,6 @@
 import Modal from "../UI/Modal";
-import ConnectWallet from "./ConnectWallet";
-import wallets from "./walletObj";
+import ConnectYourWallet from "./ConnectYourWallet";
+import { wallets } from "./walletObj";
 
 const Wallet = props => {
     
@@ -8,9 +8,8 @@ const Wallet = props => {
     return (
        <Modal onClose={props.onClose}>
           <div>
-            <ConnectWallet wallets={wallets} />
+            <ConnectYourWallet wallets={wallets} />
           </div>
-    
         </Modal>
 
     ) 

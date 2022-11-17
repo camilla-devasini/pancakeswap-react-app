@@ -15,7 +15,7 @@ import Overview from "./routes/Overview";
 import Collections from "./routes/Collections";
 import Activity from "./routes/Activity";
 import Blog from "./routes/Blog";
-import ConnectWallet from './components/wallet/ConnectWallet';
+import ConnectYourWallet from './components/wallet/ConnectYourWallet';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
             <Route path="/collections" element={<Collections/>} /> 
             <Route path="/activity" element={<Activity/>} /> 
             <Route path="/blog" element={<Blog/>} /> 
-            <Route path="/connect-wallet" element={<ConnectWallet/>}></Route>
+            <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route>
 
             <Route path="*" element ={<PageNotFound/>} />
         </Route>

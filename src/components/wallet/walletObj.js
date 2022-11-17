@@ -9,6 +9,8 @@ import tokenPocket from "../../assets/images/tokenpocket.png";
 import safePal from "../../assets/images/safepal.png";
 import coin98 from "../../assets/images/coin98.png";
 import blocto from "../../assets/images/blocto.png";
+import learnBunny from "../../assets/images/learn-connect-bunny.png";
+import worldLock from "../../assets/images/world-lock.png";
 
 
 
@@ -26,4 +28,16 @@ const wallets = [
     { title: "Blocto", img: blocto },
 ]
 
-export default wallets;
+const learning = [
+    { title: "Haven’t got a wallet yet?", img: learnBunny },
+    
+]
+const learning2 = [
+    { title: "Login using a wallet connection",
+      img: worldLock,
+      paragraph: "A Web3 Wallet allows you to send and receive crypto assets like bitcoin, BNB, ETH, NFTs and much more. Instead of setting up new accounts and passwords for every website, simply set up your wallet in one go, and connect it to your favorite DApps."
+     }
+]
+
+export { wallets, learning, learning2 };
+

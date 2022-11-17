@@ -110,7 +110,11 @@ function TradeCard(props) {
     }
 
 
-   
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = walletShown ? 'hidden' : 'auto';
+      }, [walletShown])
+
     return (
         <>
         {walletShown && <Wallet onClose={hideWalletHandler}/>}

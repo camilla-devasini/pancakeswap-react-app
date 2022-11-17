@@ -99,6 +99,14 @@ button .accordion-table .cont-apr-up .cont-n-up-to .up-to-perc .up-to {
   display: flex;
   width: 65px;
 }
+.accordion .accordion-table .cont-apr-up .cont-n-up-to .up-to-perc .up-to2,
+button .accordion-table .cont-apr-up .cont-n-up-to .up-to-perc .up-to2 {
+  display: none;
+}
+.accordion .accordion-table .cont-apr-up .cont-n-up-to .up-to-perc .perc2,
+button .accordion-table .cont-apr-up .cont-n-up-to .up-to-perc .perc2 {
+  display: none;
+}
 .accordion .accordion-table .cont-liqui,
 button .accordion-table .cont-liqui {
   width: 150px;
