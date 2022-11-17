@@ -4,6 +4,7 @@ import Footer from "../footer/Footer";
 import CommonSubmenu from "../../components/UI/CommonSubmenu";
 import { submenuItemsTrade, submenuItemsEarn, submenuItemsWin, submenuItemsNft } from "./../../components/helpers/menuItemsObj";
 import { useEffect } from "react";
+import useLocalStorage from "use-local-storage";
 
 
 function Layout() {
@@ -16,9 +17,24 @@ function Layout() {
         console.log(currentPath);
     },[location])
     
+  //tema chiaro o scuro a seconda del dato salvato in localstorage sulla base
+  // delle preferenze che sta già usando l'utente nel browser --> "theme", "light" oppure "theme", "dark",
+  //usate come default.
+  const defaultDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage(
+    "theme", defaultDarkTheme ? "dark" : "light"
+  )
+
+  //tema chiaro o scuro tramite click sul button:
+  const switchTheme = () => {
+    const newTheme = 
+      theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  }
+
     
     return (
-        <div>
+        <div data-theme={theme}>
             <Header />
             {currentPath === "/Swap" || currentPath === "/Limit" || currentPath === "/Liquidity" ?
                 <CommonSubmenu submenuItems={submenuItemsTrade} /> :
@@ -44,7 +60,7 @@ function Layout() {
             <div>
                 <Outlet />
             </div>
-            <Footer />
+            <Footer switchTheme={switchTheme} />
         </div>
     )
 }

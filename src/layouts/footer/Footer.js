@@ -13,24 +13,30 @@ import LanguagePicker from "../header/LanguagePicker"
 import { languageListObj } from "../../components/helpers/languageListObj";
 import TradeButton from "../header/TradeButton";
 import MainButton from "../../components/UI/MainButton";
+import useLocalStorage from "use-local-storage";
 
 
 
 
-const Footer = () => {
+const Footer = (props) => {
   
 
-  const [theme, setTheme] = useState('light');
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  };
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+  // const [theme, setTheme] = useState('light');
+  // const toggleTheme = () => {
+  //   if (theme === 'light') {
+  //     setTheme('dark');
+  //   } else {
+  //     setTheme('light');
+  //   }
+  // };
+   // useEffect(() => {
+  //   document.body.className = theme;
+  // }, [theme]);
+
+  
+
+
+ 
   return (
     <div className="main-footer">
       <div className="container">
@@ -89,7 +95,8 @@ const Footer = () => {
         className="switch-checkbox"
         id={`switch-new`}
         type="checkbox"
-        onClick={toggleTheme}
+        // onClick={toggleTheme}
+        onClick={props.switchTheme}
       />
       <label
         className="switch-label"
