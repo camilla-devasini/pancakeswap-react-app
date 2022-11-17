@@ -1,0 +1,51 @@
+.learn-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    margin-bottom: 50px;
+
+
+    & h1 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--colors-secondary);
+        text-align: center;
+    }
+
+    & img {
+        width: 164px;
+        height: 183px;
+        object-fit: contain;
+    }
+
+    a {
+       text-decoration: none;
+   }
+}
+
+.learning-card-two {
+    width: 100vw;
+    justify-content: center;
+    padding: 35px;
+
+    & p {
+        color: var(--colors-textSubtle);
+        font-weight: 400;
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 32px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 852px) {
+
+    .learning-card-two {
+        width: 100%;
+        align-items: center; 
+       
+    }
+}

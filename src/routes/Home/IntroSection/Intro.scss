@@ -1,0 +1,518 @@
+@mixin container2($partenza, $distanza) {
+  @keyframes bitcoin-biscuit {
+    0%,
+    100% {
+      transform: translateX($partenza) translateY($partenza);
+    }
+
+    50% {
+      transform: translateX($distanza) translateY($distanza);
+    }
+  }
+}
+
+.background-content-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 980px;
+  background: linear-gradient(white, rgb(118, 69, 217, 30%));
+  z-index: -1;
+
+  .container-1 {
+    padding: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+
+    svg {
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-weight: 600;
+      color: rgb(40, 13, 95);
+      line-height: 1.1;
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      line-height: 1.5;
+      color: rgb(122, 110, 170);
+      font-size: 18px;
+      font-weight: lighter;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    h3 {
+      color: rgb(122, 110, 170);
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .cards-section1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    height: 350px;
+
+    .card-section1 {
+      width: 300px;
+      height: 300px;
+      background-color: white;
+      border-radius: 24px;
+      border: 1px solid rgb(231, 227, 235);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font-family: "Kanit", sans-serif;
+      position: relative;
+
+      .svg {
+        width: 36px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+
+        .svg1 {
+          fill: rgb(118, 69, 217);
+        }
+      }
+
+      h2 {
+        
+        font-weight: 600;
+        font-size: 43px;
+        color: rgb(40, 13, 95);
+
+        &:nth-child(2) {
+          color: rgb(118, 69, 217);
+          position: relative;
+          bottom: 15px;
+        }
+      }
+
+      p {
+        margin-bottom: -5px;
+        font-size: 16px;
+        color: rgb(122, 110, 170);
+      }
+    }
+
+    .card-section1:nth-of-type(2) {
+      h2 {
+        font-size: 43px;
+        color: rgb(40, 13, 95);
+        font-weight: 600;
+
+        &:nth-child(2) {
+          color: #1fc7d4;
+          position: relative;
+          bottom: 15px;
+        }
+      }
+    }
+
+    .card-section1:nth-of-type(3) {
+      h2 {
+        font-size: 43px;
+        color: rgb(40, 13, 95);
+        font-weight: 600;
+
+        &:nth-child(2) {
+          color: #ed4b9e;
+          position: relative;
+          bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.svg-border-1 {
+  fill: rgb(118, 69, 217, 30%);
+  width: 100vw;
+  height: 29px;
+}
+
+// ---------------------------- MEDIA QUERIES -----------------------------//
+
+@media screen and (max-width: 1050px) and (min-width: 859px) {
+  .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
+    
+
+    .cards-section1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 20px;
+
+      .card-section1 {
+        width: 263px;
+        height: 263px;
+        background-color: white;
+        border-radius: 24px;
+        border: 1px solid rgb(231, 227, 235);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: "Kanit", sans-serif;
+        position: relative;
+
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: rgb(118, 69, 217);
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+      .card-section1:nth-of-type(2) {
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #1fc7d4;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(3) {
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #ed4b9e;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 858px) and (min-width: 426px) {
+  .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 1300px;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
+    
+
+    .cards-section1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      height: 600px;
+      
+
+      .card-section1 {
+        width: 300px;
+        height: 166px;
+        background-color: white;
+        border-radius: 24px;
+        border: 1px solid rgb(231, 227, 235);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: "Kanit", sans-serif;
+        position: relative;
+        padding-top: 155px;
+        
+        
+        h2 {
+          
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            
+            color: rgb(118, 69, 217);
+            // position: relative;
+            // bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(2) {
+
+       
+
+        h2 {
+         
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #1fc7d4;
+            // position: relative;
+            // bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(3) {
+        h2 {
+          
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            
+            color: #ed4b9e;
+            // position: relative;
+            // bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
+   
+
+    .cards-section1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      height: 600px;
+
+      .card-section1 {
+        width: 300px;
+        height: 166px;
+        background-color: white;
+        border-radius: 24px;
+        border: 1px solid rgb(231, 227, 235);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: "Kanit", sans-serif;
+        position: relative;
+
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: rgb(118, 69, 217);
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(2) {
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #1fc7d4;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(3) {
+        h2 {
+          font-size: 43px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #ed4b9e;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
+   
+
+    .cards-section1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      height: 600px;
+
+      .card-section1 {
+        width: 300px;
+        height: 166px;
+        background-color: white;
+        border-radius: 24px;
+        border: 1px solid rgb(231, 227, 235);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: "Kanit", sans-serif;
+        position: relative;
+
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: rgb(118, 69, 217);
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(2) {
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #1fc7d4;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(3) {
+        h2 {
+          font-size: 43px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #ed4b9e;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
+    
+
+    .cards-section1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      height: 600px;
+
+      .card-section1 {
+        width: 85vw;
+        height: 166px;
+        background-color: white;
+        border-radius: 24px;
+        border: 1px solid rgb(231, 227, 235);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: "Kanit", sans-serif;
+        position: relative;
+
+        h2 {
+          font-size: 35px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: rgb(118, 69, 217);
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(2) {
+        h2 {
+          font-size: 43px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #1fc7d4;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+
+      .card-section1:nth-of-type(3) {
+        h2 {
+          font-size: 43px;
+          color: rgb(40, 13, 95);
+
+          &:nth-child(2) {
+            color: #ed4b9e;
+            position: relative;
+            bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

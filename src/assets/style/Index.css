@@ -109,6 +109,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
+    
   }
   
   ::-webkit-scrollbar {
@@ -119,6 +120,16 @@
     background: #9a9fd0;
     border-radius: 8px;
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #9a9fd0;
+    border-radius: 8px;
+  }
+
 
   .hover-active-class:hover {
     opacity: 0.65;
@@ -131,4 +142,7 @@
   .hover-active-class:focus {
     outline: none;
   }
-  
+  .company-icons {
+    width: 24px;
+    height: 24px;
+  }

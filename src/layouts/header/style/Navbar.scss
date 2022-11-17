@@ -1,0 +1,26 @@
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  
+}
+
+.nav-mobile-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 20;
+   
+
+
+    & > ul {
+        background: var(--colors-backgroundAlt);
+        border-top: 1px solid var(--colors-cardBorder);
+        padding: 10px 20px;
+        width: 100vw;
+ 
+ 
+    }
+}

@@ -2,117 +2,125 @@ import tradeIcon from "../../assets/images/trade-menu-icon-mobile-active.svg";
 import earnIcon from "../../assets/images/earn-menu-icon-mobile.svg";
 import winIcon from "../../assets/images/win-menu-icon-mobile.svg";
 import nftIcon from "../../assets/images/nft-menu-icon-mobile.svg";
+import moreIcon from "../../assets/images/menu-more.svg";
 
 
-export const menuItemsObj =
+const menuItemsObj =
 
 [
     {
         title: 'Trade',
-        url: '/trade',
+        url: '/Swap',
         img: tradeIcon,
         submenu: [
             {
                 title: 'Swap',
-                url: 'swap'  // dynamic nested route
+                url: 'Swap'  // dynamic nested route without slash
             },
             {
                 title: 'Limit',
-                url: 'limit'
+                url: 'Limit'
             },
             {
                 title: 'Liquidity',
-                url: 'liquidity'
+                url: 'Liquidity'
             },
             {
                 title: 'Perpetual',
-                url: 'perpetual'
+               
             }
         
         ]
     },
     {
         title: 'Earn',
-        url: '/earn',
+        url: '/Farms',
         img: earnIcon,
         submenu: [
             {
                 title: 'Farms',
-                url: 'farms'
+                url: 'Farms'
             },
             {
                 title: 'Pools',
-                url: 'pools'
+                url: 'Pools'
             }
         ]
     },
     {
         title: 'Win',
-        url: '/win',
+        url: '/Prediction',
         img: winIcon,
         submenu: [
             {
                 title: 'Trading Competition',
-                url: 'trading-competion'
+                url: 'Trading-competion'
             },
             {
                 title: 'Prediction',
-                url: 'prediction'
+                url: 'Prediction'
             },
             {
                 title: 'Lottery',
-                url: 'lottery'
+                url: 'Lottery'
             }
         ]
     },
     {
         title: 'NFT',
-        url: '/nft',
+        url: '/Overview',
         img: nftIcon,
         submenu: [
             {
                 title: 'Overview',
-                url: 'overview'
+                url: 'Overview'
             },
             {
                 title: 'Collections',
-                url: 'collections'
+                url: 'Collections'
             },
             {
                 title: 'Activity',
-                url: 'activity'
+                url: 'Activity'
             }
         ]
     }, {
-        title: '...',
-        url: '/info',
+        img: moreIcon,
+        url: '/Blog',
   
         submenu: [
             {
                 title: 'Info',
-                url: 'info'
+                url: 'Info'
             },
             {
                 title: 'IFO',
-                url: 'ifo'
+                url: 'Ifo'
             },
             {
                 title: 'Voting',
-                url: 'voting'
+                url: 'Voting'
             },
             {
                 title: 'Leaderboard',
-                url: 'leaderboard'
+                url: 'Leaderboard'
             },
             {
                 title: 'Blog',
-                url: 'blog'
+                url: 'Blog'
             },
             {
                 title: 'Docs',
-                url: 'docs'
+                url: 'Docs'
             }
         ]
         
         },
     ]
+
+   const submenuItemsTrade = ["Swap", "Limit", "Liquidity"]; 
+   const submenuItemsEarn = ["Farms", "Pools"];
+   const submenuItemsWin = ["Trading Competition", "Prediction"];
+   const submenuItemsNft = ["Overview", "Collection"];
+   
+export { menuItemsObj, submenuItemsTrade, submenuItemsEarn, submenuItemsWin, submenuItemsNft };

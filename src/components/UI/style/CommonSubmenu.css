@@ -1,0 +1,51 @@
+.common-navbar-wrapper {
+  width: 100%;
+}
+
+.common-navbar {
+  display: flex;
+  flex-direction: row;
+  height: 42px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  justify-content: center;
+}
+.common-navbar .single-common-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 20px;
+  list-style: none;
+  padding: 0 10px;
+  list-style: none;
+}
+.common-navbar .single-common-navbar:hover {
+  background-color: rgb(239, 244, 245);
+  cursor: pointer;
+}
+.common-navbar .single-common-navbar .submenu-links {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--colors-textSubtle);
+}
+.common-navbar .link-highlighted {
+  position: relative;
+}
+.common-navbar .link-highlighted::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(31, 199, 212);
+  border-radius: 2px 2px 0px 0px;
+}
+.common-navbar .link-highlighted .submenu-links {
+  color: rgb(118, 69, 217);
+  font-weight: 700;
+}/*# sourceMappingURL=CommonSubmenu.css.map */

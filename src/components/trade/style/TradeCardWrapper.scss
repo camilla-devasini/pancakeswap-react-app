@@ -1,0 +1,20 @@
+.trade-card-wrapper {
+    min-width: 326px;
+    height: 516px;
+    border: 1px solid var(--colors-cardBorder);
+    background-color: var(--colors-backgroundAlt);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+    }
+
+.liquidity-wrapper {
+    width: 100%;
+    max-width: 434px;
+    margin: 0 auto;
+    height: 279px;
+    display: flex;
+    flex-direction: column;
+    
+}

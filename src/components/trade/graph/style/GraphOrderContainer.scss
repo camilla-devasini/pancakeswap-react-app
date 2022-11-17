@@ -1,0 +1,12 @@
+.graph-order-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+@media screen and (min-width: 576px) {
+    .graph-order-container {
+        align-self: flex-start;
+        width: 100%;
+    }
+}

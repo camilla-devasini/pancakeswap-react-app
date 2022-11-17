@@ -1,0 +1,15 @@
+.value-conversion {
+    border-radius: 50px;
+    background: rgb(238, 234, 244) url("../../../assets/images/down-arrow-blue.svg") no-repeat center;
+    width: 32px;
+    height: 32px;
+    box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+    align-self: center;
+    outline: none;
+    margin-top: 20px;
+    
+//js - check https://stackoverflow.com/questions/18032220/how-to-change-source-of-img-tag-on-hover
+    &:hover {
+        background: rgb(31, 199, 212, 0.6) url("../../../assets/images//switch-arrows.svg") no-repeat center;
+    }
+}
