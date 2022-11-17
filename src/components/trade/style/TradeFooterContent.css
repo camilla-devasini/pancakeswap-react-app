@@ -6,7 +6,7 @@
   margin: 20px 0px 8px;
 }
 .conversion-link > a {
-  color: rgb(31, 199, 212);
+  color: var(--colors-primary);
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;

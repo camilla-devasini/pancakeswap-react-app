@@ -1,7 +1,6 @@
 .trade-card-header {
     padding: 24px;
-    border-bottom: 1px solid rgb(231, 227, 235);
-    display: flex;
+    border-bottom: 1px solid var(--colors-cardBorder);
     flex-direction: column;
 
 
@@ -21,7 +20,7 @@
             
         
             & > h2 {
-                color: rgb(40, 13, 95);
+                color: var(--colors-text);
                 font-weight: 600;
                 font-size: 16px;
                 text-transform: uppercase;
@@ -46,7 +45,7 @@
         }
     }
 & > h3 {
-    color: rgb(122, 110, 170);
+    color: var(--colors-textSubtle);
     font-size: 14px;
     text-align: center;
     margin-top: 5px;

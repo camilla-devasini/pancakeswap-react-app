@@ -8,7 +8,6 @@ import useLocalStorage from "use-local-storage";
 
 
 function Layout() {
-
     
     const location = useLocation();
     const currentPath = location.pathname;
@@ -21,15 +20,14 @@ function Layout() {
   // delle preferenze che sta già usando l'utente nel browser --> "theme", "light" oppure "theme", "dark",
   //usate come default.
   const defaultDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [theme, setTheme] = useLocalStorage(
-    "theme", defaultDarkTheme ? "dark" : "light"
-  )
+  
+  const [theme, setTheme] = useLocalStorage("theme", defaultDarkTheme ? 'dark' : 'light');
 
   //tema chiaro o scuro tramite click sul button:
   const switchTheme = () => {
-    const newTheme = 
-      theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+      
   }
 
     
@@ -55,7 +53,7 @@ function Layout() {
                 <CommonSubmenu submenuItems={submenuItemsNft} /> :
                 null
             }     
-
+            <div/>
     
             <div>
                 <Outlet />

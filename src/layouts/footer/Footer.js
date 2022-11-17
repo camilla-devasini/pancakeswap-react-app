@@ -16,26 +16,8 @@ import MainButton from "../../components/UI/MainButton";
 import useLocalStorage from "use-local-storage";
 
 
-
-
 const Footer = (props) => {
   
-
-  // const [theme, setTheme] = useState('light');
-  // const toggleTheme = () => {
-  //   if (theme === 'light') {
-  //     setTheme('dark');
-  //   } else {
-  //     setTheme('light');
-  //   }
-  // };
-   // useEffect(() => {
-  //   document.body.className = theme;
-  // }, [theme]);
-
-  
-
-
  
   return (
     <div className="main-footer">
@@ -97,10 +79,12 @@ const Footer = (props) => {
         type="checkbox"
         // onClick={toggleTheme}
         onClick={props.switchTheme}
+       
       />
       <label
         className="switch-label"
         htmlFor={`switch-new`}
+        
       >
         <span className={`switch-button`} />
       </label>

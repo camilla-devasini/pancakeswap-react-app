@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   height: 56px;
-  border-bottom: 1px solid rgb(231, 227, 235);
+  border-bottom: 1px solid var(--colors-cardBorder);
+  background-color: var(--colors-backgroundAlt);
 }
 
 .main-menu-nav {
@@ -13,8 +14,8 @@
   max-width: fit-content;
   justify-content: flex-start;
   align-items: center;
-  color: rgb(122, 110, 170);
-  background-color: var(--trial-color);
+  color: var(--colors-textSubtle);
+  background-color: var(--colors-backgroundAlt);
   height: 56px;
 }
 

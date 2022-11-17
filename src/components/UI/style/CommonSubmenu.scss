@@ -1,15 +1,13 @@
 .common-navbar-wrapper {
     width: 100%;
-  
 }
-
 
 .common-navbar {
     display: flex;
     flex-direction: row;
     height: 42px;
     min-width: fit-content;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--colors-backgroundAlt);
     margin-bottom: 0;
     justify-content: center;
 
@@ -24,22 +22,15 @@
         list-style: none;
         
         &:hover {
-            background-color: rgb(239, 244, 245);
+            background-color: var(--colors-tertiary);
             cursor: pointer;
         }
-
-        // &:first-child > .submenu-links {
-        //     color: rgb(118, 69, 217);
-        //     font-weight: 700;
-        // }
 
         & .submenu-links {
             text-decoration: none;
             font-size: 16px;
             font-weight: 400;
             color: var(--colors-textSubtle);
-
-            
         }
     }
 
@@ -54,12 +45,12 @@
             left: 0px;
             height: 4px;
             width: 100%;
-            background-color: rgb(31, 199, 212);
+            background-color: var(--colors-primary);
             border-radius: 2px 2px 0px 0px;
         
         }
         & .submenu-links {
-            color: rgb(118, 69, 217);
+            color: var(--colors-secondary);
             font-weight: 700;
         }
     }

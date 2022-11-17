@@ -9,7 +9,7 @@
 .trade-value-wrapper > div > span {
   font-size: 16px;
   text-decoration: none;
-  color: #7a6eaa;
+  color: var(--colors-textSubtle);
   margin: 0 8px;
   font-weight: 600;
   line-height: 1.5;

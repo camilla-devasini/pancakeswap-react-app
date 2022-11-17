@@ -17,6 +17,7 @@ import Activity from "./routes/Activity";
 import Blog from "./routes/Blog";
 import ConnectYourWallet from './components/wallet/ConnectYourWallet';
 import useLocalStorage from "use-local-storage";
+import { useEffect } from 'react';
 
 
 function App() {
@@ -34,8 +35,15 @@ function App() {
   const switchTheme = () => {
     const newTheme = 
       theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+      setTheme(newTheme);
   }
+
+  useEffect( () => {
+    
+    return () => {
+      setTheme()
+    }
+  },[theme], switchTheme)
 
   return (
     <div data-theme={theme}>
@@ -54,7 +62,7 @@ function App() {
             <Route path="/Collections" element={<Collections/>} /> 
             <Route path="/Activity" element={<Activity/>} /> 
             <Route path="/Blog" element={<Blog/>} /> 
-            <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route>
+            {/* <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route> */}
 
             <Route path="*" element ={<PageNotFound/>} />
         </Route>

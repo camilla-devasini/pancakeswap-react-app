@@ -1,9 +1,8 @@
 .trade-orders-card {
-    // min-width: 326px;
-    // max-width: 376px;
+
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid rgb(231, 227, 235);
+    border: 1px solid var(--colors-cardBorder);
     background-color: #fff;
     border-radius: 16px;
     display: flex;
@@ -20,7 +19,7 @@
     & header {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(238, 234, 244);
+        background-color: var(--colors-input);
         border-top-right-radius: 16px;
         border-top-left-radius: 16px;
 
@@ -28,7 +27,7 @@
             padding: 0 25px;
             flex: 1 1 auto;
             font-weight: 600;
-            color: rgb(122, 110, 170);
+            color: var(--colors-textSubtle);
             padding: 10px 0px;
             text-align: center;
             border-top-right-radius: 16px;
@@ -37,8 +36,8 @@
         }
 
         & button:first-child {
-            color: rgb(40, 13, 95);
-            background-color: #fff;
+            color: var(--colors-text);
+            background-color: var(--colors-backgroundAlt);
 
         }
     }
@@ -49,7 +48,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: rgb(189, 194, 196);
+        color: var(--colors-textDisabled);
+        background-color: var(--colors-backgroundAlt);
 
         & > img {
             width: 64px;
@@ -62,6 +62,9 @@
         display: flex;
         justify-content: center;
         cursor: pointer;
+        background-color: var(--colors-backgroundAlt);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
 
         & span {
             margin: 0px 20px;

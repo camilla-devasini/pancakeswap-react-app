@@ -1,6 +1,6 @@
 .value-conversion {
   border-radius: 50px;
-  background: rgb(238, 234, 244) url("../../../assets/images/down-arrow-blue.svg") no-repeat center;
+  background: rgba(238, 234, 244, 0.9) url("../../../assets/images/down-arrow-blue.svg") no-repeat center;
   width: 32px;
   height: 32px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;

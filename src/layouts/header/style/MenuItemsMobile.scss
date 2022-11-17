@@ -25,8 +25,8 @@ img, span {
 }
 
 .menu-items-mobile-wrap:last-child .dropdown > .dropdown-item:nth-child(4) {
-    border-top: 1px solid rgb(231, 227, 235);
-    border-bottom: 1px solid rgb(231, 227, 235);
+    border-top: 1px solid var(--colors-cardBorder);
+    border-bottom: 1px solid var(--colors-cardBorder);
 }
 
 .menu-item-mobile {
@@ -43,7 +43,7 @@ img, span {
     & a {
         text-decoration: none;
         font-size: 10px;
-        color:rgb(122 110 170);
+        color: var(--colors-textSubtle);
     }
 
     & > img {
