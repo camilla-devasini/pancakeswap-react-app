@@ -46,9 +46,9 @@ export function TopTraders() {
   const [index, setIndex] = useState(0);
 
   const handleSetIndex = () => {
-
-    setIndex(1)
-
+    const nextIndex = index + 1;
+    if(nextIndex === textContent.length)setIndex(0)
+    else setIndex(nextIndex)
   }
 
 
@@ -81,7 +81,7 @@ export function TopTraders() {
           </div>
 
           <div className="group">
-            <div>
+            <div className="group1">
               <h2>{textContent[index].subtitle1}</h2>
               <h3>{textContent[index].number1}</h3>
               <h4>{textContent[index].apr}</h4>
