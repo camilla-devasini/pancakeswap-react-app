@@ -18,23 +18,28 @@ import Blog from "./routes/Blog";
 import ConnectYourWallet from './components/wallet/ConnectYourWallet';
 
 function App() {
+  const pathname = window.location.pathname;
+  console.log(pathname);
+
+
+
   return (
     <div>
       <Routes>
         <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>} />
-            <Route path="/swap" element={<TradeSwap/>} />
-            <Route path="/limit" element={<Limit/>} />
-            <Route path="/liquidity" element={<Liquidity/>} /> 
-            <Route path="/farms" element={<Farms/>} /> 
-            <Route path="/pools" element={<Pools/>} /> 
-            <Route path="/trading-competion" element={<TradingCompetitionLatest/>} /> 
-            <Route path="/prediction" element={<Prediction/>} /> 
-            <Route path="/lottery" element={<Lottery/>} /> 
-            <Route path="/overview" element={<Overview/>} /> 
-            <Route path="/collections" element={<Collections/>} /> 
-            <Route path="/activity" element={<Activity/>} /> 
-            <Route path="/blog" element={<Blog/>} /> 
+            <Route path="/Swap" element={<TradeSwap/>} />
+            <Route path="/Limit" element={<Limit/>} />
+            <Route path="/Liquidity" element={<Liquidity/>} /> 
+            <Route path="/Farms" element={<Farms/>} /> 
+            <Route path="/Pools" element={<Pools/>} /> 
+            <Route path="/Trading-competion" element={<TradingCompetitionLatest/>} /> 
+            <Route path="/Prediction" element={<Prediction/>} /> 
+            <Route path="/Lottery" element={<Lottery/>} /> 
+            <Route path="/Overview" element={<Overview/>} /> 
+            <Route path="/Collections" element={<Collections/>} /> 
+            <Route path="/Activity" element={<Activity/>} /> 
+            <Route path="/Blog" element={<Blog/>} /> 
             <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route>
 
             <Route path="*" element ={<PageNotFound/>} />
