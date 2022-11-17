@@ -1,4 +1,6 @@
 import Header from "../header/Header";
+import logoLightTheme from "./../../assets/images/pancakeswap-logo-title.svg";
+import logoDarkTheme from "./../../assets/images/logo-dark-mode.svg";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../footer/Footer";
 import CommonSubmenu from "../../components/UI/CommonSubmenu";
@@ -7,7 +9,7 @@ import { useEffect } from "react";
 import useLocalStorage from "use-local-storage";
 
 
-function Layout() {
+function Layout(props) {
     
     const location = useLocation();
     const currentPath = location.pathname;
@@ -33,7 +35,7 @@ function Layout() {
     
     return (
         <div data-theme={theme}>
-            <Header />
+            <Header logo={theme === 'light' ? logoLightTheme : logoDarkTheme }/>
             {currentPath === "/Swap" || currentPath === "/Limit" || currentPath === "/Liquidity" ?
                 <CommonSubmenu submenuItems={submenuItemsTrade} /> :
                 null

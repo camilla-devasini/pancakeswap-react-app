@@ -13,7 +13,7 @@ import Wallet from "../../components/wallet/Wallet";
 
 
 
-const Header = () => {
+const Header = (props) => {
     //useffect to control the window event resize
     const [screenSize, setScreenSize] = useState({
         dynamicWidth: window.innerWidth
@@ -53,7 +53,7 @@ const Header = () => {
             {walletShown && <Wallet onClose={hideWalletHandler}/>}
             <div className="header-wrapper">
                 <nav className="main-menu-nav">
-                    <HeaderLogo />
+                    <HeaderLogo logo={props.logo} />
                     {window.innerWidth > 575 ? <Navbar /> : <NavbarMobile />}
                 </nav>
 
