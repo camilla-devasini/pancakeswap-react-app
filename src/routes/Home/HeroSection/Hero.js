@@ -24,7 +24,7 @@ export function Hero() {
               <MainButton
                 style={{ width: 170 }}
                 label="Connect Wallet"
-                className="main-btn btn-secondary"
+                theme="secondary"
               ></MainButton>
 
               <button className="trade-now">Trade Now</button>

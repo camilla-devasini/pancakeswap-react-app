@@ -1,0 +1,59 @@
+
+.your-score {
+
+
+    width: 100vw;
+    background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+    height: 700px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.team-ranks {
+
+    width: 100vw;
+    height: 900px;
+
+}
+
+.prizes {
+
+    width: 100vw;
+    height: 1000px;
+    background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+}
+
+
+.rules {
+
+    width: 100vw;
+    height: 940px;
+    background-color: white;
+}
+
+
+.finished {
+
+    width: 100vw;
+    height: 370px;
+    background: radial-gradient(329.58% 50% at 50% 50%, rgb(59, 40, 100) 0%, rgb(25, 19, 38) 100%);
+}
+
+@import "./Alarm-Clock-Card/alarm-clock-card.scss";
+@import "./Alarm-Clock-Card-Mobile/alarm-clock-mobile.scss";
+@import "./Finished-Card/finished-card.scss";
+@import "./Fighter-Bunny/fighter-bunny.scss";
+@import "./Your-Score-Card/yourscore-card.scss";
+@import "./Cups-Sticker/cups-sticker.scss";
+@import "./Podium-Card/podium-card.scss";
+@import "./Top-Traders-Card/toptraders-card.scss";
+@import "./Honors-Sticker-Card/honors-sticker.scss";
+@import "./Prizes-By-Team-Card/prizes-by-team.scss";
+@import "./Purple-Bunny-Card/purple-bunny.scss";
+@import "./Rules-Sticker/rules-sticker.scss";
+@import "./Simple-Card/simple-card.scss";
+@import "./Details-Card/details.scss";

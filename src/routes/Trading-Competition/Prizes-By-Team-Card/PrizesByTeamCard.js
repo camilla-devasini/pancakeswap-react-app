@@ -1,0 +1,8 @@
+export function PrizesByTeamCard() {
+
+    return(
+        <>
+        </>
+    )
+
+}

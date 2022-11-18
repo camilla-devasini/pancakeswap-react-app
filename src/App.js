@@ -1,4 +1,5 @@
 import './routes/Home/homepage.scss';
+import './routes/Trading-Competition/trading-competition.scss';
 import { Routes, Route } from "react-router-dom";
 import Layout from "./layouts/layout/Layout";
 import PageNotFound from "./routes/PageNotFound";
@@ -8,7 +9,7 @@ import Limit from "./routes/Limit";
 import Liquidity from "./routes/Liquidity";
 import Farms from "./routes/Farms";
 import Pools from "./routes/Pools";
-import TradingCompetitionLatest from "./routes/Trading-Competiion/TradingCompetitionFinished";
+import TradingCompetitionLatest from "./routes/Trading-Competition/TradingCompetitionLatest";
 import Prediction from "./routes/Prediction";
 import Lottery from "./routes/Lottery";
 import Overview from "./routes/Overview";
