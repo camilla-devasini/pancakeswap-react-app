@@ -1,8 +1,3 @@
 export function RulesSticker() {
-
-    return(
-        <>
-        </>
-    )
-
+  return <></>;
 }

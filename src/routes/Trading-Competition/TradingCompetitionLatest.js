@@ -1,33 +1,29 @@
+import { CupsSticker } from "./Cups-Sticker/CupsSticker";
 import { FighterBunny } from "./Fighter-Bunny/FighterBunny";
 import { FinishedCard } from "./Finished-Card/FinishedCard";
+import { TopTradersCard } from "./Top-Traders-Card/TopTradersCard";
 import { YourScoreCard } from "./Your-Score-Card/YourScoreCard";
 
 function TradingCompetitionLatest() {
-    return (
-        <>
+  return (
+    <>
+      <FighterBunny />
+      <div className="your-score">
+        <FinishedCard />
+        <YourScoreCard />
+        <CupsSticker/>
+      </div>
 
-        <FighterBunny/>
-        <div className="your-score">
-        <FinishedCard/>
-        <YourScoreCard/>
-        </div>
+      <div className="team-ranks">
+        <TopTradersCard/>
+      </div>
 
-        <div className="team-ranks">
+      <div className="prizes"></div>
 
-        </div>
+      <div className="rules"></div>
 
-        <div className="prizes">
-
-        </div>
-
-        <div className="rules">
-
-        </div>
-
-        <div className="finished">
-
-        </div>
-        </>
-    )
+      <div className="finished"></div>
+    </>
+  );
 }
 export default TradingCompetitionLatest;

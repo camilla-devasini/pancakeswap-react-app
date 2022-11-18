@@ -6,13 +6,13 @@
   justify-content: flex-end;
   height: 600px;
   background-color: rgb(25, 19, 53);
-
+  width: 100vw;
   .cyber-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1300px;
+    width: 100%;
 
     .main-hero {
       width: 1500px;
@@ -103,6 +103,7 @@
 }
 
 .mod-mesh {
+  width: 100%;
   position: absolute;
   z-index: 0;
 }

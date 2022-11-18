@@ -1,86 +1,56 @@
-
-
 .cups-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
 
-
+  .pergamena {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 
-   
+    & .left {
+      width: 35px;
+      z-index: 1;
+      transform: scaleX(-1);
+      transform: scaleY(-1);
+    }
 
-      .pergamena {
+    & .right {
+      width: 35px;
 
+      transform: rotate(180deg);
+    }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
+    .purple-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 285px;
+      height: 55px;
+      background-color: rgb(118, 69, 217);
+      z-index: 1;
+      box-shadow: 2px 2px 2px black;
+      gap: 15px;
 
-        & .left {
-
-          width: 35px;
-          z-index: 1;
-          transform: scaleX(-1);
-          transform: scaleY(-1);
-         
-
-          
-        }
-
-
-        & .right {
-
-            width: 35px;
-            
-            transform: rotate(180deg);
-            
-        }
-
-        .purple-div {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 285px;
-        height: 55px;
-        background-color: rgb(118, 69, 217);
-        z-index: 1;
-        box-shadow: 2px 2px 2px black;
-        gap: 15px;
-
-
-        h2 {
-
-          font-family: 'Kanit';
-          color: white;
-          font-size: 37px;
-          text-shadow: 4px 4px 4px black;
-
-        }
-        
-        .leaveLeft {
-
-          fill: #280d5f;
-        }
-
-
-        .leaveRight {
-
-          transform: scaleX(-1);
-          fill: #280d5f;
-        }
-     
-
+      h2 {
+        font-weight: 600;
+        color: white;
+        font-size: 37px;
+        text-shadow: 4px 4px 4px black;
       }
 
+      .leaveLeft {
+        fill: #280d5f;
+      }
+
+      .leaveRight {
+        transform: scaleX(-1);
+        fill: #280d5f;
+      }
     }
-    
+  }
 }
-
-
- 
-
-   
-

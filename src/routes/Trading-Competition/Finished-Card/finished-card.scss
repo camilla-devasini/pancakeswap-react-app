@@ -1,30 +1,20 @@
-
-
 .finished-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 355px;
-    height: 190px;
-    position: relative;
-    z-index: 2;
-    bottom: 70px;
- 
-   
-
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 190px;
+  position: relative;
+  z-index: 2;
+  bottom: 70px;
 
   img {
     width: 90px;
     position: absolute;
     margin-right: 350px;
-    
-
   }
 
-
   .card-2 {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,58 +25,40 @@
     border-radius: 24px;
     gap: 10px;
 
-  .box-1 {
+    .box-1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
 
-    
- 
+      svg {
+        fill: #ffb237;
+      }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    svg {
-
-        fill: #ffb237
-        
-    }
-
-
-    h2 {
-      
-        font-family: 'Kanit';
+      .finished-text {
+        font-weight: 600;
         font-size: 40px;
         color: white;
         text-shadow: 4px 4px 4px black;
-        
+      }
     }
 
+    .connect-wallet {
+      margin: 0;
+      width: 180px;
+      height: 48px;
+      color: white;
+      background-color: rgb(31, 199, 212);
+      border: none;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
+
+      &:hover {
+        opacity: 75%;
+        cursor: pointer;
+      }
     }
-
-
-    button {
-        
-        width: 180px;
-        height: 48px;
-        color: white;
-        background-color: rgb(31, 199, 212);
-        border: none;
-        border-radius: 16px;
-        font-size: 16px;
-        font-weight: 600;
-        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
-        
-    
-        &:hover {
-
-            opacity: 75%;
-            cursor: pointer; 
-        }
+  }
 }
-}
-
-}
-
-
-
-  
