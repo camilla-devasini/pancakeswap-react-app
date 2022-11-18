@@ -8,7 +8,7 @@ import Limit from "./routes/Limit";
 import Liquidity from "./routes/Liquidity";
 import Farms from "./routes/Farms";
 import Pools from "./routes/Pools";
-import TradingCompetitionLatest from "./routes/TradingCompetitionFinished";
+import TradingCompetitionLatest from "./routes/Trading-Competiion/TradingCompetitionFinished";
 import Prediction from "./routes/Prediction";
 import Lottery from "./routes/Lottery";
 import Overview from "./routes/Overview";

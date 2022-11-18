@@ -1,8 +1,8 @@
-
 import lunarbunny from "../../../assets/images/homepage/bunny@2x.webp";
 import starL from "../../../assets/images/homepage/star-l@2x.webp";
 import starR from "../../../assets/images/homepage/star-r@2x.webp";
 import starT from "../../../assets/images/homepage/star-top-r@2x.webp";
+import MainButton from "../../../components/UI/MainButton";
 import { PurpleDiv } from "./PurpleDiv";
 
 export function Hero() {
@@ -20,9 +20,12 @@ export function Hero() {
             </h3>
 
             <section className="buttons">
-             
-             <button className="connect-wallet">Connect Wallet</button>
-             
+              {/* <button className="connect-wallet">Connect Wallet</button> */}
+              <MainButton
+                style={{ width: 170 }}
+                label="Connect Wallet"
+                className="main-btn btn-secondary"
+              ></MainButton>
 
               <button className="trade-now">Trade Now</button>
             </section>
