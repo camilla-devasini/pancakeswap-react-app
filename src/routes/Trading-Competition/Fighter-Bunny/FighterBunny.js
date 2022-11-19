@@ -70,16 +70,12 @@ export function FighterBunny() {
               <div className="cyber-bunny">
                 <img src={hero} alt="hero" />
               </div>
-              <AlarmClockCard/>
+              <AlarmClockCard />
             </div>
-            
           </div>
-          
         </div>
         <img className="mod-mesh" src={mesh} alt="mod-mesh" />
-       
       </div>
-      
     </>
   );
 }
