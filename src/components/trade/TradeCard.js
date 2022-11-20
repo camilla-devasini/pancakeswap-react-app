@@ -3,7 +3,7 @@ import Wallet from "../wallet/Wallet";
 import TradeCardWrapper from "./TradeCardWrapper";
 import TradeCardHeader from "./TradeCardHeader";
 import "./style/TradeCard.scss";
-import { tradeImages, tradeImagesClose } from "./tradeImages";
+import { tradeImages } from "./tradeImages";
 import TradeCardInput from "./TradeCardInput";
 import bnbIcon from "../../assets/images/bnb-icon.svg";
 import blueLogo from "../../assets/images/light-blue-logo.svg";
@@ -52,6 +52,7 @@ function TradeCard(props) {
     //             setError(new Error("error occurred"))
     //         } 
     //         return response.json();
+            
             
     //     })
     //     .then(json => {

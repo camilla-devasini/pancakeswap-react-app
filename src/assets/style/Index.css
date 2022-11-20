@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap');
-
-:root {
+[data-theme = "light"] {
 
     --trial-color: #C8D5B9;
     --colors-white: #fff;
@@ -57,8 +56,8 @@
     --size-macro: 64px;
     --size-micro: 12px;
 }
-
-[data-theme = "dark"] {
+[data-theme = "dark"] 
+ {
     --trial-color: #344026;
     --colors-white: #fff;
     --colors-failure: #ed4b9e;
