@@ -37,47 +37,48 @@ function LimitCard(props) {
 
     const [amount1, setAmount1] = useState(1);
     const [amount2, setAmount2] = useState(1);
-    const [currency1, setCurrency1] = useState("BNB");
-    const [currency2, setCurrency2] = useState("BNB");
+    const [currency1, setCurrency1] = useState();
+    const [currency2, setCurrency2] = useState();
     const [rates, setRates] = useState([]);
     const [error, setError] = useState(null);
 
 
 
     // COMMENTATO PER LIMITARE LE CHIAMATE API (MAX 100/MONTH)
-    // useEffect( () => {
-    //     fetch(`http://api.coinlayer.com/api/live?access_key=6164605467866c721bae4409da0de194`)
-    //     .then(response => {
-    //         if (response.status !== 200) {
-    //             setError(new Error("error occurred"))
-    //         } 
-    //         return response.json();
+    useEffect( () => {
+        fetch(`http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`)
+        .then(response => {
+            if (response.status !== 200) {
+                setError(new Error("error occurred"))
+            } 
+            return response.json();
             
-    //     })
-    //     .then(json => {
+        })
+        .then(json => {
             
-    //         setRates(json.rates);
-    //         console.log(json.rates);
-    //         console.log(Object.keys(rates));
-    //     })
-    //     .catch(error => {
-    //         setError(error)
-    //     })
+            setRates(json.rates);
+            console.log(json.rates);
+            console.log(Object.keys(rates));
+        })
+        .catch(error => {
+            setError(error)
+        })
 
-    // }, [])
+    }, [])
 
-    // useEffect(() => {
-    //     if (!!rates) {
-    //       function init() {
-    //         handleAmount1Change(1);
-    //       }
-    //       init();
-    //     }
-    //   }, [rates]);
+    useEffect(() => {
+        if (!!rates) {
+          function init() {
+            handleAmount1Change(1);
+          }
+          init();
+        }
+      }, [rates]);
 
     function format(number) {
         return number.toFixed(4);
     }
+    
 
     const handleAmount1Change = (amount1) => {
         setAmount1(amount1);
