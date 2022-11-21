@@ -80,7 +80,7 @@ export function TopTraders() {
             </button>
           </div>
 
-          <div className="group">
+          <div className="group-section">
             <div className="group1">
               <h2>{textContent[index].subtitle1}</h2>
               <h3>{textContent[index].number1}</h3>

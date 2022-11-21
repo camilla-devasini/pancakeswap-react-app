@@ -1,6 +1,7 @@
 import earn1 from "../../../assets/images/homepage/folder@2x.webp";
 import earn2 from "../../../assets/images/homepage/pie@2x.webp";
 import earn3 from "../../../assets/images/homepage/stonks@2x.webp";
+import MainButton from "../../../components/UI/MainButton";
 import { TopTraders } from "./TopTraders";
 
 export function Earn() {
@@ -28,8 +29,13 @@ export function Earn() {
               PancakeSwap makes it easy to make your crypto work for <br /> you.
             </h4>
 
-            <div className="buttons-home">
-              <button>Explore</button>
+            <div className="buttons-earn">
+              {/* <button>Explore</button> */}
+              <MainButton
+                style={{ width: 140, margin: 0, padding: 13 }}
+                label="Explore"
+                theme="secondary"
+              ></MainButton>
 
               <a className="link-learn" href="">
                 Learn
@@ -44,7 +50,7 @@ export function Earn() {
           </div>
         </div>
       </div>
-      <TopTraders/>
+      <TopTraders />
     </>
   );
 }

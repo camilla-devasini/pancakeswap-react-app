@@ -53,29 +53,36 @@
         margin-top: 30px;
       }
 
-      button {
-        margin-top: 30px;
-        width: 140px;
-        height: 48px;
-        color: white;
-        background-color: rgb(31, 199, 212);
-        border: none;
-        border-radius: 16px;
-        font-size: 18px;
-        font-weight: 600;
-        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
-      }
+      .buttons-trade {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
 
-      a {
-        font-weight: 600;
-        color: rgb(31, 199, 212);
-        font-size: 18px;
-        margin-left: 10px;
-        text-decoration: none;
-      }
+        // button {
+        //   margin-top: 30px;
+        //   width: 140px;
+        //   height: 48px;
+        //   color: white;
+        //   background-color: rgb(31, 199, 212);
+        //   border: none;
+        //   border-radius: 16px;
+        //   font-size: 18px;
+        //   font-weight: 600;
+        //   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
+        // }
 
-      a:hover {
-        text-decoration: underline;
+        a {
+          font-weight: 600;
+          color: rgb(31, 199, 212);
+          font-size: 18px;
+          margin-left: 10px;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -135,8 +142,6 @@
 }
 
 @media screen and (max-width: 858px) and (min-width: 426px) {
- 
-
   .background-content-2 {
     .container-2 {
       margin-top: 30px;

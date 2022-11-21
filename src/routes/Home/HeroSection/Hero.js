@@ -19,15 +19,23 @@ export function Hero() {
               platform in the galaxy{" "}
             </h3>
 
-            <section className="buttons">
+            <section className="buttons-section">
               {/* <button className="connect-wallet">Connect Wallet</button> */}
               <MainButton
-                style={{ width: 170 }}
+                style={{ width: 170, margin: 0,padding: 13 }}
                 label="Connect Wallet"
                 theme="secondary"
               ></MainButton>
 
-              <button className="trade-now">Trade Now</button>
+
+              <MainButton
+                style={{ width: 130 , margin: 0,padding: 13}}
+                label="Trade Now"
+                theme="tertiary"
+              ></MainButton>
+
+
+              {/* <button className="trade-now">Trade Now</button> */}
             </section>
           </div>
 
