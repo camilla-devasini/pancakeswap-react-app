@@ -3,16 +3,27 @@ import top10Gold from '../../../assets/images/trading-competition/medaglie/MoD-t
 import top100Gold from '../../../assets/images/trading-competition/medaglie/MoD-top-100-gold.svg';
 import top500Gold from '../../../assets/images/trading-competition/medaglie/MoD-top-500-gold.svg';
 import participantGold from '../../../assets/images/trading-competition/medaglie/MoD-participant-gold.svg';
+import firstSilver from '../../../assets/images/trading-competition/medaglie/MoD-champion-silver.svg';
+import top10Silver from '../../../assets/images/trading-competition/medaglie/MoD-top-10-silver.svg';
+import top100Silver from '../../../assets/images/trading-competition/medaglie/MoD-top-100-silver.svg';
+import top500Silver from '../../../assets/images/trading-competition/medaglie/MoD-top-500-silver.svg';
+import participantSilver from '../../../assets/images/trading-competition/medaglie/MoD-participant-silver.svg';
+import firstBronze from '../../../assets/images/trading-competition/medaglie/MoD-champion-bronze.svg';
+import top10Bronze from '../../../assets/images/trading-competition/medaglie/MoD-top-10-bronze.svg';
+import top100Bronze from '../../../assets/images/trading-competition/medaglie/MoD-top-100-bronze.svg';
+import top500Bronze from '../../../assets/images/trading-competition/medaglie/MoD-top-500-bronze.svg';
+import participantBronze from '../../../assets/images/trading-competition/medaglie/MoD-participant-bronze.svg';
 import { useState } from 'react';
+import React from 'react';
 
 
 
 export function PrizesByTeamCard() {
 
-    const [toggleState, setToggleState] = useState(1);
+    const [state, setState] = useState(1);
 
     const toggleTab = (index) => {
-        setToggleState(index);
+        setState(index);
     };
 
     return (
@@ -23,12 +34,12 @@ export function PrizesByTeamCard() {
                     <p>Higher trading volume = higher rank!</p>
                 </div>
                 <div className="team-btns">
-                    <button className="team1">#1 Team</button>
-                    <button className="team2">#2 Team</button>
-                    <button className="team3">#3 Team</button>
+                    <button className={`${state===1 ? "active-button" : "button"}`} onClick={() => toggleTab(1)}>#1 Team</button>
+                    <button className={`${state===2 ? "active-button" : "button"}`} onClick={() => toggleTab(2)}>#2 Team</button>
+                    <button className={`${state===3 ? "active-button" : "button"}`} onClick={() => toggleTab(3)}>#3 Team</button>
                 </div>
                 <div className="body">
-                    <table className="first-team js-slide">
+                    <table className={`${state===1? "active-content": "content"} `}>
                         <thead>
                             <tr>
                                 <th>RANK IN TEAM</th>
@@ -136,7 +147,7 @@ export function PrizesByTeamCard() {
                             </tr>
                         </tbody>
                     </table>
-                    <table className="second-team js-slide">
+                    <table className={`${state===2 ? "active-content": "content"} `}>
                         <thead>
                             <tr>
                                 <th>RANK IN TEAM</th>
@@ -158,7 +169,7 @@ export function PrizesByTeamCard() {
                                 </td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-champion-silver.svg" width="38px" height="38px" alt="" />
+                                        <img src={firstSilver} width="38px" height="38px" alt="" />
                                         <p>+2.250</p>
                                     </div>
                                 </td>
@@ -179,7 +190,7 @@ export function PrizesByTeamCard() {
                                 </td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-top-10-silver.svg" width="38px" height="38px" alt="" />
+                                        <img src={top10Silver} width="38px" height="38px" alt="" />
                                         <p>+1.000</p>
                                     </div>
                                 </td>
@@ -198,7 +209,7 @@ export function PrizesByTeamCard() {
                                 <td>$10.800</td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-top-100-silver.svg" width="38px" height="38px" alt="" />
+                                        <img src={top100Silver} width="38px" height="38px" alt="" />
                                         <p>+850</p>
                                     </div>
                                 </td>
@@ -217,7 +228,7 @@ export function PrizesByTeamCard() {
                                 <td>$7.200</td>
                                 <td>
                                     <div className="row">
-                                        <img src={participantGold} width="38px" height="38px" alt="" />
+                                        <img src={top500Silver} width="38px" height="38px" alt="" />
                                         <p>+500</p>
                                     </div>
                                 </td>
@@ -234,7 +245,7 @@ export function PrizesByTeamCard() {
                                 <td>$0</td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-participant-silver.svg" width="38px" height="38px" alt="" />
+                                        <img src={participantSilver} width="38px" height="38px" alt="" />
                                         <p>+250</p>
                                     </div>
                                 </td>
@@ -244,7 +255,7 @@ export function PrizesByTeamCard() {
                             </tr>
                         </tbody>
                     </table>
-                    <table className="third-team js-slide">
+                    <table className={`${state===3 ? "active-content": "content"} `}>
                         <thead>
                             <tr>
                                 <th>RANK IN TEAM</th>
@@ -266,7 +277,7 @@ export function PrizesByTeamCard() {
                                 </td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-champion-bronze.svg" width="38px" height="38px" alt="" />
+                                        <img src={firstBronze} width="38px" height="38px" alt="" />
                                         <p>+2.100</p>
                                     </div>
                                 </td>
@@ -287,7 +298,7 @@ export function PrizesByTeamCard() {
                                 </td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-top-10-bronze.svg" width="38px" height="38px" alt="" />
+                                        <img src={top10Bronze} width="38px" height="38px" alt="" />
                                         <p>+850</p>
                                     </div>
                                 </td>
@@ -306,7 +317,7 @@ export function PrizesByTeamCard() {
                                 <td>$3.600</td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-top-100-bronze.svg" width="38px" height="38px" alt="" />
+                                        <img src={top100Bronze} width="38px" height="38px" alt="" />
                                         <p>+500</p>
                                     </div>
                                 </td>
@@ -325,7 +336,7 @@ export function PrizesByTeamCard() {
                                 <td>$2.400</td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-top-500-bronze.svg" width="38px" height="38px" alt="" />
+                                        <img src={top500Bronze} width="38px" height="38px" alt="" />
                                         <p>+250</p>
                                     </div>
                                 </td>
@@ -342,7 +353,7 @@ export function PrizesByTeamCard() {
                                 <td>$0</td>
                                 <td>
                                     <div className="row">
-                                        <img src="assets/MoD-participant-bronze.svg" width="38px" height="38px" alt="" />
+                                        <img src={participantBronze} width="38px" height="38px" alt="" />
                                         <p>+100</p>
                                     </div>
                                 </td>
