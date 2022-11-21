@@ -2,6 +2,7 @@ import { CupsSticker } from "./Cups-Sticker/CupsSticker";
 import { FighterBunny } from "./Fighter-Bunny/FighterBunny";
 import { FinishedCard } from "./Finished-Card/FinishedCard";
 import { PrizesByTeamCard } from "./Prizes-By-Team-Card/PrizesByTeamCard";
+import { PurpleBunnyCard } from "./Purple-Bunny-Card/PurpleBunnyCard";
 import { TopTradersCard } from "./Top-Traders-Card/TopTradersCard";
 import { YourScoreCard } from "./Your-Score-Card/YourScoreCard";
 
@@ -20,6 +21,7 @@ function TradingCompetitionLatest() {
       </div>
 
       <div className="prizes">
+        <PurpleBunnyCard />
         <PrizesByTeamCard />
       </div>
 
