@@ -21,14 +21,17 @@ body {
         border-radius: 24px;
         border: 1px solid #eeeaf4;
 
-        .top {
+        .top-card {
             background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
             padding: 24px;
             border-radius: 24px 24px 0 0;
+            // display: unset;
+            align-items: flex-start;
 
             h2 {
                 color: #7645d9;
                 font-weight: 600;
+                font-size: 24px;
             }
 
             p {
@@ -230,7 +233,9 @@ body {
 
         .prizes-by-team {
             min-width: 381px;
-            max-width: 467px;
+            max-width: 555px;
+            margin-left: auto;
+
         }
     }
 }

@@ -29,7 +29,7 @@ export function PrizesByTeamCard() {
     return (
         <>
             <div className="prizes-by-team">
-                <div className="top">
+                <div className="top-card">
                     <h2>Prizes by Team</h2>
                     <p>Higher trading volume = higher rank!</p>
                 </div>

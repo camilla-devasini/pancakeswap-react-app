@@ -26,12 +26,16 @@ body {
   background: linear-gradient(139.73deg,
       rgb(230, 253, 255) 0%,
       rgb(243, 239, 255) 100%);
+  display: flex;
+  flex-direction: column;
 
-  @media screen and (min-width: 852px) {
+  .prizes-sub {
+    @media screen and (min-width: 852px) {
 
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 30px;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 50px 70px 50px 70px;
+    }
   }
 }
 
@@ -63,3 +67,4 @@ body {
 @import "./Rules-Sticker/rules-sticker.scss";
 @import "./Simple-Card/simple-card.scss";
 @import "./Details-Card/details.scss";
+@import "./Prizes-Card/PrizesCard.scss"
