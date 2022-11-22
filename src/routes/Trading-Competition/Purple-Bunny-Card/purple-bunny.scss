@@ -76,3 +76,22 @@
         display: none;
     }
 }
+
+
+@media screen and (min-width: 852px) {
+
+    .wrapperBunnyCard {
+        padding: 30px;
+
+        .imgBunny {
+            display: block;
+            width: 270px;
+            height: 293px;
+
+            img {
+                width: 270px;
+                height: 293px;
+            }
+        }
+    }
+}
