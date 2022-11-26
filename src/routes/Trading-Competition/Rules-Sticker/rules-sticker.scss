@@ -1,0 +1,50 @@
+.top-rules {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .rules {
+        display: flex;
+        flex-direction: row;
+        width: unset;
+        height: unset;
+        background-color: unset;
+
+        .first,
+        .flipped {
+            position: relative;
+            bottom: 6px;
+        }
+
+
+        .purple {
+            background: rgb(118, 69, 217);
+            height: 46px;
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid black;
+
+            h2 {
+                font-size: 32px;
+                color: rgb(255, 255, 255);
+                white-space: nowrap;
+                text-align: center;
+                line-height: 110%;
+                text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+                background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
+            }
+
+        }
+
+
+        .flipped {
+            transform: scaleX(-1);
+        }
+
+    }
+}

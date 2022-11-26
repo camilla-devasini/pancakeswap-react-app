@@ -4,6 +4,8 @@ import { FinishedCard } from "./Finished-Card/FinishedCard";
 import { PrizesByTeamCard } from "./Prizes-By-Team-Card/PrizesByTeamCard";
 import { PrizesCard } from "./Prizes-Card/PrizesCard";
 import { PurpleBunnyCard } from "./Purple-Bunny-Card/PurpleBunnyCard";
+import { RulesSticker } from "./Rules-Sticker/RulesSticker";
+import { SimpleCard } from "./Simple-Card/SimpleCard";
 import { TopTradersCard } from "./Top-Traders-Card/TopTradersCard";
 import { YourScoreCard } from "./Your-Score-Card/YourScoreCard";
 
@@ -29,7 +31,10 @@ function TradingCompetitionLatest() {
         </div>
       </div>
 
-      <div className="rules"></div>
+      <div className="rules">
+        <RulesSticker />
+        <SimpleCard />
+      </div>
 
       <div className="finished"></div>
     </>
