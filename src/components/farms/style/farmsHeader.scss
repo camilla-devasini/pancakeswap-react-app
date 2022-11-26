@@ -1,80 +1,103 @@
-.farms_header {
-    background-color: rgb(233, 249, 255);
-    max-width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    .first_title_cont {
-        display: flex;
-        color: rgb(118, 69, 217);
-        flex-direction: column;
-        justify-content: space-around;
-        font-weight: bold;
-        width: 100%;
-        h1 {
-            font-size: 70px;
-            font-weight: bolder;
-        }
-        .btn-title {}
-    }
-    .first_title_cont h2 {
-        color: rgb(40, 13, 95);
-        font-weight: bold;
-    }
-    .first_title_cont button {
-        width: 200px;
-        border: none;
-        color: rgb(31, 199, 212);
-        font-weight: bold;
-        background-color: rgb(233, 249, 255);
-    }
-}
-
-.second-title-cont {
-    display: flex;
-    align-items: center;
-    .second-title {
-        height: 150px;
-        width: 300px;
-        background-color: aliceblue;
-        text-align: center;
-        .mini-title {
-            color: rgb(40, 13, 95);
-            background-color: rgb(255, 255, 255);
-            border-radius: 15px;
-        }
-        .mini-title p {
-            color: rgb(123, 111, 171);
-            font-size: small;
-        }
-        .mini-title button {
-            width: 240px;
-            height: 40px;
-            border-radius: 15px;
-            background-color: rgb(122, 110, 170);
-            border: none;
-            color: white;
-        }
-    }
-}
-
-$breakpoint-tablet: 768px;
-@media (max-width: $breakpoint-tablet) {
     .farms_header {
+        background: var( --colors-gradientBubblegum);
+        max-width: 100%;
+        height: 300px;
         display: flex;
-        flex-direction: column;
-        height: 100%;
-        .second-title-cont {
-            .img-second-title {
-                display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        .first_title_cont {
+            display: flex;
+            color: var(--colors-secondary);
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: bold;
+            width: 100%;
+            h1 {
+                font-size: 70px;
+                font-weight: bolder;
             }
-            .second-title {
-                width: 100%;
-                height: 100%;
+            .btn-title-2 {
+                background: none;
+            }
+        }
+        .first_title_cont h2 {
+            color: var(--colors-text);
+            font-weight: bold;
+        }
+        .first_title_cont button {
+            width: 200px;
+            border: none;
+            color: var(--colors-primary);
+            font-weight: bold;
+            background-color: var(--colors-gradientBlue);
+        }
+    }
+    
+    .second-title-cont {
+        display: flex;
+        align-items: center;
+        .second-title {
+            height: 150px;
+            width: 300px;
+            background: var(--colors-cardBorder);
+            text-align: center;
+            border-radius: 30px;
+            .mini-title {
+                color: var(--colors-text);
+                background: var(--colors-cardBorder);
+                border-radius: 30px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .mini-title h3 {
+                border-bottom: 0.2px solid lightgrey;
+                gap: 10px;
+                margin: auto;
+                font-weight: bolder;
+                width: 90%;
+            }
+            .mini-title p {
+                color: rgb(123, 111, 171);
+                font-size: small;
+                border-radius: 30px;
+            }
+            .mini-title button {
+                width: 240px;
+                height: 40px;
+                border-radius: 15px;
+                background-color: rgb(122, 110, 170);
+                border: none;
+                color: white;
             }
         }
     }
-}
+    
+    $breakpoint-tablet: 668px;
+    @media (max-width: $breakpoint-tablet) {
+        .farms_header {
+            display: flex;
+            flex-wrap: wrap;
+            .first_title_cont {
+                h1 {
+                    font-size: 30px;
+                }
+                .first_title_cont h2 {
+                    color: var(--colors-text);
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+            .second-title-cont {
+                .img-second-title {
+                    display: none;
+                }
+                .second-title {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }

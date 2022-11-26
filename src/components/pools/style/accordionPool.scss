@@ -3,28 +3,28 @@ button {
     width: 95%;
     margin: auto;
     align-items: center;
-    .accordion-table {
+    .accordion-table-pool {
         display: flex;
         flex-direction: row;
         width: 1200px;
         align-items: center;
-        .title-accordion {
+        .title-accordion-pool {
             display: flex;
             gap: 5px;
             width: 200px;
             margin-top: 5px;
-            .cont-title-p {
-                .title-p {
+            .cont-title-p-pool {
+                .title-p-pool {
                     color: rgb(40, 13, 95);
                     font-weight: bold;
                     font-size: large;
                 }
-                .title-p2 {
+                .title-p-pool2 {
                     font-size: 10px;
                 }
             }
-            .title-icon {
-                .icon-acc2 {
+            .title-icon-pool {
+                .icon-acc2-pool {
                     border: 1px solid;
                     border-radius: 50%;
                     img {
@@ -33,50 +33,50 @@ button {
                 }
             }
         }
-        .cont-core-boosted2 {
+        .cont-core-boosted2-pool {
             display: flex;
             flex-direction: column;
             width: 190px;
             gap: 0px;
-            .p1 {
+            .p1-pool {
                 font-size: 12px;
                 color: rgb(126, 121, 173);
             }
-            .p2 {
+            .p2-pool {
                 font-size: 20px;
                 font-weight: bold;
                 color: rgb(189, 194, 198);
             }
-            .p3 {
+            .p3-pool {
                 font-size: 12px;
                 color: rgb(189, 194, 198);
             }
         }
-        .cont-earned2 {
+        .cont-earned-pool {
             color: rgb(138, 127, 180);
             width: 150px;
-            .earned2 {
+            .earned-pool {
                 font-size: 12px;
             }
-            .earned-perc2 {
+            .earned-pool-perc {
                 color: rgb(40, 13, 95);
                 font-weight: 600;
             }
         }
-        .cont-apr-up2 {
+        .cont-apr-pool-up {
             display: flex;
             width: 150px;
-            .cont-apr2 {
+            .cont-apr-pool {
                 display: flex;
                 flex-direction: column;
                 color: rgb(40, 13, 95);
                 gap: 0px;
-                .apr2 {
+                .apr-pool {
                     display: flex;
                     color: rgb(138, 127, 180);
                     font-size: 12px;
                 }
-                .number2 {
+                .number-pool {
                     font-weight: 600;
                 }
             }
@@ -87,7 +87,6 @@ button {
                 font-weight: bold;
                 margin-top: 23px;
                 width: 200px;
-                .number {}
                 .up-to-perc2 {
                     display: flex;
                     gap: 5px;
@@ -104,19 +103,19 @@ button {
                 }
             }
         }
-        .cont-liqui2 {
+        .cont-liqui-pool {
             width: 150px;
-            .liquidity2 {
+            .liquidity-pool {
                 color: rgb(138, 127, 180);
                 font-size: 12px;
             }
-            .price-cont2 {
+            .price-cont-pool {
                 display: flex;
                 flex-direction: row;
                 gap: 10px;
                 color: rgb(40, 13, 95);
                 font-weight: bold;
-                .cash-svg {}
+                .cash-svg-pool {}
             }
         }
         .cont-multi2 {

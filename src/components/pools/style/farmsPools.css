@@ -8,7 +8,7 @@
   padding-left: 30px;
   padding-right: 30px;
 }
-.farms_header .first_title_cont {
+.farms_header .first_title_cont-2 {
   display: flex;
   color: rgb(118, 69, 217);
   flex-direction: column;
@@ -16,7 +16,7 @@
   font-weight: bold;
   width: 40%;
 }
-.farms_header .first_title_cont h1 {
+.farms_header .first_title_cont-2 h1 {
   font-size: 70px;
   font-weight: bolder;
 }

@@ -1,89 +1,116 @@
 .farms_caption {
+  background: var(--colors-background);
+  width: 100%;
+}
+.farms_caption .container-total {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 90px;
+  align-items: center;
+  margin: auto;
+  background: var(--colors-background);
 }
-.farms_caption .farms_caption_sort {
+.farms_caption .container-total .cont-first {
   display: flex;
-  flex-direction: column;
+  gap: 14px;
+  margin-top: 15px;
 }
-.farms_caption .farms_caption_search {
-  display: flex;
-  flex-direction: column;
-}
-.farms_caption #sort {
-  border-radius: 15px;
-  width: 130px;
-  height: 35px;
-  background-color: rgb(238, 234, 244);
-  color: rgb(40, 13, 95);
-  font-weight: bold;
-  border: 1px solid lightgray;
-}
-.farms_caption #search {
-  border-radius: 15px;
-  width: 200px;
-  height: 35px;
-  background-color: rgb(238, 234, 244);
-  font-weight: bold;
-  color: rgb(123, 111, 171);
-  border: 1px solid lightgray;
-}
-.farms_caption .farms_caption_staked {
+.farms_caption .container-total .cont-first .farms_caption_staked {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.farms_caption .farms_caption_staked .switch {
+.farms_caption .container-total .cont-first .farms_caption_staked .switch {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
 }
-.farms_caption .farms_caption_staked .switch input {
+.farms_caption .container-total .cont-first .farms_caption_staked .switch input {
   opacity: 0;
   width: 0;
   height: 0;
+  background-color: var(--colors-input);
 }
-.farms_caption .farms_caption_staked .slider {
+.farms_caption .container-total .cont-first .farms_caption_staked .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--colors-input);
   transition: 0.4s;
 }
-.farms_caption .farms_caption_staked .slider:before {
+.farms_caption .container-total .cont-first .farms_caption_staked .slider:before {
   position: absolute;
   content: "";
   height: 15px;
   width: 15px;
   top: 2px;
   left: 0px;
-  background-color: white;
+  background-color: var(--colors-backgroundAlt);
   transition: 0.4s;
 }
-.farms_caption .farms_caption_staked input:checked + .slider {
+.farms_caption .container-total .cont-first .farms_caption_staked input:checked + .slider {
   background-color: rgb(49, 208, 170);
 }
-.farms_caption .farms_caption_staked input:focus + .slider {
+.farms_caption .container-total .cont-first .farms_caption_staked input:focus + .slider {
   box-shadow: 0 0 1px rgb(49, 208, 170);
 }
-.farms_caption .farms_caption_staked input:checked + .slider:before {
+.farms_caption .container-total .cont-first .farms_caption_staked input:checked + .slider:before {
   transform: translateX(26px);
 }
-.farms_caption .farms_caption_staked .slider.round {
+.farms_caption .container-total .cont-first .farms_caption_staked .slider.round {
   border-radius: 34px;
 }
-.farms_caption .farms_caption_staked .slider.round:before {
+.farms_caption .container-total .cont-first .farms_caption_staked .slider.round:before {
   border-radius: 50%;
 }
+.farms_caption .container-total .cont-first .farms_caption_staked p {
+  color: var(--colors-text);
+}
+.farms_caption .container-total .cont-sort-search {
+  display: flex;
+  gap: 15px;
+}
+.farms_caption .container-total .cont-sort-search .farms_caption_sort {
+  display: flex;
+  flex-direction: column;
+}
+.farms_caption .container-total .cont-sort-search .farms_caption_search {
+  display: flex;
+  flex-direction: column;
+}
+.farms_caption .container-total .cont-sort-search #sort {
+  border-radius: 15px;
+  width: 130px;
+  height: 35px;
+  background-color: var(--colors-input);
+  color: var(--colors-text);
+  font-weight: bold;
+  border: 1px solid var(--colors-inputSecondary);
+}
+.farms_caption .container-total .cont-sort-search #search {
+  border-radius: 15px;
+  width: 200px;
+  height: 35px;
+  background-color: var(--colors-input);
+  font-weight: bold;
+  color: var(--colors-text);
+  border: 1px solid var(--colors-inputSecondary);
+}
 
-@media (max-width: 768px) {
-  .farms_caption {
+@media (max-width: 960px) {
+  .farms_caption .container-total {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .cont-first {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=farmsNav.css.map */
