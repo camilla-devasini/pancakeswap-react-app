@@ -34,9 +34,13 @@
             border-bottom: 1px solid #d7caec;
 
             .text {
-                display: none;
+                // display: none;
                 font-size: 14px;
                 color: #7a6eaa;
+
+                // &.active {
+                //     display: block;
+                // }
             }
 
             .wrapper-detailsCard {

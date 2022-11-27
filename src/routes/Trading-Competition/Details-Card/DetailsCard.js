@@ -1,4 +1,20 @@
+import { useState } from "react";
+import React from 'react';
+
 export function DetailsCard() {
+
+    const [show, setShow] = useState(false);
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(false);
+    const [show6, setShow6] = useState(false);
+    const [show7, setShow7] = useState(false);
+    // const handleClick = () => {
+    //     setShow(!show);
+    //   };
+
 
     return (
         <>
@@ -8,11 +24,11 @@ export function DetailsCard() {
                     <h2>Details</h2>
                 </div>
                 <div className="content-detailsCard">
-                    <div className="eligible" onclick="showHide()">
+                    <div className="eligible" onClick={() => setShow(!show)}>
                         <div className="wrapper-detailsCard">
                             <p>Eligible trading pairs</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -21,16 +37,16 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show?<div className="text">
                             Only trades on DAR/BNB, CAKE/BNB, and CAKE/BUSD pairs will be included in volume calculations. Please
                             note that the volume from limit orders will not be included.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible" onclick="showHide2()">
+                    <div className="eligible" onClick={() => setShow1(!show1)}>
                         <div className="wrapper-detailsCard">
                             <p>Calculating team ranks and winners</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show1?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -39,18 +55,18 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show1?<div className="text">
                             - Team ranks are calculated by the total combined volume of the top 500 members of each respective team.
                             <br></br>
                             - The final winning team will be the team with the highest total volume score at the end of the
                             competition period.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible" onclick="showHide3()">
+                    <div className="eligible" onClick={() => setShow2(!show2)}>
                         <div className="wrapper-detailsCard">
                             <p>Prize distribution</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show2?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -59,19 +75,19 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show2?<div className="text">
                             - Prizes to be distributed in CAKE and DAR in a distribution of 1:5 and shared by all members of each
                             respective tier. <br></br>
                             - The price of token prizes ($CAKE and $DAR) in USD will be determined as per their BUSD pair price
                             during the tally period. <br></br>
                             - Every participant will win at least one prize at the end of the competition.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible" onclick="showHide4()">
+                    <div className="eligible" onClick={() => setShow3(!show3)}>
                         <div className="wrapper-detailsCard">
                             <p>Fine print</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show3?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -80,18 +96,18 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show3?<div className="text">
                             - In the event of a disagreement concerning the final winning team or rank, PancakeSwap will have the
                             final say. <br></br>
                             - PancakeSwap can and will disqualify any team or specific members that are proven to have taken
                             malicious action or attempt to “cheat” in any way.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible" onclick="showHide5()">
+                    <div className="eligible" onClick={() => setShow4(!show4)}>
                         <div className="wrapper-detailsCard">
                             <p>Can I join the battle after it starts?</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show4?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -100,15 +116,15 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show4?<div className="text">
                             Sorry, no. You need to register during the registration period, before the start of the event.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible" onclick="showHide6()">
+                    <div className="eligible" onClick={() => setShow5(!show5)}>
                         <div className="wrapper-detailsCard">
                             <p>How do I know if I successfully registered?</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show5?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -117,15 +133,15 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show5?<div className="text">
                             At the top of the page, the text in the button “I Want to Battle” will change to “Registered”.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible" onclick="showHide7()">
+                    <div className="eligible" onClick={() => setShow6(!show6)}>
                         <div className="wrapper-detailsCard">
                             <p>How can I see my current rank?</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show6?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -134,15 +150,15 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show6?<div className="text">
                             Check Your Score section on the event page. You’ll need to connect your wallet, of course.
-                        </div>
+                        </div>:null}
                     </div>
-                    <div className="eligible border-detailsCard" onclick="showHide8()">
+                    <div className="eligible border-detailsCard" onClick={() => setShow7(!show7)}>
                         <div className="wrapper-detailsCard">
                             <p>How do I claim my prize(s)?</p>
                             <div className="btn">
-                                <button className="detailsBtn">Details</button>
+                                {show7?<button className="detailsBtn">Hide</button>:<button className="detailsBtn">Details</button>}
                                 <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
                                     xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
                                     <path
@@ -151,11 +167,11 @@ export function DetailsCard() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="text">
+                        {show7?<div className="text">
                             After the battle ends, visit the event page and click the “Claim Prizes” button in the top section or in
                             “Your Score” section. Once you claim your prizes successfully, the button text will change to “Prizes
                             Claimed”.
-                        </div>
+                        </div>:null}
                     </div>
                 </div>
             </div>
