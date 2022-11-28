@@ -1,3 +1,5 @@
+
+
 import bottomRight from '../../../assets/images/homepage/bottom-right@2x.webp';
 import coin from '../../../assets/images/homepage/coin@2x.webp';
 import topLeft from '../../../assets/images/homepage/top-left@2x.webp';

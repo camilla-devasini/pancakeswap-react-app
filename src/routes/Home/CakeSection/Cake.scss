@@ -6,6 +6,8 @@ section.container-6 {
     position: relative;
     align-items: center;
     width: 100vw;
+    padding-bottom: 50px;
+    // padding-left: 10px;
 
     .wrapper-6 {
         display: flex;
@@ -20,6 +22,7 @@ section.container-6 {
             gap: 60px;
 
             picture {
+                
                 width: 192px;
                 height: 192px;
                 position: relative;
@@ -74,12 +77,14 @@ section.container-6 {
                 gap: 20px;
 
                 h2 {
+                    font-weight: 600;
                     font-size: 32px;
                     color: rgb(40, 13, 95);
                     line-height: 1.1;
                 }
 
                 span {
+                    display: inline;
                     font-size: 32px;
                     color: rgb(118, 69, 217);
                 }
@@ -94,9 +99,10 @@ section.container-6 {
                 display: flex;
                 align-items: center;
                 overflow: hidden;
+                align-self: flex-start;
 
                 button {
-                    // width: 125px;
+                    width: 125px;
                     height: 48px;
                     background-color: rgb(31, 199, 212);
                     border: 0px;
@@ -197,7 +203,7 @@ section.container-6 {
 
         .wrapper-6 {
             padding: 48px 24px;
-            width: 70%;
+            width: 80%;
             height: 750px;
             justify-content: center;
 

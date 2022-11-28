@@ -34,10 +34,13 @@ export function Countdown() {
     return () => clearInterval(timer.current);
   },);
 
+
+ 
+
   return (
     <>
       <div>
-        <h1>{hour}:{minutes}:{seconds}</h1>
+        <h1 style={{fontWeight: '600'}}>{hour}<span>h    </span>{minutes}<span>m    </span>{seconds}<span>s    </span></h1>
       </div>
     </>
   );

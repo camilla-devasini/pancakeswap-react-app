@@ -26,7 +26,7 @@
     // padding-bottom: 16px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    // padding: 10px;
 
     picture.balls {
 
@@ -143,7 +143,7 @@
         box-sizing: border-box;
         backdrop-filter: blur(12px);
         border-radius: 72px;
-        width: 100%;
+        width: 95%;
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -162,17 +162,25 @@
             h2 {
                 font-size: 32px;
                 color: rgb(40, 13, 95);
+                font-weight: 600;
 
                 span {
                     color: rgb(118, 69, 217);
+                    display: inline;
                 }
             }
 
-            p {
-                color: rgb(122, 110, 170);
-                font-size: 16px;
-                text-align: center;
+            .paragraphs {
+
+                line-height: 0.5;
+
+                p {
+                    color: rgb(122, 110, 170);
+                    font-size: 16px;
+                    text-align: center;
+                }
             }
+
         }
     }
 }
@@ -254,10 +262,12 @@
         }
 
         p {
+            font-weight: 600;
             font-size: 16px;
         }
 
         h2 {
+            font-weight: 600;
             font-size: 32px;
         }
 
@@ -306,7 +316,7 @@
         picture.cards {
             // bottom: 0px;
             // position: absolute;
-            top: 450px;
+            top: 544px;
             position: relative;
 
             img {

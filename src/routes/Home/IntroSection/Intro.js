@@ -76,7 +76,7 @@ export function Intro() {
         </div>
       </div>
       <svg
-        className="svg-border"
+        className="svg-border-1"
         viewBox="0 0 1660 48"
         preserveAspectRatio="none"
         color="text"
