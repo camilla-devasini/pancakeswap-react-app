@@ -1,8 +1,8 @@
-
 import lunarbunny from "../../../assets/images/homepage/bunny@2x.webp";
 import starL from "../../../assets/images/homepage/star-l@2x.webp";
 import starR from "../../../assets/images/homepage/star-r@2x.webp";
 import starT from "../../../assets/images/homepage/star-top-r@2x.webp";
+import MainButton from "../../../components/UI/MainButton";
 import { PurpleDiv } from "./PurpleDiv";
 
 export function Hero() {
@@ -19,12 +19,21 @@ export function Hero() {
               platform in the galaxy{" "}
             </h3>
 
-            <section className="buttons">
-             
-             <button className="connect-wallet">Connect Wallet</button>
-             
+            <section className="buttons-section">
+              {/* <button className="connect-wallet">Connect Wallet</button> */}
+              <MainButton
+                style={{ width: 170, margin: 0, padding: 13 }}
+                label="Connect Wallet"
+                theme="secondary"
+              ></MainButton>
 
-              <button className="trade-now">Trade Now</button>
+              <MainButton
+                style={{ width: 130, margin: 0, padding: 13 }}
+                label="Trade Now"
+                theme="tertiary"
+              ></MainButton>
+
+              {/* <button className="trade-now">Trade Now</button> */}
             </section>
           </div>
 

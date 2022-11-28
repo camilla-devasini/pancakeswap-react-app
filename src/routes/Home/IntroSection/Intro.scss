@@ -93,7 +93,6 @@
       }
 
       h2 {
-        
         font-weight: 600;
         font-size: 43px;
         color: rgb(40, 13, 95);
@@ -157,7 +156,6 @@
     justify-content: center;
     width: 100vw;
     background: linear-gradient(white, rgb(118, 69, 217, 30%));
-    
 
     .cards-section1 {
       display: flex;
@@ -226,7 +224,6 @@
     width: 100vw;
     height: 1300px;
     background: linear-gradient(white, rgb(118, 69, 217, 30%));
-    
 
     .cards-section1 {
       display: flex;
@@ -250,8 +247,7 @@
         font-family: "Kanit", sans-serif;
         position: relative;
         padding-top: 155px;
-        
-        
+
         h2 {
           
           font-size: 35px;
@@ -309,7 +305,6 @@
     width: 100vw;
     height: fit-content;
     background: linear-gradient(white, rgb(118, 69, 217, 30%));
-   
 
     .cards-section1 {
       display: flex;
@@ -359,7 +354,7 @@
 
       .card-section1:nth-of-type(3) {
         h2 {
-          font-size: 43px;
+          font-size: 35px;
           color: rgb(40, 13, 95);
 
           &:nth-child(2) {
@@ -381,7 +376,6 @@
     width: 100vw;
     height: fit-content;
     background: linear-gradient(white, rgb(118, 69, 217, 30%));
-   
 
     .cards-section1 {
       display: flex;
@@ -431,7 +425,7 @@
 
       .card-section1:nth-of-type(3) {
         h2 {
-          font-size: 43px;
+          font-size: 35px;
           color: rgb(40, 13, 95);
 
           &:nth-child(2) {
@@ -453,7 +447,6 @@
     width: 100vw;
     height: fit-content;
     background: linear-gradient(white, rgb(118, 69, 217, 30%));
-    
 
     .cards-section1 {
       display: flex;
@@ -477,7 +470,7 @@
         position: relative;
 
         h2 {
-          font-size: 35px;
+          font-size: 33px;
           color: rgb(40, 13, 95);
 
           &:nth-child(2) {
@@ -490,7 +483,7 @@
 
       .card-section1:nth-of-type(2) {
         h2 {
-          font-size: 43px;
+          font-size: 33px;
           color: rgb(40, 13, 95);
 
           &:nth-child(2) {
@@ -503,7 +496,7 @@
 
       .card-section1:nth-of-type(3) {
         h2 {
-          font-size: 43px;
+          font-size: 33px;
           color: rgb(40, 13, 95);
 
           &:nth-child(2) {
