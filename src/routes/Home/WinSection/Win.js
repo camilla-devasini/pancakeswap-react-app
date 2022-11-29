@@ -45,6 +45,7 @@ export function Win() {
               <p>Predict the price trend of BNB or CAKE to win</p>
               <MainButton
                 style={{
+                  flexDirection: "row-reverse",
                   width: 220,
                   margin: 0,
                   padding: 13,
@@ -78,6 +79,7 @@ export function Win() {
               <p>Buy tickets with CAKE, win CAKE if your numbers match</p>
               <MainButton
                 style={{
+                  flexDirection: "row-reverse",
                   width: 220,
                   margin: 0,
                   padding: 13,
