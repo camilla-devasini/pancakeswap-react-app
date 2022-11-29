@@ -28,7 +28,7 @@
   .background-hero {
     background-color: rgb(230, 254, 255); //var(--   )
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 0;
     height: 700px;
     z-index: -1;
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   padding-top: 100px;
 
   .main-banner-container {
