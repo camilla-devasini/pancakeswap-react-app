@@ -1,0 +1,36 @@
+    .mb-2 {
+        background-color: var(--colors-input);
+        border-radius: 20px;
+        .btn-check:checked+.btn {
+            background-color: var(--colors-textSubtle);
+            color: var(--colors-backgroundAlt);
+            border-radius: 20px;
+        }
+        .btn-check:checked+.btn:hover {
+            border-radius: 20px;
+        }
+         :not(.btn-check)+.btn:active,
+        .btn:first-child:active,
+        .btn.active,
+        .btn.show {
+            height: 32px;
+            display: flex;
+            margin: 0 auto;
+            .btn {
+                height: 32px;
+                line-height: 31px;
+                border-radius: 20px;
+                transition: none;
+            }
+        }
+        .btn-secondary {
+            background-color: transparent;
+            height: 32px;
+            line-height: 31px;
+            color: var(--colors-textSubtle);
+            border-radius: 20px;
+            border: none;
+            --bs-btn-bg: none;
+            font-weight: bold;
+        }
+    }

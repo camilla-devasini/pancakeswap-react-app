@@ -19,10 +19,12 @@ import iconGreen from "../../assets/images/iconGreen.png"
 
 function AccordionPool() {
   return (
+    <div className="total-cont-back">
     <Accordion>
       <Accordion.Item eventKey="0">
+      <div className="accordion-table-pool">
         <Accordion.Header>
-        <div className="accordion-table-pool">
+       
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
                 <div className="icon-acc2-pool">
@@ -30,7 +32,7 @@ function AccordionPool() {
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Stake-CAKE</div>
               <div className="title-p-pool2">Stake, Earn – And more!</div>
               </div>
@@ -60,8 +62,9 @@ function AccordionPool() {
               </div>
             </div>
            
-          </div>
+         
         </Accordion.Header>
+        </div>
         <Accordion.Body>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body2">
@@ -111,7 +114,8 @@ function AccordionPool() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header> <div className="accordion-table-pool">
+      <div className="accordion-table-pool">
+        <Accordion.Header> 
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
                 <div className="icon-acc2-pool">
@@ -119,7 +123,7 @@ function AccordionPool() {
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn XCAD</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -133,7 +137,7 @@ function AccordionPool() {
             <div className="cont-earned-pool">
               <div className="earned-pool">Flexible APY</div>
               <div className="earned-pool-perc">792,755 CAKE</div>
-            </div>liquidity-pool
+            </div>
             <div className="cont-apr-pool-up">
               <div className="cont-apr-pool">
               <div className="apr-pool">APR</div>
@@ -149,7 +153,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+          </Accordion.Header>
+          </div>
         <Accordion.Body>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -184,15 +189,16 @@ blocks</div>
       </Accordion.Item>
  
      <Accordion.Item eventKey="2">
-     <Accordion.Header> <div className="accordion-table-pool">
-            <div className="title-accordion-pool">
+     <div className="accordion-table-pool">
+     <Accordion.Header> <div className="title-accordion-pool">
+            
               <div className="title-icon-pool">
               <div className="icon-acc2-pool">
                 <img src={iconpi}  alt="" />
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn MGP</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -222,7 +228,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+          </Accordion.Header>
+          </div>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -256,7 +263,8 @@ blocks</div>
      </Accordion.Body>
    </Accordion.Item>
    <Accordion.Item eventKey="3">
-     <Accordion.Header> <div className="accordion-table-pool">
+   <div className="accordion-table-pool">
+     <Accordion.Header> 
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
               <div className="icon-acc2-pool">
@@ -264,7 +272,7 @@ blocks</div>
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn WMX</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -294,7 +302,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+         </Accordion.Header>
+         </div>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -328,7 +337,8 @@ blocks</div>
      </Accordion.Body>
    </Accordion.Item>
    <Accordion.Item eventKey="4">
-     <Accordion.Header> <div className="accordion-table-pool">
+   <div className="accordion-table-pool">
+     <Accordion.Header> 
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
                 <div className="icon-acc2-pool">
@@ -336,7 +346,7 @@ blocks</div>
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn KRS</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -366,7 +376,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+          </Accordion.Header>
+          </div>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -400,7 +411,8 @@ blocks</div>
      </Accordion.Body>
    </Accordion.Item>
    <Accordion.Item eventKey="5">
-     <Accordion.Header> <div className="accordion-table-pool">
+   <div className="accordion-table-pool">
+     <Accordion.Header> 
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
               <div className="icon-acc2-pool">
@@ -408,7 +420,7 @@ blocks</div>
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn CO</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -440,7 +452,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+          </Accordion.Header>
+          </div>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -474,7 +487,8 @@ blocks</div>
      </Accordion.Body>
    </Accordion.Item>
    <Accordion.Item eventKey="6">
-     <Accordion.Header> <div className="accordion-table-pool">
+   <div className="accordion-table-pool">
+     <Accordion.Header> 
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
               <div className="icon-acc2-pool">
@@ -482,7 +496,7 @@ blocks</div>
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn HOOP</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -512,7 +526,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+        </Accordion.Header>
+        </div>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -546,7 +561,8 @@ blocks</div>
      </Accordion.Body>
    </Accordion.Item>
    <Accordion.Item eventKey="7">
-     <Accordion.Header> <div className="accordion-table-pool">
+   <div className="accordion-table-pool">
+     <Accordion.Header>
             <div className="title-accordion-pool">
               <div className="title-icon-pool">
                 <div className="icon-acc2-pool">
@@ -554,7 +570,7 @@ blocks</div>
                 </div>
                 <img src="" alt="" />
               </div>
-              <div className="cont-title-p-pool-pool">
+              <div className="cont-title-p-pool">
               <div className="title-p-pool">Earn MONI</div>
               <div className="title-p-pool2">Stake CAKE</div>
               </div>
@@ -584,7 +600,8 @@ blocks</div>
               </div>
             </div>
            
-          </div></Accordion.Header>
+         </Accordion.Header>
+         </div>
      <Accordion.Body>
      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                            <div className="accordion-body">
@@ -618,7 +635,7 @@ blocks</div>
      </Accordion.Body>
    </Accordion.Item>
    </Accordion>
- 
+   </div>
 
   );
 }

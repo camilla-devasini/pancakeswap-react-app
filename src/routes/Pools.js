@@ -7,9 +7,9 @@ function Pools() {
   return (
     <div>
       <PoolsHeader />
-      <br />
+  
       <PoolsNav />
-      <br />
+    
       <AccordionPool />
       <FinalImgPool />
     </div>

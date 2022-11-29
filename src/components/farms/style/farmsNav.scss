@@ -70,39 +70,97 @@
                                              border-radius: 50%;
                                          }
                                      }
-                                     .farms_caption_staked p {
-                                         color: var(--colors-text);
+                                     .farms_caption_live {
+                                         background-color: var(--colors-input);
+                                         border-radius: 16px;
+                                         display: inline-flex;
+                                         border: 1px solid var(--colors-inputSecondary);
+                                         width: auto;
+                                         height: 32px
+                                     }
+                                     .a-live {
+                                         text-decoration: none;
+                                         position: relative;
+                                         -webkit-box-align: center;
+                                         align-items: center;
+                                         border: 0px;
+                                         border-radius: 16px;
+                                         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                                         cursor: pointer;
+                                         display: inline-flex;
+                                         font-family: inherit;
+                                         font-size: 16px;
+                                         font-weight: 600;
+                                         -webkit-box-pack: center;
+                                         justify-content: center;
+                                         letter-spacing: 0.03em;
+                                         line-height: 1;
+                                         opacity: 1;
+                                         outline: 0px;
+                                         transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                         height: 32px;
+                                         padding: 0px 16px;
+                                         background-color: var(--colors-textSubtle);
+                                         color: var(--colors-backgroundAlt);
+                                     }
+                                     .a-finished {
+                                         text-decoration: none;
+                                         position: relative;
+                                         -webkit-box-align: center;
+                                         align-items: center;
+                                         border: 0px;
+                                         border-radius: 16px;
+                                         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                                         cursor: pointer;
+                                         display: inline-flex;
+                                         font-family: inherit;
+                                         font-size: 16px;
+                                         font-weight: 600;
+                                         -webkit-box-pack: center;
+                                         justify-content: center;
+                                         letter-spacing: 0.03em;
+                                         line-height: 1;
+                                         opacity: 1;
+                                         outline: 0px;
+                                         transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                         height: 32px;
+                                         padding: 0px 16px;
+                                         background-color: var(--colors-textSubtle);
+                                         color: var(--colors-backgroundAlt);
                                      }
                                  }
-                                 .cont-sort-search {
+                                 .farm .farms_caption_staked p {
+                                     color: var(--colors-text);
+                                 }
+                             }
+                             .cont-sort-search {
+                                 display: flex;
+                                 gap: 15px;
+                                 .farms_caption_sort {
                                      display: flex;
-                                     gap: 15px;
-                                     .farms_caption_sort {
-                                         display: flex;
-                                         flex-direction: column;
-                                     }
-                                     .farms_caption_search {
-                                         display: flex;
-                                         flex-direction: column;
-                                     }
-                                     #sort {
-                                         border-radius: 15px;
-                                         width: 130px;
-                                         height: 35px;
-                                         background-color: var(--colors-input);
-                                         color: var(--colors-text);
-                                         font-weight: bold;
-                                         border: 1px solid var(--colors-inputSecondary);
-                                     }
-                                     #search {
-                                         border-radius: 15px;
-                                         width: 200px;
-                                         height: 35px;
-                                         background-color: var( --colors-input);
-                                         font-weight: bold;
-                                         color: var(--colors-text);
-                                         border: 1px solid var(--colors-inputSecondary);
-                                     }
+                                     flex-direction: column;
+                                 }
+                                 .farms_caption_search {
+                                     display: flex;
+                                     flex-direction: column;
+                                 }
+                                 #sort {
+                                     border-radius: 15px;
+                                     width: 130px;
+                                     height: 35px;
+                                     background-color: var(--colors-input);
+                                     color: var(--colors-text);
+                                     font-weight: bold;
+                                     border: 1px solid var(--colors-inputSecondary);
+                                 }
+                                 #search {
+                                     border-radius: 15px;
+                                     width: 200px;
+                                     height: 35px;
+                                     background-color: var( --colors-input);
+                                     font-weight: bold;
+                                     color: var(--colors-text);
+                                     border: 1px solid var(--colors-inputSecondary);
                                  }
                              }
                          }
