@@ -65,24 +65,21 @@
             text-decoration: underline;
         }
 
-        button {
-            font-size: 16px;
-            padding: 0px 24px;
-            cursor: pointer;
-            border: 0px;
-            border-radius: 16px;
-            background-color: rgb(31, 199, 212);
-            color: white;
-            height: 48px;
-            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-            letter-spacing: 0.03em;
-            font-weight: 600;
-            width: 165.16px;
-        }
+        // button {
+        //     font-size: 16px;
+        //     padding: 0px 24px;
+        //     cursor: pointer;
+        //     border: 0px;
+        //     border-radius: 16px;
+        //     background-color: rgb(31, 199, 212);
+        //     color: white;
+        //     height: 48px;
+        //     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+        //     letter-spacing: 0.03em;
+        //     font-weight: 600;
+        //     width: 165.16px;
+        // }
 
-        button:hover {
-            opacity: 0.65;
-        }
     }
 }
 

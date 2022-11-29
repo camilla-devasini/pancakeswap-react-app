@@ -1,9 +1,15 @@
+
+
+
 import pancakeBottom from '../../../assets/images/homepage/1-bottom@2x.webp';
 import pancakeLeft from '../../../assets/images/homepage/1-left@2x.webp';
 import pancakeTop from '../../../assets/images/homepage/1-top@2x.webp';
 import flyingBottom from '../../../assets/images/homepage/2-bottom@2x.webp';
 import flyingRight from '../../../assets/images/homepage/2-right@2x.webp'
 import flyingTop from '../../../assets/images/homepage/2-top@2x.webp';
+import MainButton from "../../../components/UI/MainButton";
+
+
 
 export function Start() {
 
@@ -32,7 +38,12 @@ export function Start() {
                         <span>No registration needed.</span>
                     </div>
                     <a href="https://docs.pancakeswap.finance/">Learn how to start</a>
-                    <button>Connect wallet</button>
+                    
+                    <MainButton
+                        style={{ width: 170, margin: 0, padding: 13 }}
+                        label="Connect Wallet"
+                        theme="secondary"
+                    ></MainButton>
                 </div>
             </section>
         </>

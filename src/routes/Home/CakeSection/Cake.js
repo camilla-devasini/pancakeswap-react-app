@@ -3,7 +3,8 @@
 import bottomRight from '../../../assets/images/homepage/bottom-right@2x.webp';
 import coin from '../../../assets/images/homepage/coin@2x.webp';
 import topLeft from '../../../assets/images/homepage/top-left@2x.webp';
-import topRight from '../../../assets/images/homepage/top-right@2x.webp'
+import topRight from '../../../assets/images/homepage/top-right@2x.webp';
+import MainButton from "../../../components/UI/MainButton";
 
 export function Cake() {
 
@@ -19,14 +20,16 @@ export function Cake() {
                             <img className="top-right" src={topRight} alt="" />
                         </picture>
                         <div className="box-cake">
-                            <h2><span>CAKE</span> makes our world go round.</h2>
+                            <h2><span className='ck-btn'>CAKE</span> makes our world go round.</h2>
                             <p>CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it...
                                 heck, you can even vote with it!
                             </p>
-                            <div className="cake-buttons">
-                                <button> Buy CAKE
-                                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"></a>
-                                </button>
+                            <div className="cake-buttons" style={{gap: 10}}>
+                            <MainButton
+                                style={{ width: 130, margin: 0, padding: 13 }}
+                                label="Buy CAKE"
+                                theme="secondary"
+                            ></MainButton>
                                 <a href="https://docs.pancakeswap.finance/tokenomics/cake">Learn</a>
                             </div>
                         </div>

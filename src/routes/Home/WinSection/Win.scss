@@ -164,7 +164,7 @@
                 color: rgb(40, 13, 95);
                 font-weight: 600;
 
-                span {
+                .win-btn {
                     color: rgb(118, 69, 217);
                     display: inline;
                 }
@@ -272,7 +272,6 @@
         }
 
         span {
-            font-size: 40px;
             font-weight: 600;
         }
 
@@ -298,7 +297,8 @@
     box-shadow: 1px 3px black;
 
 
-    span {
+    .lottery-number {
+        font-size: 40px;
         color: rgb(253, 171, 50);
     }
 
