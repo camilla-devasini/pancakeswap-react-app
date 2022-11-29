@@ -40,7 +40,9 @@ function TradingCompetitionLatest() {
         </div>
       </div>
 
-      <div className="finished"></div>
+      <div className="finished">
+        <FinishedCard />
+      </div>
     </>
   );
 }

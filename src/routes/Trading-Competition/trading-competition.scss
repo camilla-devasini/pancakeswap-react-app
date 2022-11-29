@@ -71,6 +71,11 @@ body {
   background: radial-gradient(329.58% 50% at 50% 50%,
       rgb(59, 40, 100) 0%,
       rgb(25, 19, 38) 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 @import "./Alarm-Clock-Card/alarm-clock-card.scss";

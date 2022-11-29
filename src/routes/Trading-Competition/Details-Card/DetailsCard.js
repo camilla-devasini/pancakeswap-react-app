@@ -11,9 +11,6 @@ export function DetailsCard() {
     const [show5, setShow5] = useState(false);
     const [show6, setShow6] = useState(false);
     const [show7, setShow7] = useState(false);
-    // const handleClick = () => {
-    //     setShow(!show);
-    //   };
 
 
     return (
