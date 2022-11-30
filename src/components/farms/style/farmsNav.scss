@@ -69,6 +69,10 @@
                 .slider.round:before {
                     border-radius: 50%;
                 }
+                p {
+                    color: var(--colors-text);
+                    font-weight: 500;
+                }
             }
             .farms_caption_live {
                 background-color: var(--colors-input);
@@ -139,10 +143,16 @@
         .farms_caption_sort {
             display: flex;
             flex-direction: column;
+            label {
+                color: var(--colors-text);
+            }
         }
         .farms_caption_search {
             display: flex;
             flex-direction: column;
+            label {
+                color: var(--colors-text);
+            }
         }
         #sort {
             border-radius: 15px;
