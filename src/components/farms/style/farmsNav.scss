@@ -1,94 +1,182 @@
 .farms_caption {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    .farms_caption_sort {
-        display: flex;
-        flex-direction: column;
-    }
-    .farms_caption_search {
-        display: flex;
-        flex-direction: column;
-    }
-    #sort {
-        border-radius: 15px;
-        width: 130px;
-        height: 35px;
-        background-color: rgb(238, 234, 244);
-        color: rgb(40, 13, 95);
-        font-weight: bold;
-        border: 1px solid lightgray;
-    }
-    #search {
-        border-radius: 15px;
-        width: 200px;
-        height: 35px;
-        background-color: rgb(238, 234, 244);
-        font-weight: bold;
-        color: rgb(123, 111, 171);
-        border: 1px solid lightgray;
-    }
-    .farms_caption_staked {
+    background: var(--colors-background);
+    width: 100%;
+    .container-total {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 40px;
-            height: 20px;
+        justify-content: space-between;
+        width: 90%;
+        min-height: 90px;
+        align-items: center;
+        margin: auto;
+        background: var(--colors-background);
+        .cont-first {
+            display: flex;
+            gap: 14px;
+            margin-top: 15px;
+            .farms_caption_staked {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 40px;
+                    height: 20px;
+                }
+                .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: var(--colors-input);
+                }
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: var(--colors-input);
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    top: 2px;
+                    left: 0px;
+                    background-color: var(--colors-backgroundAlt);
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+                input:checked+.slider {
+                    background-color: rgb(49, 208, 170);
+                }
+                input:focus+.slider {
+                    box-shadow: 0 0 1px rgb(49, 208, 170);
+                }
+                input:checked+.slider:before {
+                    -webkit-transform: translateX(26px);
+                    -ms-transform: translateX(26px);
+                    transform: translateX(26px);
+                }
+                .slider.round {
+                    border-radius: 34px;
+                }
+                .slider.round:before {
+                    border-radius: 50%;
+                }
+            }
+            .farms_caption_live {
+                background-color: var(--colors-input);
+                border-radius: 16px;
+                display: inline-flex;
+                border: 1px solid var(--colors-inputSecondary);
+                width: auto;
+                height: 32px
+            }
+            .a-live {
+                text-decoration: none;
+                position: relative;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 0px;
+                border-radius: 16px;
+                box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: inherit;
+                font-size: 16px;
+                font-weight: 600;
+                -webkit-box-pack: center;
+                justify-content: center;
+                letter-spacing: 0.03em;
+                line-height: 1;
+                opacity: 1;
+                outline: 0px;
+                transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                height: 32px;
+                padding: 0px 16px;
+                background-color: var(--colors-textSubtle);
+                color: var(--colors-backgroundAlt);
+            }
+            .a-finished {
+                text-decoration: none;
+                position: relative;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 0px;
+                border-radius: 16px;
+                box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: inherit;
+                font-size: 16px;
+                font-weight: 600;
+                -webkit-box-pack: center;
+                justify-content: center;
+                letter-spacing: 0.03em;
+                line-height: 1;
+                opacity: 1;
+                outline: 0px;
+                transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                height: 32px;
+                padding: 0px 16px;
+                background-color: var(--colors-textSubtle);
+                color: var(--colors-backgroundAlt);
+            }
         }
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
+        .farm .farms_caption_staked p {
+            color: var(--colors-text);
         }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
+    }
+    .cont-sort-search {
+        display: flex;
+        gap: 15px;
+        .farms_caption_sort {
+            display: flex;
+            flex-direction: column;
         }
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 15px;
-            width: 15px;
-            top: 2px;
-            left: 0px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
+        .farms_caption_search {
+            display: flex;
+            flex-direction: column;
         }
-        input:checked+.slider {
-            background-color: rgb(49, 208, 170);
+        #sort {
+            border-radius: 15px;
+            width: 130px;
+            height: 35px;
+            background-color: var(--colors-input);
+            color: var(--colors-text);
+            font-weight: bold;
+            border: 1px solid var(--colors-inputSecondary);
         }
-        input:focus+.slider {
-            box-shadow: 0 0 1px rgb(49, 208, 170);
-        }
-        input:checked+.slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-        }
-        .slider.round {
-            border-radius: 34px;
-        }
-        .slider.round:before {
-            border-radius: 50%;
+        #search {
+            border-radius: 15px;
+            width: 200px;
+            height: 35px;
+            background-color: var( --colors-input);
+            font-weight: bold;
+            color: var(--colors-text);
+            border: 1px solid var(--colors-inputSecondary);
         }
     }
 }
 
-$breakpoint-tablet: 768px;
+$breakpoint-tablet: 960px;
 @media (max-width: $breakpoint-tablet) {
-    .farms_caption {
+    .farms_caption .container-total {
         display: flex;
-        width: 100%;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+$breakpoint-tablet: 575px;
+@media (max-width: $breakpoint-tablet) {
+    .cont-first {
+        flex-wrap: wrap;
     }
 }

@@ -1,19 +1,42 @@
-                .accordion,
-                button {
-                    width: 95%;
-                    margin: auto;
-                    .accordion-table {
+.total-cont {
+    background: var(--colors-background);
+    .accordion,
+    button {
+        width: 90%;
+        margin: auto;
+        .accordion-item {
+            background: var(--colors-dropdown);
+            border: none;
+            .accordion-table {
+                background: var(--colors-dropdown);
+                .accordion-header {
+                    border-color: var(--colors-dropdown);
+                    // border-bottom: 1px solid var(--colors-disabled);
+                    button {
+                        gap: 70px;
+                        margin-left: 0px;
+                        align-content: center;
+                        background: var(--colors-dropdown);
+                        border-top-left-radius: var(--colors-dropdown);
+                        border-top-right-radius: var(--colors-dropdown);
+                    }
+                    button:focus {
+                        border-color: none;
+                        box-shadow: none;
+                    }
+                    button::after {
+                        background-image: var(--bs-accordion-btn-active-icon)
+                    }
+                    .cont-t-c {
                         display: flex;
-                        flex-direction: row;
-                        width: 1200px;
+                        width: 30%;
                         align-items: center;
-                        gap: 60px;
                         .title-accordion {
                             display: flex;
                             gap: 5px;
-                            width: 200px;
+                            min-width: 140px;
                             h2 {
-                                color: rgb(40, 13, 95);
+                                color: var(--colors-text);
                                 font-weight: bold;
                                 font-size: large;
                             }
@@ -25,32 +48,38 @@
                         }
                         .cont-core-boosted {
                             display: flex;
-                            gap: 20px;
-                            width: 190px;
+                            gap: 15px;
+                            min-width: 150px;
                             .core {
-                                border: 2px solid rgb(118, 69, 217);
+                                border: 2px solid var( --colors-secondary);
                                 border-radius: 20px;
-                                color: rgb(118, 69, 217);
+                                color: var( --colors-secondary);
                                 font-size: smaller;
                                 width: 60px;
                                 display: flex;
-                                position: static;
+                                align-items: center;
                             }
                             .boosted {
-                                border: 2px solid rgb(49, 208, 170);
+                                border: 2px solid var(--colors-success);
                                 border-radius: 20px;
                                 width: 80px;
-                                color: rgb(118, 69, 217);
+                                color: var(--colors-success);
                                 font-size: smaller;
                                 display: flex;
+                                align-items: center;
                             }
                             .boosted2 {
                                 display: none;
                             }
                         }
+                    }
+                    .cont-media-2 {
+                        display: flex;
+                        width: 40%;
+                        gap: 50px;
                         .cont-earned {
-                            color: rgb(138, 127, 180);
-                            width: 150px;
+                            color: var(--colors-textSubtle);
+                            width: 8%;
                             .earned {}
                             .earned-perc {}
                         }
@@ -62,16 +91,16 @@
                                 display: flex;
                                 flex-direction: column;
                                 gap: 5px;
-                                color: rgb(40, 13, 95);
+                                color: var(--colors-text);
                                 .apr {
                                     display: flex;
-                                    color: rgb(138, 127, 180);
+                                    color: var(--colors-textSubtle);
                                 }
                             }
                             .cont-n-up-to {
                                 display: flex;
                                 flex-direction: row;
-                                color: rgb(64, 212, 176);
+                                color: var(--colors-success);
                                 font-weight: bold;
                                 margin-top: 23px;
                                 width: 200px;
@@ -94,109 +123,244 @@
                             }
                         }
                         .cont-liqui {
-                            width: 150px;
+                            width: 15%;
                             .liquidity {
-                                color: rgb(138, 127, 180);
+                                color: var(--colors-textSubtle);
                             }
                             .price-cont {
                                 display: flex;
                                 flex-direction: row;
                                 gap: 10px;
-                                color: rgb(40, 13, 95);
+                                color: var(--colors-text);
                                 font-weight: bold;
                                 .cash-svg {}
                             }
                         }
-                        .cont-multi {
-                            width: 150px;
-                            color: rgb(138, 127, 180);
-                            font-weight: bold;
-                            .n-x-svg {
-                                color: rgb(40, 13, 95);
-                            }
-                        }
                     }
-                    .accordion-collapse {
-                        height: 300px;
-                        background-color: rgb(246, 246, 246);
-                        .accordion-body {
-                            display: flex;
-                            flex-direction: row;
-                            width: 100%;
-                            .left-link {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                width: 250px;
-                            }
-                            .cont-coll {
-                                display: flex;
-                                flex-direction: column;
-                                width: 100%;
-                                gap: 50px;
-                                .double-cont {
-                                    display: flex;
-                                    flex-direction: row;
-                                    gap: 15px;
-                                    .cake-earned-cont {
-                                        margin-top: 8px;
-                                        width: 48%;
-                                        border: 1px solid;
-                                        border-radius: 15px;
-                                        height: 110%;
-                                        padding: 10px;
-                                        color: rgb(125, 113, 172);
-                                        font-weight: bold;
-                                        .cont2 {
-                                            display: flex;
-                                            flex-direction: row;
-                                            margin-top: 15px;
-                                            justify-content: space-between;
-                                            .btn-harvest {
-                                                text-decoration: none;
-                                                border: none;
-                                                background-color: gray;
-                                                border-radius: 15px;
-                                                width: 100px;
-                                                font-weight: bold;
-                                                color: lightgrey;
-                                            }
-                                        }
-                                    }
-                                    .yield-boost {
-                                        display: flex;
-                                        flex-direction: column;
-                                        border: 1px solid;
-                                        border-radius: 15px;
-                                        padding: 10px;
-                                        margin-top: 8px;
-                                        height: 110%;
-                                        width: 49%;
-                                        color: rgb(136, 125, 179);
-                                    }
-                                }
-                                .cont-btn {
-                                    display: flex;
-                                    flex-direction: column;
-                                    border: 1px solid;
-                                    border-radius: 15px;
-                                    height: 90px;
-                                    gap: 5px;
-                                    .title-cont-btn {
-                                        padding-left: 10px;
-                                    }
-                                    .btn-wallet-coll {
-                                        width: 98%;
-                                        align-self: center;
-                                        background-color: rgb(31, 199, 212);
-                                        height: 45px;
-                                        border-radius: 15px;
-                                        border: none;
-                                        color: white;
-                                        font-weight: bold;
-                                    }
-                                }
-                            }
+                    .cont-multi {
+                        width: 15%;
+                        color: var(--colors-textSubtle);
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        .n-x-svg {
+                            color: var(--colors-text);
                         }
                     }
                 }
+            }
+        }
+        .accordion-collapse {
+            height: 100%;
+            background: var(--colors-dropdown);
+            width: 100%;
+            .accordion-body {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .left-link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 250px;
+                    color: var(--bs-link-color);
+                }
+                .cont-coll {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 50px;
+                    .double-cont {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        width: 90%;
+                        .cake-earned-cont {
+                            margin-top: 8px;
+                            border: 1px solid var(--colors-input);
+                            border-radius: 15px;
+                            min-height: 130px;
+                            padding: 10px;
+                            color: rgb(125, 113, 172);
+                            font-weight: 600;
+                            width: 400px;
+                            .cake-earned-title {
+                                display: flex;
+                                gap: 5px;
+                                font-size: 12px;
+                                margin-top: 10px;
+                                .cake-title {
+                                    color: var(--colors-secondary);
+                                }
+                                .earned-title {
+                                    color: var(--colors-textSubtle);
+                                }
+                            }
+                            .cont2 {
+                                display: flex;
+                                flex-direction: row;
+                                margin-top: 15px;
+                                justify-content: space-between;
+                                h2 {
+                                    font-size: 20px;
+                                }
+                                .btn-harvest {
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: var(--colors-backgroundDisabled);
+                                    border-radius: 15px;
+                                    width: 100px;
+                                    height: 45px;
+                                    font-weight: bold;
+                                    color: var(--color-textDisabled);
+                                    border-color: var(--colors-backgroundDisabled);
+                                }
+                            }
+                        }
+                        .yield-boost {
+                            display: flex;
+                            flex-direction: column;
+                            border: 1px solid var(--colors-input);
+                            border-radius: 15px;
+                            padding: 10px;
+                            margin-top: 8px;
+                            min-height: 130px;
+                            color: var(--colors-textSubtle);
+                            width: 400px;
+                            .title-yield {
+                                font-size: 12px;
+                                margin-top: 10px;
+                            }
+                            h2 {
+                                font-size: 20px;
+                            }
+                            .title-para {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .cont-btn {
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid var(--colors-input);
+                        border-radius: 15px;
+                        height: 90px;
+                        gap: 5px;
+                        width: 90%;
+                        .title-cont-btn {
+                            padding-left: 10px;
+                            color: var(--colors-textSubtle);
+                        }
+                        .btn-wallet-coll {
+                            width: 98%;
+                            align-self: center;
+                            background-color: var(--colorsPrimary);
+                            height: 45px;
+                            border-radius: 15px;
+                            border: none;
+                            color: var( --colors-invertedContrast);
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header .cont-t-c .cont-core-boosted,
+    .total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c .cont-core-boosted {
+        display: none;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .cont-liqui {
+        display: none;
+    }
+    .cont-multi {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header button,
+    .total-cont button .accordion-item .accordion-table .accordion-header {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        .cont-t-c {
+            gap: 5px;
+            .cont-core-boosted,
+            button .accordion-table .cont-t-c .cont-core-boosted {
+                display: flex;
+            }
+        }
+        .cont-media-2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+    }
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header button::after,
+    .total-cont button .accordion-item .accordion-table .accordion-header button::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .total-cont .accordion .accordion-collapse .accordion-body,
+    .total-cont button .accordion-collapse .accordion-body {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button,
+    .total-cont-back button .accordion-item .accordion-table-pool .accordion-header button {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header button,
+    .total-cont button .accordion-item .accordion-table .accordion-header button {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header button .cont-media-2,
+    .total-cont button .accordion-item .accordion-table .accordion-header .cont-media-2 {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cont-t-c {
+        flex-wrap: wrap;
+    }
+    .cont-media-2 {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .cont2 {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .double-cont {
+        flex-wrap: wrap;
+        .cake-earned-cont {
+            width: 408px;
+        }
+        .yield-boost {
+            width: 408px;
+        }
+    }
+}

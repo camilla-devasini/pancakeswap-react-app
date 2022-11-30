@@ -9,7 +9,7 @@ const PoolsHeader = () => {
   <header>
   
     <div className="farms_header">
-      <div className="first_title_cont">
+      <div className="first_title_cont-2">
         <div>
         <h1>Syrup Pools</h1>
         </div>

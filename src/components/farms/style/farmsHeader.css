@@ -1,5 +1,5 @@
 .farms_header {
-  background-color: rgb(233, 249, 255);
+  background: var(--colors-gradientBubblegum);
   max-width: 100%;
   height: 300px;
   display: flex;
@@ -10,7 +10,7 @@
 }
 .farms_header .first_title_cont {
   display: flex;
-  color: rgb(118, 69, 217);
+  color: var(--colors-secondary);
   flex-direction: column;
   justify-content: space-around;
   font-weight: bold;
@@ -20,16 +20,19 @@
   font-size: 70px;
   font-weight: bolder;
 }
+.farms_header .first_title_cont .btn-title-2 {
+  background: none;
+}
 .farms_header .first_title_cont h2 {
-  color: rgb(40, 13, 95);
+  color: var(--colors-text);
   font-weight: bold;
 }
 .farms_header .first_title_cont button {
   width: 200px;
   border: none;
-  color: rgb(31, 199, 212);
+  color: var(--colors-primary);
   font-weight: bold;
-  background-color: rgb(233, 249, 255);
+  background-color: var(--colors-gradientBlue);
 }
 
 .second-title-cont {
@@ -39,17 +42,29 @@
 .second-title-cont .second-title {
   height: 150px;
   width: 300px;
-  background-color: aliceblue;
+  background: var(--colors-cardBorder);
   text-align: center;
+  border-radius: 30px;
 }
 .second-title-cont .second-title .mini-title {
-  color: rgb(40, 13, 95);
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  color: var(--colors-text);
+  background: var(--colors-cardBorder);
+  border-radius: 30px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.second-title-cont .second-title .mini-title h3 {
+  border-bottom: 0.2px solid lightgrey;
+  gap: 10px;
+  margin: auto;
+  font-weight: bolder;
+  width: 90%;
 }
 .second-title-cont .second-title .mini-title p {
   color: rgb(123, 111, 171);
   font-size: small;
+  border-radius: 30px;
 }
 .second-title-cont .second-title .mini-title button {
   width: 240px;
@@ -60,11 +75,18 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .farms_header {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-wrap: wrap;
+  }
+  .farms_header .first_title_cont h1 {
+    font-size: 30px;
+  }
+  .farms_header .first_title_cont .first_title_cont h2 {
+    color: var(--colors-text);
+    font-weight: bold;
+    font-size: 16px;
   }
   .farms_header .second-title-cont .img-second-title {
     display: none;
