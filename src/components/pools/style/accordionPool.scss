@@ -1,220 +1,229 @@
-.accordion,
-button {
-    width: 95%;
-    margin: auto;
-    align-items: center;
-    .accordion-table-pool {
-        display: flex;
-        flex-direction: row;
-        width: 1200px;
-        align-items: center;
-        .title-accordion-pool {
-            display: flex;
-            gap: 5px;
-            width: 200px;
-            margin-top: 5px;
-            .cont-title-p-pool {
-                .title-p-pool {
-                    color: rgb(40, 13, 95);
-                    font-weight: bold;
-                    font-size: large;
-                }
-                .title-p-pool2 {
-                    font-size: 10px;
-                }
-            }
-            .title-icon-pool {
-                .icon-acc2-pool {
-                    border: 1px solid;
-                    border-radius: 50%;
-                    img {
-                        width: 32px;
+.total-cont-back {
+    background: var(--colors-background);
+    .accordion,
+    button {
+        width: 90%;
+        margin: auto;
+        .accordion-item {
+            background: var(--colors-dropdown);
+            border: none;
+            .accordion-table-pool {
+                background: var(--colors-dropdown);
+                .accordion-header {
+                    border-color: var(--colors-dropdown);
+                    button {
+                        margin-left: 0px;
+                        align-content: center;
+                        gap: 40px;
+                        background: var(--colors-dropdown);
+                        border-top-left-radius: var(--colors-dropdown);
+                        border-top-right-radius: var(--colors-dropdown);
                     }
-                }
-            }
-        }
-        .cont-core-boosted2-pool {
-            display: flex;
-            flex-direction: column;
-            width: 190px;
-            gap: 0px;
-            .p1-pool {
-                font-size: 12px;
-                color: rgb(126, 121, 173);
-            }
-            .p2-pool {
-                font-size: 20px;
-                font-weight: bold;
-                color: rgb(189, 194, 198);
-            }
-            .p3-pool {
-                font-size: 12px;
-                color: rgb(189, 194, 198);
-            }
-        }
-        .cont-earned-pool {
-            color: rgb(138, 127, 180);
-            width: 150px;
-            .earned-pool {
-                font-size: 12px;
-            }
-            .earned-pool-perc {
-                color: rgb(40, 13, 95);
-                font-weight: 600;
-            }
-        }
-        .cont-apr-pool-up {
-            display: flex;
-            width: 150px;
-            .cont-apr-pool {
-                display: flex;
-                flex-direction: column;
-                color: rgb(40, 13, 95);
-                gap: 0px;
-                .apr-pool {
-                    display: flex;
-                    color: rgb(138, 127, 180);
-                    font-size: 12px;
-                }
-                .number-pool {
-                    font-weight: 600;
-                }
-            }
-            .cont-n-up-to2 {
-                display: flex;
-                flex-direction: row;
-                color: rgb(64, 212, 176);
-                font-weight: bold;
-                margin-top: 23px;
-                width: 200px;
-                .up-to-perc2 {
-                    display: flex;
-                    gap: 5px;
-                    .up-to2 {
+                    button:focus {
+                        border-color: none;
+                        box-shadow: none;
+                    }
+                    button::after {
+                        background-image: var(--bs-accordion-btn-active-icon)
+                    }
+                    .title-accordion-pool {
                         display: flex;
-                        width: 65px;
-                    }
-                    .up-to2 {
-                        display: none;
-                    }
-                    .perc2 {
-                        display: none;
-                    }
-                }
-            }
-        }
-        .cont-liqui-pool {
-            width: 150px;
-            .liquidity-pool {
-                color: rgb(138, 127, 180);
-                font-size: 12px;
-            }
-            .price-cont-pool {
-                display: flex;
-                flex-direction: row;
-                gap: 10px;
-                color: rgb(40, 13, 95);
-                font-weight: bold;
-                .cash-svg-pool {}
-            }
-        }
-        .cont-multi2 {
-            width: 150px;
-            color: rgb(138, 127, 180);
-            font-weight: bold;
-            .n-x-svg2 {
-                color: rgb(40, 13, 95);
-            }
-        }
-    }
-    .accordion-collapse {
-        height: 200px;
-        background-color: rgb(246, 246, 246);
-        .accordion-body2 {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            .left-cont2 {
-                display: flex;
-                flex-direction: column;
-                width: 350px;
-                font-size: 12px;
-                .cont-total2 {
-                    display: flex;
-                    justify-content: space-around;
-                }
-                .cont-ave {
-                    display: flex;
-                }
-            }
-            .cont-coll {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                gap: 50px;
-                .double-cont {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 15px;
-                    .cake-earned-cont {
-                        margin-top: 8px;
-                        width: 48%;
-                        border: 1px solid;
-                        border-radius: 15px;
-                        height: 110%;
-                        padding: 10px;
-                        color: rgb(125, 113, 172);
-                        font-weight: bold;
-                        .cont2 {
-                            display: flex;
-                            flex-direction: row;
-                            margin-top: 15px;
-                            justify-content: space-between;
-                            .btn-harvest {
-                                text-decoration: none;
-                                border: none;
-                                background-color: gray;
-                                border-radius: 15px;
-                                width: 100px;
+                        gap: 5px;
+                        .cont-title-p-pool {
+                            width: 110px;
+                            .title-p-pool {
+                                color: var(--colors-text);
                                 font-weight: bold;
-                                color: lightgrey;
+                                font-size: large;
+                            }
+                            .title-p-pool2 {
+                                font-size: 10px;
+                                color: var(--colors-text);
+                            }
+                        }
+                        .title-icon-pool {
+                            .icon-acc2-pool {
+                                border: 1px solid;
+                                border-radius: 50%;
+                                img {
+                                    width: 32px;
+                                }
                             }
                         }
                     }
-                    .yield-boost {
+                    .cont-core-boosted2-pool {
+                        display: flex;
+                        flex-direction: column;
+                        width: 110px;
+                        gap: 0px;
+                        .p1-pool {
+                            display: flex;
+                            flex-wrap: wrap;
+                            font-size: 12px;
+                            color: var(--colors-textSubtle);
+                        }
+                        .p2-pool {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: var(--colors-textDisabled);
+                        }
+                        .p3-pool {
+                            font-size: 12px;
+                            color: var(--colors-textDisabled);
+                        }
+                    }
+                    .cont-earned-pool {
+                        color: rgb(138, 127, 180);
+                        width: 150px;
+                        .earned-pool {
+                            font-size: 12px;
+                            color: var(--colors-textSubtle);
+                        }
+                        .earned-pool-perc {
+                            color: var(--colors-text);
+                            font-weight: 600;
+                        }
+                    }
+                    .cont-apr-pool-up {
+                        display: flex;
+                        .cont-apr-pool {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100px;
+                            color: var(--colors-textSubtle);
+                            gap: 0px;
+                            flex-wrap: wrap;
+                            .apr-pool {
+                                display: flex;
+                                color: var(--colors-text);
+                                font-size: 12px;
+                                flex-wrap: wrap;
+                            }
+                            .number-pool {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .cont-liqui-pool {
+                        width: 130px;
+                        .liquidity-pool {
+                            font-size: 12px;
+                            color: var(--colors-text);
+                        }
+                        .price-cont-pool {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+                            color: var(--colors-textSubtle);
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .accordion-collapse {
+            height: 200px;
+            background-color: rgb(246, 246, 246);
+            .accordion-body2 {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .left-cont2 {
+                    display: flex;
+                    flex-direction: column;
+                    width: 350px;
+                    font-size: 12px;
+                }
+                .cont-coll-pool {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 50px;
+                    .double-cont {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        .cake-earned-pool-cont {
+                            margin-top: 8px;
+                            width: 48%;
+                            border: 1px solid;
+                            border-radius: 15px;
+                            height: 110%;
+                            padding: 10px;
+                            color: rgb(125, 113, 172);
+                            font-weight: bold;
+                            .cont2 {
+                                display: flex;
+                                flex-direction: row;
+                                margin-top: 15px;
+                                justify-content: space-between;
+                                .cont-color-pool {}
+                                .btn-harvest-pool {
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: gray;
+                                    border-radius: 15px;
+                                    width: 100px;
+                                    font-weight: bold;
+                                    color: lightgrey;
+                                }
+                            }
+                        }
+                        .yield-boost-pool {
+                            display: flex;
+                            flex-direction: column;
+                            border: 1px solid;
+                            border-radius: 15px;
+                            padding: 10px;
+                            margin-top: 8px;
+                            height: 110%;
+                            width: 49%;
+                            color: rgb(136, 125, 179);
+                        }
+                    }
+                    .cont-btn {
                         display: flex;
                         flex-direction: column;
                         border: 1px solid;
                         border-radius: 15px;
-                        padding: 10px;
-                        margin-top: 8px;
-                        height: 110%;
-                        width: 49%;
-                        color: rgb(136, 125, 179);
-                    }
-                }
-                .cont-btn {
-                    display: flex;
-                    flex-direction: column;
-                    border: 1px solid;
-                    border-radius: 15px;
-                    height: 90px;
-                    gap: 5px;
-                    .title-cont-btn {
-                        padding-left: 10px;
-                    }
-                    .btn-wallet-coll {
-                        width: 98%;
-                        align-self: center;
-                        background-color: rgb(31, 199, 212);
-                        height: 45px;
-                        border-radius: 15px;
-                        border: none;
-                        color: white;
-                        font-weight: bold;
+                        height: 90px;
+                        gap: 5px;
+                        .title-cont-btn {
+                            padding-left: 10px;
+                        }
+                        .btn-wallet-coll {
+                            width: 98%;
+                            align-self: center;
+                            background-color: rgb(31, 199, 212);
+                            height: 45px;
+                            border-radius: 15px;
+                            border: none;
+                            color: white;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cont-liqui-pool {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cont-earned-pool {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button,
+    .total-cont-back button .accordion-item .accordion-table-pool .accordion-header button {
+        gap: 0px;
+        flex-wrap: wrap;
     }
 }

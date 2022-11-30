@@ -1,10 +1,13 @@
 import React from 'react'
 import "./style/poolsnav.scss"
 import iconHam from "../../assets/images/iconHam.svg"
+// import LiveFinished from "../farms/LiveFinished"
+// import "../farms/style/liveFinished.scss"
+
 
 const FarmsNav = () => {
   return (
-    
+    <div className='cont-total-2'>
        <div className="farms_caption2">
   <div className="farms_caption_order2">
     <div className='ham-icon'>
@@ -12,15 +15,12 @@ const FarmsNav = () => {
   </div>
   <div className="farms_caption_staked">
     <label className="switch">
-      <input type="checkbox" className="button-staked" defaultChecked />
+      <input type="checkbox" className="button-staked"/>
       <span className="slider round" />
     </label>
     <p>Staked only</p>
   </div>
-  <div className="farms_caption_live">
-    <a href="!#">Live</a>
-    <a href="!#">Finished</a>
-  </div>
+ {/* <LiveFinished /> */}
   </div>
   <div className='cont-input'>
   <div className="farms_caption_sort">
@@ -35,11 +35,11 @@ const FarmsNav = () => {
   </div>
   <div className="farms_caption_search">
     <label htmlFor="search">Search</label>
-    <input id="search" name="search" type="search" placeholder="  Search Farms" />
+    <input id="search" name="search" type="search" placeholder="  Search Pools" />
   </div>
   </div>
 </div>
-
+</div>
   )
 }
 
