@@ -1,8 +1,8 @@
 import React from 'react'
 import "./style/poolsnav.scss"
 import iconHam from "../../assets/images/iconHam.svg"
-// import LiveFinished from "../farms/LiveFinished"
-// import "../farms/style/liveFinished.scss"
+import LiveFinished from "../farms/LiveFinished"
+import "../farms/style/liveFinished.scss"
 
 
 const FarmsNav = () => {
@@ -20,7 +20,7 @@ const FarmsNav = () => {
     </label>
     <p>Staked only</p>
   </div>
- {/* <LiveFinished /> */}
+ <LiveFinished />
   </div>
   <div className='cont-input'>
   <div className="farms_caption_sort">
