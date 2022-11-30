@@ -22,6 +22,7 @@
             line-height: 31px;
             border-radius: 20px;
             transition: none;
+            width: 100px;
         }
     }
     .btn-secondary {
@@ -30,6 +31,7 @@
         line-height: 31px;
         color: var(--colors-textSubtle);
         border-radius: 20px;
+        width: 100px;
         border: none;
         --bs-btn-bg: none;
         font-weight: bold;
