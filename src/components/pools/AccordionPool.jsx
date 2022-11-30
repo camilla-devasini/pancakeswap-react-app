@@ -8,9 +8,7 @@ import xIcon from "../../assets/images/xIcon.png" ;
 import iconpi from "../../assets/images/iconpi.png"
 import iconLeon from "../../assets/images/iconLeon.png"
 import iconsr from "../../assets/images/iconsr.png"
-import iconNer from "../../assets/images/iconNer.png"
-import iconOr from "../../assets/images/iconOr.png"
-import iconGreen from "../../assets/images/iconGreen.png"
+
 
 function AccordionPool() {
   return (
@@ -83,7 +81,7 @@ function AccordionPool() {
                   <a href="!*">View Tutorial</a>
                   <a href="!*">View Contract</a>
                   </div>
-                  <button>Auto</button>
+                  <button className="btn-cake-acc">Auto</button>
                 
                 
                 </div>
@@ -95,8 +93,8 @@ function AccordionPool() {
                         <div className="earned-title">EARNED</div>
                       </div>
                       <div className="cont2">
-                        <h2 className="cont-color">0.00000</h2>
-                        <button className="btn-harvest">Harvest</button>
+                        <h2 className="cont-color">0</h2>
+                    
                       </div>
                     </div>
                     <div className="cont-btn">
@@ -134,19 +132,19 @@ function AccordionPool() {
               </div>
 
               <div className="cont-earned-pool">
-                <div className="earned-pool">Flexible APY</div>
-                <div className="earned-pool-perc">2,79%</div>
+                <div className="earned-pool">APR</div>
+                <div className="earned-pool-perc">5.84%</div>
               </div>
               <div className="cont-apr-pool-up">
                 <div className="cont-apr-pool">
-                  <div className="apr-pool">Locked APY</div>
-                  <div className="number-pool">Up to 59.84%</div>
+                  <div className="apr-pool">Total Staked</div>
+                  <div className="number-pool">5,727,974 CAKE</div>
                 </div>
               </div>
               <div className="cont-liqui-pool">
-                <div className="liquidity-pool">Total staked</div>
+                <div className="liquidity-pool">End In</div>
                 <div className="price-cont-pool">
-                  <div className="cash-svg-pool">244,762,974 CAKE</div>
+                  <div className="cash-svg-pool">1,927,256 Blocks</div>
                 </div>
               </div>
             </Accordion.Header>
@@ -162,24 +160,22 @@ function AccordionPool() {
                 <div className="left-link">
                   
                   <div className="tot-locked">
-                  <div>Total locked: </div>
-                  <div>198,171,208 CAKE</div>
+                  <div>APR:</div>
+                  <div>5.89%</div>
                   </div>
                 
                 <div className="cont-ave">
-                  <div>Average lock duration: </div>
-                  <div>40 weeks</div>
+                  <div>End in: </div>
+                  <div>1,985,372
+blocks</div>
                 </div>
-                <div className="cont-perf">
-                  <div>Performance </div>
-                  <div>Fee 0~2%</div>
-                  </div>
+               
                   <div className="hyper">
                   <a href="!*">See Token Info</a>
                   <a href="!*">View Tutorial</a>
                   <a href="!*">View Contract</a>
                   </div>
-                  <button>Auto</button>
+                  <button>Manuale</button>
                 
                 
                 </div>
@@ -187,7 +183,7 @@ function AccordionPool() {
                   <div className="double-cont">
                     <div className="cake-earned-cont">
                       <div className="cake-earned-title">
-                        <div className="cake-title">CAKE</div>{" "}
+                        <div className="cake-title">XCAD</div>{" "}
                         <div className="earned-title">EARNED</div>
                       </div>
                       <div className="cont2">
@@ -231,19 +227,19 @@ function AccordionPool() {
               </div>
 
               <div className="cont-earned-pool">
-                <div className="earned-pool">Flexible APY</div>
-                <div className="earned-pool-perc">2,79%</div>
+                <div className="earned-pool">APR</div>
+                <div className="earned-pool-perc">5.91%</div>
               </div>
               <div className="cont-apr-pool-up">
                 <div className="cont-apr-pool">
-                  <div className="apr-pool">Locked APY</div>
-                  <div className="number-pool">Up to 59.84%</div>
+                  <div className="apr-pool">Total staked</div>
+                  <div className="number-pool">5,969,484 CAKE</div>
                 </div>
               </div>
               <div className="cont-liqui-pool">
-                <div className="liquidity-pool">Total staked</div>
+                <div className="liquidity-pool">End In</div>
                 <div className="price-cont-pool">
-                  <div className="cash-svg-pool">244,762,974 CAKE</div>
+                  <div className="cash-svg-pool">2,447,529 Blocks</div>
                 </div>
               </div>
             </Accordion.Header>
@@ -258,25 +254,22 @@ function AccordionPool() {
               <div className="accordion-body">
                 <div className="left-link">
                   
-                  <div className="tot-locked">
-                  <div>Total locked: </div>
-                  <div>198,171,208 CAKE</div>
+                <div className="tot-locked">
+                  <div>APR:</div>
+                  <div>5.92%</div>
                   </div>
                 
                 <div className="cont-ave">
-                  <div>Average lock duration: </div>
-                  <div>40 weeks</div>
+                  <div>End in: </div>
+                  <div>2,485,752
+blocks</div>
                 </div>
-                <div className="cont-perf">
-                  <div>Performance </div>
-                  <div>Fee 0~2%</div>
-                  </div>
                   <div className="hyper">
                   <a href="!*">See Token Info</a>
                   <a href="!*">View Tutorial</a>
                   <a href="!*">View Contract</a>
                   </div>
-                  <button>Auto</button>
+                  <button>Manuale</button>
                 
                 
                 </div>
@@ -327,19 +320,19 @@ function AccordionPool() {
               </div>
 
               <div className="cont-earned-pool">
-                <div className="earned-pool">Flexible APY</div>
-                <div className="earned-pool-perc">2,79%</div>
+                <div className="earned-pool">APR</div>
+                <div className="earned-pool-perc">6.24%</div>
               </div>
               <div className="cont-apr-pool-up">
                 <div className="cont-apr-pool">
-                  <div className="apr-pool">Locked APY</div>
-                  <div className="number-pool">Up to 59.84%</div>
+                  <div className="apr-pool">Total Staked</div>
+                  <div className="number-pool">5,425,187</div>
                 </div>
               </div>
               <div className="cont-liqui-pool">
-                <div className="liquidity-pool">Total staked</div>
+                <div className="liquidity-pool">End In</div>
                 <div className="price-cont-pool">
-                  <div className="cash-svg-pool">244,762,974 CAKE</div>
+                  <div className="cash-svg-pool">462,974 Blocks</div>
                 </div>
               </div>
             </Accordion.Header>
@@ -354,25 +347,22 @@ function AccordionPool() {
               <div className="accordion-body">
                 <div className="left-link">
                   
-                  <div className="tot-locked">
-                  <div>Total locked: </div>
-                  <div>198,171,208 CAKE</div>
+                <div className="tot-locked">
+                  <div>APR:</div>
+                  <div>6.24%</div>
                   </div>
                 
                 <div className="cont-ave">
-                  <div>Average lock duration: </div>
-                  <div>40 weeks</div>
+                  <div>End in: </div>
+                  <div>585,372
+blocks</div>
                 </div>
-                <div className="cont-perf">
-                  <div>Performance </div>
-                  <div>Fee 0~2%</div>
-                  </div>
                   <div className="hyper">
                   <a href="!*">See Token Info</a>
                   <a href="!*">View Tutorial</a>
                   <a href="!*">View Contract</a>
                   </div>
-                  <button>Auto</button>
+                  <button>Manuale</button>
                 
                 
                 </div>
@@ -423,19 +413,19 @@ function AccordionPool() {
               </div>
 
               <div className="cont-earned-pool">
-                <div className="earned-pool">Flexible APY</div>
-                <div className="earned-pool-perc">2,79%</div>
+                <div className="earned-pool">APR</div>
+                <div className="earned-pool-perc">6,09%</div>
               </div>
               <div className="cont-apr-pool-up">
                 <div className="cont-apr-pool">
-                  <div className="apr-pool">Locked APY</div>
-                  <div className="number-pool">Up to 59.84%</div>
+                  <div className="apr-pool">Total Staked</div>
+                  <div className="number-pool">3,462,215 CAKE</div>
                 </div>
               </div>
               <div className="cont-liqui-pool">
-                <div className="liquidity-pool">Total staked</div>
+                <div className="liquidity-pool">End in</div>
                 <div className="price-cont-pool">
-                  <div className="cash-svg-pool">244,762,974 CAKE</div>
+                  <div className="cash-svg-pool">328,741 Blocks</div>
                 </div>
               </div>
             </Accordion.Header>
@@ -450,25 +440,22 @@ function AccordionPool() {
               <div className="accordion-body">
                 <div className="left-link">
                   
-                  <div className="tot-locked">
-                  <div>Total locked: </div>
-                  <div>198,171,208 CAKE</div>
+                <div className="tot-locked">
+                  <div>APR:</div>
+                  <div>6.04%</div>
                   </div>
                 
                 <div className="cont-ave">
-                  <div>Average lock duration: </div>
-                  <div>40 weeks</div>
+                  <div>End in: </div>
+                  <div>385,372
+blocks</div>
                 </div>
-                <div className="cont-perf">
-                  <div>Performance </div>
-                  <div>Fee 0~2%</div>
-                  </div>
                   <div className="hyper">
                   <a href="!*">See Token Info</a>
                   <a href="!*">View Tutorial</a>
                   <a href="!*">View Contract</a>
                   </div>
-                  <button>Auto</button>
+                  <button>Manuale</button>
                 
                 
                 </div>
