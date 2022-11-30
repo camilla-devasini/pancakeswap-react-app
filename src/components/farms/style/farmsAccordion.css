@@ -23,14 +23,15 @@
 .total-cont button .accordion-item .accordion-table .accordion-header button {
   gap: 80px;
   margin-left: 0px;
+  align-content: center;
   background: var(--colors-dropdown);
   border-top-left-radius: var(--colors-dropdown);
   border-top-right-radius: var(--colors-dropdown);
 }
 .total-cont .accordion .accordion-item .accordion-table .accordion-header button:focus,
 .total-cont button .accordion-item .accordion-table .accordion-header button:focus {
-  border-color: var(--colors-dropdown);
-  box-shadow: var(--colors-dropdown);
+  border-color: none;
+  box-shadow: none;
 }
 .total-cont .accordion .accordion-item .accordion-table .accordion-header button::after,
 .total-cont button .accordion-item .accordion-table .accordion-header button::after {
@@ -46,7 +47,7 @@
 .total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c .title-accordion {
   display: flex;
   gap: 5px;
-  min-width: 140px;
+  min-width: 120px;
 }
 .total-cont .accordion .accordion-item .accordion-table .accordion-header .cont-t-c .title-accordion h2,
 .total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c .title-accordion h2 {
@@ -166,6 +167,7 @@
   width: 15%;
   color: var(--colors-textSubtle);
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .total-cont .accordion .accordion-item .accordion-table .accordion-header .cont-multi .n-x-svg,
 .total-cont button .accordion-item .accordion-table .accordion-header .cont-multi .n-x-svg {
@@ -173,8 +175,9 @@
 }
 .total-cont .accordion .accordion-collapse,
 .total-cont button .accordion-collapse {
-  height: 300px;
-  background-color: rgb(246, 246, 246);
+  height: 100%;
+  background: var(--colors-dropdown);
+  width: 100%;
 }
 .total-cont .accordion .accordion-collapse .accordion-body,
 .total-cont button .accordion-collapse .accordion-body {
@@ -187,7 +190,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 250px;
+  width: 30%;
+  color: var(--bs-link-color);
 }
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll,
 .total-cont button .accordion-collapse .accordion-body .cont-coll {
@@ -201,17 +205,33 @@
   display: flex;
   flex-direction: row;
   gap: 15px;
+  width: 100%;
 }
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont {
   margin-top: 8px;
   width: 48%;
-  border: 1px solid;
+  border: 1px solid var(--colors-input);
   border-radius: 15px;
-  height: 110%;
+  min-height: 130px;
   padding: 10px;
   color: rgb(125, 113, 172);
-  font-weight: bold;
+  font-weight: 600;
+}
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cake-earned-title,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cake-earned-title {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cake-earned-title .cake-title,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cake-earned-title .cake-title {
+  color: var(--colors-secondary);
+}
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cake-earned-title .earned-title,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cake-earned-title .earned-title {
+  color: var(--colors-textSubtle);
 }
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cont2,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cont2 {
@@ -220,33 +240,52 @@
   margin-top: 15px;
   justify-content: space-between;
 }
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cont2 h2,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cont2 h2 {
+  font-size: 20px;
+}
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest {
   text-decoration: none;
   border: none;
-  background-color: gray;
+  background-color: var(--colors-backgroundDisabled);
   border-radius: 15px;
   width: 100px;
+  height: 45px;
   font-weight: bold;
-  color: lightgrey;
+  color: var(--color-textDisabled);
+  border-color: var(--colors-backgroundDisabled);
 }
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: 1px solid var(--colors-input);
   border-radius: 15px;
   padding: 10px;
   margin-top: 8px;
-  height: 110%;
+  min-height: 130px;
   width: 49%;
-  color: rgb(136, 125, 179);
+  color: var(--colors-textSubtle);
+}
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost .title-yield,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost .title-yield {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost h2,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost h2 {
+  font-size: 20px;
+}
+.total-cont .accordion .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost .title-para,
+.total-cont button .accordion-collapse .accordion-body .cont-coll .double-cont .yield-boost .title-para {
+  font-size: 10px;
 }
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .cont-btn,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .cont-btn {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: 1px solid var(--colors-input);
   border-radius: 15px;
   height: 90px;
   gap: 5px;
@@ -254,26 +293,28 @@
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .cont-btn .title-cont-btn,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .cont-btn .title-cont-btn {
   padding-left: 10px;
+  color: var(--colors-textSubtle);
 }
 .total-cont .accordion .accordion-collapse .accordion-body .cont-coll .cont-btn .btn-wallet-coll,
 .total-cont button .accordion-collapse .accordion-body .cont-coll .cont-btn .btn-wallet-coll {
   width: 98%;
   align-self: center;
-  background-color: rgb(31, 199, 212);
+  background-color: var(--colorsPrimary);
   height: 45px;
   border-radius: 15px;
   border: none;
-  color: white;
+  color: var(--colors-invertedContrast);
   font-weight: bold;
 }
 
 @media screen and (max-width: 980px) {
-  .total-cont .accordion .accordion-table .cont-t-c .cont-core-boosted,
-button .accordion-table .cont-t-c .cont-core-boosted {
+  .total-cont .accordion .accordion-item .accordion-table .accordion-header .cont-t-c .cont-core-boosted,
+.total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c .cont-core-boosted {
     display: none;
+    margin: auto;
   }
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 910px) {
   .cont-liqui {
     display: none;
   }
@@ -282,20 +323,37 @@ button .accordion-table .cont-t-c .cont-core-boosted {
   }
 }
 @media screen and (max-width: 575px) {
-  .accordion .accordion-table {
+  .total-cont .accordion .accordion-item .accordion-table .accordion-header button,
+.total-cont button .accordion-item .accordion-table .accordion-header {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
   }
-  .accordion .accordion-table .cont-t-c {
+  .total-cont .accordion .accordion-item .accordion-table .accordion-header button .cont-t-c,
+.total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c {
     gap: 5px;
   }
-  .accordion .accordion-table .cont-t-c .cont-core-boosted,
-.accordion .accordion-table .cont-t-c button .accordion-table .cont-t-c .cont-core-boosted {
+  .total-cont .accordion .accordion-item .accordion-table .accordion-header button .cont-t-c .cont-core-boosted,
+.total-cont .accordion .accordion-item .accordion-table .accordion-header button .cont-t-c button .accordion-table .cont-t-c .cont-core-boosted,
+.total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c .cont-core-boosted,
+.total-cont button .accordion-item .accordion-table .accordion-header .cont-t-c button .accordion-table .cont-t-c .cont-core-boosted {
     display: flex;
   }
-  .accordion .accordion-table .cont-media-2 {
+  .total-cont .accordion .accordion-item .accordion-table .accordion-header button .cont-media-2,
+.total-cont button .accordion-item .accordion-table .accordion-header .cont-media-2 {
     display: flex;
     justify-content: space-between;
     gap: 60px;
+  }
+  .total-cont .accordion .accordion-item .accordion-table .accordion-header button::after,
+.total-cont button .accordion-item .accordion-table .accordion-header button::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .total-cont .accordion .accordion-collapse .accordion-body,
+.total-cont button .accordion-collapse .accordion-body {
+    flex-direction: column-reverse;
+    height: 100%;
   }
 }/*# sourceMappingURL=farmsAccordion.css.map */

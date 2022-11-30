@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style/farmsNav.scss";
 import iconHam from "../../assets/images/iconHam.svg";
-
+import LiveFinished from "./LiveFinished";
 const FarmsNav = () => {
+
   return (
     <div className="farms_caption">
       <div className="container-total">
@@ -26,10 +27,9 @@ const FarmsNav = () => {
             </label>
             <p>Booster available</p>
           </div>
-          <div className="farms_caption_live">
-            <a href="!#">Live</a>
-            <a href="!#">Finished</a>
-          </div>
+          
+        <LiveFinished />
+          
         </div>
         <div className="cont-sort-search">
           <div className="farms_caption_sort">

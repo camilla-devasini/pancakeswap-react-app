@@ -7,7 +7,7 @@ function Pools() {
   return (
     <div>
       <PoolsHeader />
-
+  
       <PoolsNav />
     
       <AccordionPool />

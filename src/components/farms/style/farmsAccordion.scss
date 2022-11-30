@@ -13,7 +13,7 @@
                     border-color: var(--colors-dropdown);
                     // border-bottom: 1px solid var(--colors-disabled);
                     button {
-                        gap: 80px;
+                        gap: 70px;
                         margin-left: 0px;
                         align-content: center;
                         background: var(--colors-dropdown);
@@ -34,7 +34,7 @@
                         .title-accordion {
                             display: flex;
                             gap: 5px;
-                            min-width: 120px;
+                            min-width: 140px;
                             h2 {
                                 color: var(--colors-text);
                                 font-weight: bold;
@@ -161,7 +161,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    width: 30%;
+                    width: 250px;
                     color: var(--bs-link-color);
                 }
                 .cont-coll {
@@ -173,16 +173,16 @@
                         display: flex;
                         flex-direction: row;
                         gap: 15px;
-                        width: 100%;
+                        width: 90%;
                         .cake-earned-cont {
                             margin-top: 8px;
-                            width: 48%;
                             border: 1px solid var(--colors-input);
                             border-radius: 15px;
                             min-height: 130px;
                             padding: 10px;
                             color: rgb(125, 113, 172);
                             font-weight: 600;
+                            width: 400px;
                             .cake-earned-title {
                                 display: flex;
                                 gap: 5px;
@@ -224,8 +224,8 @@
                             padding: 10px;
                             margin-top: 8px;
                             min-height: 130px;
-                            width: 49%;
                             color: var(--colors-textSubtle);
+                            width: 400px;
                             .title-yield {
                                 font-size: 12px;
                                 margin-top: 10px;
@@ -245,6 +245,7 @@
                         border-radius: 15px;
                         height: 90px;
                         gap: 5px;
+                        width: 90%;
                         .title-cont-btn {
                             padding-left: 10px;
                             color: var(--colors-textSubtle);
@@ -313,5 +314,53 @@
     .total-cont button .accordion-collapse .accordion-body {
         flex-direction: column-reverse;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button,
+    .total-cont-back button .accordion-item .accordion-table-pool .accordion-header button {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header button,
+    .total-cont button .accordion-item .accordion-table .accordion-header button {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .total-cont .accordion .accordion-item .accordion-table .accordion-header button .cont-media-2,
+    .total-cont button .accordion-item .accordion-table .accordion-header .cont-media-2 {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cont-t-c {
+        flex-wrap: wrap;
+    }
+    .cont-media-2 {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .cont2 {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .double-cont {
+        flex-wrap: wrap;
+        .cake-earned-cont {
+            width: 408px;
+        }
+        .yield-boost {
+            width: 408px;
+        }
     }
 }
