@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-import { Link } from 'react-router-dom';
+
 import "./style/liveFinished.scss"
 
 function LiveFinished() {
