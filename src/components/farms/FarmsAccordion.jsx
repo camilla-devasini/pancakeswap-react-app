@@ -61,7 +61,7 @@ function FarmsAccordion() {
                 <div className="cont-liqui">
                   <div className="liquidity">Liquidity</div>
                   <div className="price-cont">
-                    <div className="cash-svg">199999999</div>
+                    <div className="cash-svg">19999999</div>
                   </div>
                 </div>
               </div>
@@ -209,7 +209,7 @@ function FarmsAccordion() {
                 <div className="cont-liqui">
                   <div className="liquidity">Liquidity</div>
                   <div className="price-cont">
-                    <div className="cash-svg">199999999</div>
+                    <div className="cash-svg">19999999</div>
                   </div>
                 </div>
               </div>
@@ -358,7 +358,7 @@ function FarmsAccordion() {
                 <div className="cont-liqui">
                   <div className="liquidity">Liquidity</div>
                   <div className="price-cont">
-                    <div className="cash-svg">199999999</div>
+                    <div className="cash-svg">19999999</div>
                   </div>
                 </div>
               </div>
@@ -506,7 +506,7 @@ function FarmsAccordion() {
                 <div className="cont-liqui">
                   <div className="liquidity">Liquidity</div>
                   <div className="price-cont">
-                    <div className="cash-svg">199999999</div>
+                    <div className="cash-svg">19999999</div>
                   </div>
                 </div>
               </div>
@@ -647,7 +647,7 @@ function FarmsAccordion() {
                 <div className="cont-liqui">
                   <div className="liquidity">Liquidity</div>
                   <div className="price-cont">
-                    <div className="cash-svg">$167.686.544</div>
+                    <div className="cash-svg">$167.686</div>
                   </div>
                 </div>
               </div>
