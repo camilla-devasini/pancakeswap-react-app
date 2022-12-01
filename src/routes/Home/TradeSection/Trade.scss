@@ -18,6 +18,7 @@
   justify-content: center;
   width: 100%;
   height: 650px;
+  background-color:  var( --colors-background);
 
   .container-2 {
     display: flex;
@@ -39,7 +40,7 @@
       }
 
       h2 {
-        color: rgb(40, 13, 95);
+        color: var(--colors-text);
         line-height: 1.1;
         font-size: 45px;
         font-weight: 600;
@@ -47,7 +48,7 @@
 
       h4 {
         line-height: 1.3;
-        color: rgb(122, 110, 170);
+        color: var(--colors-textSubtle);
         font-size: 18px;
         font-weight: lighter;
         margin-top: 30px;

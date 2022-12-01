@@ -62,7 +62,7 @@ export function PurpleDiv() {
               label={content[index].buttonTitle}
               theme="secondary"
             >
-              <AiOutlineArrowRight />
+              <AiOutlineArrowRight style={{color: "var(--colors-contrast)"}}/>
             </MainButton>
           </div>
 

@@ -53,7 +53,9 @@ export function Win() {
                 label="Play"
                 theme="secondary"
               >
-                <AiOutlineArrowRight />
+                <AiOutlineArrowRight
+                  style={{ fill: "var(--colors-contrast)" }}
+                />
               </MainButton>
               <div className="svg">
                 <svg
@@ -87,7 +89,9 @@ export function Win() {
                 label="Buy Tickets"
                 theme="secondary"
               >
-                <AiOutlineArrowRight />
+                <AiOutlineArrowRight
+                  style={{ fill: "var(--colors-contrast)" }}
+                />
               </MainButton>
               <div className="svg">
                 <svg

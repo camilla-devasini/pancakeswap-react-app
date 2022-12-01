@@ -26,7 +26,7 @@
   --colors-backgroundAlt: #fff;
   --colors-backgroundAlt2: hsla(0, 0%, 100%, 0.7);
   --colors-cardBorder: #e7e3eb;
-  --colors-contrast: #191326;
+  --colors-contrast: #fff;
   --colors-dropdown: #f6f6f6;
   --colors-dropdownDeep: #eee;
   --colors-invertedContrast: #fff;
@@ -38,6 +38,8 @@
   --colors-textDisabled: #bdc2c4;
   --colors-textSubtle: #7a6eaa;
   --colors-disabled: #e9eaeb;
+  --colors-earnSection: #f2ecf2;
+  --colors-winContainer: rgba(255, 255, 255, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #e5fdff, #f3efff);
   --colors-gradientInverseBubblegum: linear-gradient(
     139.73deg,
@@ -50,6 +52,9 @@
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+  --colors-gradientPurple: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  --colors-radialGradient: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
+  --colors-winSection: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
 
   --size-note: 14px;
   --size-normal: 16px;
@@ -86,7 +91,7 @@
   --colors-backgroundAlt: #27262c;
   --colors-backgroundAlt2: rgba(39, 38, 44, 0.7);
   --colors-cardBorder: #383241;
-  --colors-contrast: #fff;
+  --colors-contrast: #191326;
   --colors-dropdown: #1e1d20;
   --colors-dropdownDeep: #100c18;
   --colors-invertedContrast: #191326;
@@ -98,18 +103,27 @@
   --colors-textDisabled: #666171;
   --colors-textSubtle: #b8add2;
   --colors-disabled: #524b63;
+  --colors-earnSection: #3b4155;
+  --colors-winContainer: rgba(8, 6, 11, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --colors-gradientInverseBubblegum: linear-gradient(
     139.73deg,
     #3d2a54,
     #313d5c
   );
-  --colors-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
+  --colors-gradientCardHeader: linear-gradient(170.77deg, #3b4155 35%, #3a3045);
   --colors-gradientBlue: linear-gradient(180deg, #00707f, #19778c);
   --colors-gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
   --colors-gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --colors-gradientPurple: linear-gradient(180deg, #09070c 22%, #201335 100%);
+  --colors-radialGradient: radial-gradient(
+    103.12%50%at 50%50%,
+    #21193a 0%,
+    #191326 100%
+  );
+  --colors-winSection: linear-gradient(180deg,#0b4576 0%,#091115 100%)
 }
 
 * {
