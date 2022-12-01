@@ -1,4 +1,5 @@
-import lunarbunny from "../../../assets/images/homepage/bunny@2x.webp";
+import astronautbunny from "../../../assets/images/homepage/astronaut-bunny.webp";
+// import lunarbunny from "../../../assets/images/homepage/bunny@2x.webp";
 import starL from "../../../assets/images/homepage/star-l@2x.webp";
 import starR from "../../../assets/images/homepage/star-r@2x.webp";
 import starT from "../../../assets/images/homepage/star-top-r@2x.webp";
@@ -21,7 +22,6 @@ export function Hero() {
             </h3>
 
             <section className="buttons-section">
-              {/* <button className="connect-wallet">Connect Wallet</button> */}
               <MainButton
                 style={{ width: 170, margin: 0, padding: 13 }}
                 label="Connect Wallet"
@@ -33,8 +33,6 @@ export function Hero() {
                 label="Trade Now"
                 theme="tertiary"
               ></MainButton>
-
-              {/* <button className="trade-now">Trade Now</button> */}
             </section>
           </div>
 
@@ -43,11 +41,15 @@ export function Hero() {
               <img src={starL} className="star" alt="star-l" />
               <img src={starR} className="star" alt="star-r" />
               <img src={starT} className="star" alt="star-top" />
-              <img src={lunarbunny} className="lunar-bunny" alt="lunar-bunny" />
+              <img
+                src={astronautbunny}
+                className="lunar-bunny"
+                alt="lunar-bunny"
+              />
             </div>
           </div>
 
-         <svg src={fadeOut}className="svg-border"/>
+          <svg src={fadeOut} className="svg-border" />
         </div>
       </div>
     </>
