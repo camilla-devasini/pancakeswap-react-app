@@ -101,6 +101,7 @@ const SignUp = () => {
               Sign Up
             </button>
             <button
+              type="button"
               className="hover-active-class"
               onClick={() => navigate("/")}
             >

@@ -1,373 +1,365 @@
-@mixin container2 ($partenza, $distanza ) {
-    @keyframes bitcoin-biscuit{
-      0%, 100% {transform: translateX($partenza) translateY($partenza);}
-
-      50% {transform: translateX($distanza) translateY($distanza);}
-
-      
+@mixin container2($partenza, $distanza) {
+  @keyframes bitcoin-biscuit {
+    0%,
+    100% {
+      transform: translateX($partenza) translateY($partenza);
     }
 
+    50% {
+      transform: translateX($distanza) translateY($distanza);
+    }
+  }
 }
 
-@mixin container5 ($partenza, $distanza) {
-    @keyframes balls{
-        0%, 100% {transform: translateY($partenza) translateY($partenza);}
-        50% {transform: translateY($distanza) translateY($distanza);}
+@mixin container5($partenza, $distanza) {
+  @keyframes balls {
+    0%,
+    100% {
+      transform: translateY($partenza) translateY($partenza);
     }
+    50% {
+      transform: translateY($distanza) translateY($distanza);
+    }
+  }
 }
 
 .container-5 {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 968px;
-    background: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
-    // padding-top: 16px;
-    // padding-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 968px;
+  background: var(--colors-winSection);
+  // padding-top: 16px;
+  // padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  // padding: 10px;
+
+  picture.balls {
+    & img {
+      position: absolute;
+      top: -45px;
+      right: 0px;
+      width: 192px;
+      height: 192px;
+    }
+
+    img.prima {
+      @include container5(0, -12px);
+      animation-duration: 8000ms;
+      animation-delay: 2000ms;
+      animation-name: balls;
+      animation-iteration-count: infinite;
+    }
+
+    img.seconda {
+      @include container5(0, -12px);
+      animation-duration: 8000ms;
+      animation-delay: 3000ms;
+      animation-name: balls;
+      animation-iteration-count: infinite;
+    }
+
+    img.terza {
+      @include container5(0, -8px);
+      animation-duration: 3000ms;
+      animation-delay: 2000ms;
+      animation-name: balls;
+      animation-iteration-count: infinite;
+    }
+
+    img.quarta {
+      @include container5(0, -8px);
+      animation-duration: 4000ms;
+      animation-delay: 3000ms;
+      animation-name: balls;
+      animation-iteration-count: infinite;
+    }
+
+    img.quinta {
+      @include container5(0, -8px);
+      animation-duration: 4000ms;
+      animation-delay: 1000ms;
+      animation-name: balls;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  picture.cards {
+    img {
+      position: absolute;
+      width: 192px;
+      height: 192px;
+      bottom: 0;
+      margin-bottom: -60px;
+
+      &.card-1 {
+        @include container2(0, -100px);
+        animation-duration: 6000ms;
+        animation-delay: 2000ms;
+        animation-name: bitcoin-biscuit;
+        animation-iteration-count: infinite;
+        z-index: 2;
+      }
+
+      &.card-2 {
+        @include container2(0, -15px);
+        animation-duration: 6500ms;
+        animation-delay: 2000ms;
+        animation-name: bitcoin-biscuit;
+        animation-iteration-count: infinite;
+        z-index: 3;
+      }
+
+      &.card-3 {
+        @include container5(0, -15px);
+        animation-duration: 3500ms;
+        animation-delay: 2000ms;
+        animation-name: balls;
+        animation-iteration-count: infinite;
+        // z-index: 5;
+        margin-bottom: -72px;
+      }
+
+      &.card-4 {
+        @include container5(0, -12px);
+        animation-duration: 3500ms;
+        animation-delay: 2000ms;
+        animation-name: balls;
+        animation-iteration-count: infinite;
+        z-index: 1;
+      }
+    }
+  }
+
+  .box-wrapper {
+    background-color: var(--colors-winContainer);
+    backdrop-filter: blur(12px);
+    padding: 16px;
+    border: 1px solid var(--colors-cardBorder);
+    box-sizing: border-box;
+    backdrop-filter: blur(12px);
+    border-radius: 72px;
+    width: 95%;
+    align-self: center;
     display: flex;
     flex-direction: column;
-    // padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 40px;
+    z-index: 4;
+    text-align: center;
 
-    picture.balls {
+    .box-prizes {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
 
+      h2 {
+        font-size: 32px;
+        color: var(--colors-text);
+        font-weight: 600;
 
-
-        & img {
-            position: absolute;
-            top: -45px;
-            right: 0px;
-            width: 192px;
-            height: 192px;
-
+        .win-btn {
+          color: rgb(118, 69, 217);
+          display: inline;
         }
+      }
 
-        img.prima {
-            @include container5(0, -12px);
-            animation-duration: 8000ms;
-            animation-delay: 2000ms;
-            animation-name: balls;
-            animation-iteration-count: infinite;
-        }
+      .paragraphs {
+        line-height: 0.5;
 
-        img.seconda {
-            @include container5(0, -12px);
-            animation-duration: 8000ms;
-            animation-delay: 3000ms;
-            animation-name: balls;
-            animation-iteration-count: infinite;
+        p {
+          color: var(--colors-textSubtle);
+          font-size: 16px;
+          text-align: center;
         }
-
-        img.terza {
-            @include container5(0, -8px);
-            animation-duration: 3000ms;
-            animation-delay: 2000ms;
-            animation-name: balls;
-            animation-iteration-count: infinite;
-        }
-
-        img.quarta {
-            @include container5(0, -8px);
-            animation-duration: 4000ms;
-            animation-delay: 3000ms;
-            animation-name: balls;
-            animation-iteration-count: infinite;
-        }
-
-        img.quinta {
-            @include container5(0, -8px);
-            animation-duration: 4000ms;
-            animation-delay: 1000ms;
-            animation-name: balls;
-            animation-iteration-count: infinite;
-        }
+      }
     }
-
-
-
-
-
-
-    picture.cards {
-        img {
-            position: absolute;
-            width: 192px;
-            height: 192px;
-            bottom: 0;
-            margin-bottom: -60px;
-
-            &.card-1 {
-                @include container2(0, -100px);
-                animation-duration: 6000ms;
-                animation-delay: 2000ms;
-                animation-name: bitcoin-biscuit;
-                animation-iteration-count: infinite;
-                z-index: 2;
-            }
-
-            &.card-2 {
-                @include container2(0, -15px);
-                animation-duration: 6500ms;
-                animation-delay: 2000ms;
-                animation-name: bitcoin-biscuit;
-                animation-iteration-count: infinite;
-                z-index: 3;
-            }
-
-            &.card-3 {
-                @include container5(0, -15px);
-                animation-duration: 3500ms;
-                animation-delay: 2000ms;
-                animation-name: balls;
-                animation-iteration-count: infinite;
-                // z-index: 5;
-                margin-bottom: -72px;
-            }
-
-            &.card-4 {
-                @include container5(0, -12px);
-                animation-duration: 3500ms;
-                animation-delay: 2000ms;
-                animation-name: balls;
-                animation-iteration-count: infinite;
-                z-index: 1;
-            }
-        }
-
-    }
-
-
-    .box-wrapper {
-        background: rgba(255, 255, 255, 0.6);
-        padding: 16px;
-        border: 1px solid rgb(231, 227, 235);
-        box-sizing: border-box;
-        backdrop-filter: blur(12px);
-        border-radius: 72px;
-        width: 95%;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        gap: 40px;
-        z-index: 4;
-        text-align: center;
-
-        .box-prizes {
-            align-self: center;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-
-            h2 {
-                font-size: 32px;
-                color: rgb(40, 13, 95);
-                font-weight: 600;
-
-                .win-btn {
-                    color: rgb(118, 69, 217);
-                    display: inline;
-                }
-            }
-
-            .paragraphs {
-
-                line-height: 0.5;
-
-                p {
-                    color: rgb(122, 110, 170);
-                    font-size: 16px;
-                    text-align: center;
-                }
-            }
-
-        }
-    }
+  }
 }
 
 //card container 5
 .card-section1.green {
-    h2:nth-child(2) {
-        color: rgb(31, 199, 212);
-    }
+  h2:nth-child(2) {
+    color: rgb(31, 199, 212);
+  }
 
-    svg {
-        fill: rgb(31, 199, 212);
-    }
+  svg {
+    fill: rgb(31, 199, 212);
+  }
 }
 
 .card-section1.red {
-    h2:nth-child(2) {
-        color: rgb(237, 75, 158);
-    }
+  h2:nth-child(2) {
+    color: rgb(237, 75, 158);
+  }
 
-    svg {
-        fill: rgb(237, 75, 158);
-    }
+  svg {
+    fill: rgb(237, 75, 158);
+  }
 }
 
 .millions-in-prizes-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  .card-million {
+    width: 266px;
+    height: 388px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    border-radius: 24px;
+    padding: 24px;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+    justify-content: space-evenly;
+    text-align: left;
 
-    .card-million {
-        width: 266px;
-        height: 388px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 24px;
-        padding: 24px;
-        font-family: 'Kanit', sans-serif;
-        position: relative;
-        justify-content: space-evenly;
-        text-align: left;
-
-        p:nth-child(1) {
-            position: relative;
-            top: 20px;
-        }
-
-        p:nth-child(3) {
-            position: relative;
-            bottom: 15px;
-        }
-
-        button {
-            width: 225px;
-            height: 48px;
-            background-color: rgb(31, 199, 212);
-            border: 0;
-            border-radius: 16px;
-            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-            color: rgb(255, 255, 255);
-            font-weight: 600;
-            line-height: 1.5;
-            font-family: 'Kanit', sans-serif;
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            svg {
-                fill: white;
-                margin-left: 4px;
-            }
-        }
-
-        button:hover {
-            opacity: 0.65;
-        }
-
-        p {
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        h2 {
-            font-weight: 600;
-            font-size: 32px;
-        }
-
-        span {
-            font-weight: 600;
-        }
-
-        .svg {
-            position: absolute;
-            top: 24px;
-            right: 24px;
-        }
+    p:nth-child(1) {
+      position: relative;
+      top: 20px;
     }
+
+    p:nth-child(3) {
+      position: relative;
+      bottom: 15px;
+    }
+
+    button {
+      width: 225px;
+      height: 48px;
+      background-color: rgb(31, 199, 212);
+      border: 0;
+      border-radius: 16px;
+      box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      line-height: 1.5;
+      font-family: "Kanit", sans-serif;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        fill: white;
+        margin-left: 4px;
+      }
+    }
+
+    button:hover {
+      opacity: 0.65;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    .svg {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+    }
+  }
 }
 
 .yellow {
-    background-color: rgb(255, 178, 55);
-    color: rgb(40, 13, 95);
-    background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
-    box-shadow: 1px 3px rgb(255, 178, 55);
-
+  background-color: rgb(255, 178, 55);
+  color: rgb(40, 13, 95);
+  background: linear-gradient(
+    rgb(255, 178, 55) 0%,
+    rgb(255, 205, 81) 51.17%,
+    rgb(255, 231, 106) 100%
+  );
+  box-shadow: 1px 3px rgb(255, 178, 55);
 }
 
 .purple {
-    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
-    color: white;
-    box-shadow: 1px 3px black;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  color: white;
+  box-shadow: 1px 3px black;
 
+  .lottery-number {
+    font-size: 40px;
+    color: rgb(253, 171, 50);
+  }
 
-    .lottery-number {
-        font-size: 40px;
-        color: rgb(253, 171, 50);
-    }
-
-    svg {
-        fill: white;
-    }
+  svg {
+    fill: white;
+  }
 }
 
 @media all and (min-width: 852px) {
+  //container 5
+  .container-5 {
+    max-width: 100%;
 
-    //container 5
-    .container-5 {
-        max-width: 100%;
+    picture.cards {
+      // bottom: 0px;
+      // position: absolute;
+      top: 544px;
+      position: relative;
 
-        picture.cards {
-            // bottom: 0px;
-            // position: absolute;
-            top: 544px;
-            position: relative;
-
-            img {
-                position: absolute;
-                width: 512px;
-                height: 512px;
-                bottom: -280px;
-            }
-        }
-
-        .box-wrapper {
-            width: 80% !important;
-            // display: flex;
-            // flex-direction: column;
-
-            .box-prizes {
-
-                h2,
-                span {
-                    font-size: 42px !important;
-                }
-            }
-
-            .millions-in-prizes-cards {
-                display: flex;
-                flex-direction: row;
-                margin-top: 20px;
-                justify-content: center;
-                padding-bottom: 20px;
-
-                .card-million.yellow {
-                    transform: rotate(-2deg);
-                }
-
-                .card-million.purple {
-                    transform: rotate(2deg);
-                }
-            }
-        }
-
-        picture.balls {
-
-            img {
-                position: absolute;
-                top: -95px;
-                right: 0px;
-                width: 512px;
-                height: 512px;
-
-            }
-        }
-
+      img {
+        position: absolute;
+        width: 512px;
+        height: 512px;
+        bottom: -280px;
+      }
     }
+
+    .box-wrapper {
+      width: 80% !important;
+      // display: flex;
+      // flex-direction: column;
+
+      .box-prizes {
+        h2,
+        span {
+          font-size: 42px !important;
+        }
+      }
+
+      .millions-in-prizes-cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        .card-million.yellow {
+          transform: rotate(-2deg);
+        }
+
+        .card-million.purple {
+          transform: rotate(2deg);
+        }
+      }
+    }
+
+    picture.balls {
+      img {
+        position: absolute;
+        top: -95px;
+        right: 0px;
+        width: 512px;
+        height: 512px;
+      }
+    }
+  }
 }
