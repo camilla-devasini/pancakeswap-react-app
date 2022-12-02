@@ -2,6 +2,8 @@ import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AccountContext } from "./../../context/AccountContext";
+import "./style/authenticationForm.scss";
+import PageWrapper from "../UI/PageWrapper";
 
 import * as Yup from "yup";
 
@@ -60,45 +62,56 @@ const Login = () => {
   });
 
   return (
-    <form
-      style={{ display: "flex", flexDirection: "column", width: "20%" }}
-      onSubmit={formik.handleSubmit}
-    >
-      <label htmlFor="username">Username</label>
+    <PageWrapper>
+      <div className="form-container">
+        <form onSubmit={formik.handleSubmit}>
+          <label className="form-title">
+            <h1>Log in to your account</h1>
+          </label>
+          <div className="label-wrapper">
+            <label htmlFor="username">Username</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.username}
+            />
+            {formik.touched.username && formik.errors.username ? (
+              <div>{formik.errors.username}</div>
+            ) : null}
+          </div>
 
-      <input
-        id="username"
-        name="username"
-        type="text"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.username}
-      />
+          <div className="label-wrapper">
+            <label htmlFor="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.password}
+            />
+            {formik.touched.password && formik.errors.password ? (
+              <div>{formik.errors.password}</div>
+            ) : null}
+          </div>
 
-      {formik.touched.username && formik.errors.username ? (
-        <div>{formik.errors.username}</div>
-      ) : null}
-
-      <label htmlFor="password">Password</label>
-
-      <input
-        id="password"
-        name="password"
-        type="password"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.password}
-      />
-
-      {formik.touched.password && formik.errors.password ? (
-        <div>{formik.errors.password}</div>
-      ) : null}
-
-      <button type="submit">Login</button>
-      <button onClick={() => navigate("/auth/signup")}>
-        Create a new Account
-      </button>
-    </form>
+          <div className="form-btn-wrapper">
+            <button className="hover-active-class" type="submit">
+              Login
+            </button>
+            <button
+              className="hover-active-class"
+              onClick={() => navigate("/auth/signup")}
+            >
+              Not registered yet? <br></br>Create a new Account
+            </button>
+          </div>
+        </form>
+      </div>
+    </PageWrapper>
   );
 };
 
