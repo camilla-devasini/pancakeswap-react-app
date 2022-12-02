@@ -1,4 +1,4 @@
-import './routes/Home/homepage.scss';
+import "./routes/Home/homepage.scss";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./layouts/layout/Layout";
 import PageNotFound from "./routes/PageNotFound";
@@ -14,12 +14,10 @@ import Lottery from "./routes/Lottery";
 import Overview from "./routes/Overview";
 import Collections from "./routes/Collections";
 import Activity from "./routes/Activity";
-import Blog from "./routes/Blog";
-import ConnectYourWallet from './components/wallet/ConnectYourWallet';
-import useLocalStorage from "use-local-storage";
-import { useEffect } from 'react';
-
-
+import SignUp from "./components/authentication/SignUp";
+import Login from "./components/authentication/Login";
+import ProtectedRoute from "./components/authentication/ProtectedRoute";
+import Welcome from "./components/authentication/Welcome";
 
 function App() {
   const pathname = window.location.pathname;
@@ -34,40 +32,50 @@ function App() {
 
   //tema chiaro o scuro tramite click sul button:
   // const switchTheme = () => {
-  //   const newTheme = 
+  //   const newTheme =
   //     theme === "light" ? "dark" : "light";
   //     setTheme(newTheme);
   // }
 
   // useEffect( () => {
-    
+
   //   return () => {
   //     setTheme()
   //   }
   // },[theme], switchTheme)
 
-
- 
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Layout/>}>
-            <Route index element={<Home/>} />
-            <Route path="/Swap" element={<TradeSwap/>} />
-            <Route path="/Limit" element={<Limit/>} />
-            <Route path="/Liquidity" element={<Liquidity/>} /> 
-            <Route path="/Farms" element={<Farms/>} /> 
-            <Route path="/Pools" element={<Pools/>} /> 
-            <Route path="/Trading-competion" element={<TradingCompetitionLatest/>} /> 
-            <Route path="/Prediction" element={<Prediction/>} /> 
-            <Route path="/Lottery" element={<Lottery/>} /> 
-            <Route path="/Overview" element={<Overview/>} /> 
-            <Route path="/Collections" element={<Collections/>} /> 
-            <Route path="/Activity" element={<Activity/>} /> 
-            <Route path="/Blog" element={<Blog/>} /> 
-            {/* <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route> */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/Swap" element={<TradeSwap />} />
+          <Route path="/Limit" element={<Limit />} />
+          <Route path="/Liquidity" element={<Liquidity />} />
+          <Route path="/Farms" element={<Farms />} />
+          <Route path="/Pools" element={<Pools />} />
+          <Route
+            path="/Trading-competion"
+            element={<TradingCompetitionLatest />}
+          />
+          <Route path="/Prediction" element={<Prediction />} />
+          <Route path="/Lottery" element={<Lottery />} />
+          <Route path="/Overview" element={<Overview />} />
+          <Route path="/Collections" element={<Collections />} />
+          <Route path="/Activity" element={<Activity />} />
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/signup" element={<SignUp />} />
+          <Route
+            path="/welcome"
+            element={
+              <ProtectedRoute>
+                <Welcome />
+              </ProtectedRoute>
+            }
+          />
+          {/* <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route> */}
 
-            <Route path="*" element ={<PageNotFound/>} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </div>
