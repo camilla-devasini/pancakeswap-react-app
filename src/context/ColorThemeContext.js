@@ -24,6 +24,7 @@ const toggleTheme = () =>
         localStorage.setItem("myTheme", theme);
         if (theme === "light") {
             document.documentElement.setAttribute("data-theme", "dark");
+           
           
         } else {
             document.documentElement.removeAttribute("data-theme", "dark");

@@ -1,5 +1,5 @@
-import React,{ useState, useEffect } from "react";
-import "./style/darkMode.css"
+import React, { useState, useEffect } from "react";
+import "./style/darkMode.css";
 import "./style/footer.scss";
 import twitter from "../../assets/images/twitter.svg";
 import instagram from "../../assets/images/instagram.svg";
@@ -8,16 +8,13 @@ import telegram from "../../assets/images/telegram.svg";
 import reddit from "../../assets/images/reddit.svg";
 import github from "../../assets/images/github.svg";
 import medium from "../../assets/images/medium.svg";
-import iconBunny from "../../assets/images/iconBunny.svg"
-import LanguagePicker from "../header/LanguagePicker"
+import iconBunny from "../../assets/images/iconBunny.svg";
+import LanguagePicker from "../header/LanguagePicker";
 import { languageListObj } from "../../components/helpers/languageListObj";
 import TradeButton from "../header/TradeButton";
 import MainButton from "../../components/UI/MainButton";
 
-
 const Footer = (props) => {
-  
- 
   return (
     <div className="main-footer">
       <div className="container">
@@ -71,31 +68,27 @@ const Footer = (props) => {
           <img src={medium} alt="icon" />
         </div>
         <div className="cont-down">
-        <div className="down">
-        <input
-        className="switch-checkbox"
-        id={`switch-new`}
-        type="checkbox"
-        onClick={props.toggleTheme}
-       
-      />
-      <label
-        className="switch-label"
-        htmlFor={`switch-new`}
-        
-      >
-        <span className={`switch-button`} />
-      </label>
-      <LanguagePicker langList={languageListObj}/>
-       </div>
-       <div className="down">
-       {window.innerWidth > 851 ? <TradeButton value="$4.443"/>: null}
-       {window.innerWidth > 851 ? <MainButton label={"buy cake ->"} />  : <MainButton label="Connect"/>  }
-    
-     
-       </div>
-
-      </div>
+          <div className="down">
+            <input
+              className="switch-checkbox"
+              id={`switch-new`}
+              type="checkbox"
+              onClick={props.toggleTheme}
+            />
+            <label className="switch-label" htmlFor={`switch-new`}>
+              <span className={`switch-button`} />
+            </label>
+            <LanguagePicker langList={languageListObj} />
+          </div>
+          <div className="down">
+            {window.innerWidth > 851 ? <TradeButton value="$4.443" /> : null}
+            {window.innerWidth > 851 ? (
+              <MainButton label={"buy cake ->"} />
+            ) : (
+              <MainButton label="Connect" />
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
