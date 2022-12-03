@@ -1,8 +1,6 @@
 import coin from '../../../assets/images/trading-competition/MoD-banner-dar3.webp';
 import MainButton from '../../../components/UI/MainButton';
 import stormBunny from '../../../assets/images/trading-competition/MoD-storm-bunny.webp';
-import MainButton from '../../../components/UI/MainButton';
-
 
 export function FinishedCard() {
 
