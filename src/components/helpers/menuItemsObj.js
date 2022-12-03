@@ -82,7 +82,7 @@ const menuItemsObj = [
   },
   {
     img: moreIcon,
-    url: "/Blog",
+    url: "/auth/login",
 
     submenu: [
       {
