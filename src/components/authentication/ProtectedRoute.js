@@ -4,12 +4,13 @@
 import { Navigate } from "react-router-dom";
 import { useContext } from "react";
 import AccountContext from "./../../context/AccountContext";
+import Welcome from "./Welcome";
 
-const ProtectedRoute = ({ children }) => {
+const ProtectedRoute = () => {
   const isLoggedIn = useContext(AccountContext);
   if (!isLoggedIn) {
     return <Navigate to="/" replace />;
   }
-  return children; // children rendered solo se l'utente è loggato
+  return <Welcome />; // rendered solo se l'utente è loggato
 };
 export default ProtectedRoute;
