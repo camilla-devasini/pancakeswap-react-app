@@ -16,13 +16,38 @@ import Collections from "./routes/Collections";
 import Activity from "./routes/Activity";
 import Blog from "./routes/Blog";
 import ConnectYourWallet from './components/wallet/ConnectYourWallet';
+import useLocalStorage from "use-local-storage";
+import { useEffect } from 'react';
+
+
 
 function App() {
   const pathname = window.location.pathname;
   console.log(pathname);
 
+  //tema chiaro o scuro a seconda del dato salvato in localstorage sulla base
+  // delle preferenze che sta già usando l'utente nel browser --> "theme", "light" oppure "theme", "dark"
+  // const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // const [theme, setTheme] = useLocalStorage(
+  //   "theme", defaultDark ? "dark" : "light"
+  // )
+
+  //tema chiaro o scuro tramite click sul button:
+  // const switchTheme = () => {
+  //   const newTheme = 
+  //     theme === "light" ? "dark" : "light";
+  //     setTheme(newTheme);
+  // }
+
+  // useEffect( () => {
+    
+  //   return () => {
+  //     setTheme()
+  //   }
+  // },[theme], switchTheme)
 
 
+ 
   return (
     <div>
       <Routes>
@@ -40,7 +65,7 @@ function App() {
             <Route path="/Collections" element={<Collections/>} /> 
             <Route path="/Activity" element={<Activity/>} /> 
             <Route path="/Blog" element={<Blog/>} /> 
-            <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route>
+            {/* <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route> */}
 
             <Route path="*" element ={<PageNotFound/>} />
         </Route>

@@ -53,6 +53,12 @@ function TradeCard(props) {
             } 
             return response.json();
             
+<<<<<<< HEAD
+=======
+            
+    //     })
+    //     .then(json => {
+>>>>>>> develop
             
         })
         .then(json => {

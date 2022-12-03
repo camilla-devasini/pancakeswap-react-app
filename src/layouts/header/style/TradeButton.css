@@ -3,13 +3,14 @@
   margin-right: 10px;
   cursor: pointer;
 }
-.trade-value-wrapper > div {
+.trade-value-wrapper > div > a {
   display: flex;
+  text-decoration: none;
 }
-.trade-value-wrapper > div > span {
+.trade-value-wrapper > div > a > span {
   font-size: 16px;
   text-decoration: none;
-  color: #7a6eaa;
+  color: var(--colors-textSubtle);
   margin: 0 8px;
   font-weight: 600;
   line-height: 1.5;

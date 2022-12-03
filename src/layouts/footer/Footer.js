@@ -15,22 +15,9 @@ import TradeButton from "../header/TradeButton";
 import MainButton from "../../components/UI/MainButton";
 
 
-
-
-const Footer = () => {
+const Footer = (props) => {
   
-
-  const [theme, setTheme] = useState('light');
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  };
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+ 
   return (
     <div className="main-footer">
       <div className="container">
@@ -89,11 +76,13 @@ const Footer = () => {
         className="switch-checkbox"
         id={`switch-new`}
         type="checkbox"
-        onClick={toggleTheme}
+        onClick={props.toggleTheme}
+       
       />
       <label
         className="switch-label"
         htmlFor={`switch-new`}
+        
       >
         <span className={`switch-button`} />
       </label>

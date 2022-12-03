@@ -9,7 +9,7 @@
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--colors-backgroundAlt);
   margin-bottom: 0;
   justify-content: center;
 }
@@ -23,7 +23,7 @@
   list-style: none;
 }
 .common-navbar .single-common-navbar:hover {
-  background-color: rgb(239, 244, 245);
+  background-color: var(--colors-tertiary);
   cursor: pointer;
 }
 .common-navbar .single-common-navbar .submenu-links {
@@ -42,10 +42,10 @@
   left: 0px;
   height: 4px;
   width: 100%;
-  background-color: rgb(31, 199, 212);
+  background-color: var(--colors-primary);
   border-radius: 2px 2px 0px 0px;
 }
 .common-navbar .link-highlighted .submenu-links {
-  color: rgb(118, 69, 217);
+  color: var(--colors-secondary);
   font-weight: 700;
 }/*# sourceMappingURL=CommonSubmenu.css.map */

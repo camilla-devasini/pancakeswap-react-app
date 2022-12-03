@@ -1,197 +1,192 @@
-.accordion,
-button {
-  width: 95%;
+.total-cont-back {
+  background: var(--colors-background);
+}
+.total-cont-back .accordion,
+.total-cont-back button {
+  width: 90%;
   margin: auto;
-  align-items: center;
 }
-.accordion .accordion-table,
-button .accordion-table {
-  display: flex;
-  flex-direction: row;
-  width: 1200px;
-  align-items: center;
+.total-cont-back .accordion .accordion-item,
+.total-cont-back button .accordion-item {
+  background: var(--colors-dropdown);
+  border: none;
 }
-.accordion .accordion-table .title-accordion,
-button .accordion-table .title-accordion {
+.total-cont-back .accordion .accordion-item .accordion-table-pool,
+.total-cont-back button .accordion-item .accordion-table-pool {
+  background: var(--colors-dropdown);
+}
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header {
+  border-color: var(--colors-dropdown);
+}
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header button {
+  margin-left: 0px;
+  align-content: center;
+  gap: 35px;
+  background: var(--colors-dropdown);
+  border-top-left-radius: var(--colors-dropdown);
+  border-top-right-radius: var(--colors-dropdown);
+}
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button:focus,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button::after,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header button::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+}
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool {
   display: flex;
   gap: 5px;
-  width: 200px;
-  margin-top: 5px;
 }
-.accordion .accordion-table .title-accordion .cont-title-p .title-p,
-button .accordion-table .title-accordion .cont-title-p .title-p {
-  color: rgb(40, 13, 95);
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .cont-title-p-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .cont-title-p-pool {
+  min-width: 70px;
+}
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .cont-title-p-pool .title-p-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .cont-title-p-pool .title-p-pool {
+  color: var(--colors-text);
   font-weight: bold;
   font-size: large;
 }
-.accordion .accordion-table .title-accordion .cont-title-p .title-p2,
-button .accordion-table .title-accordion .cont-title-p .title-p2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .cont-title-p-pool .title-p-pool2,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .cont-title-p-pool .title-p-pool2 {
   font-size: 10px;
+  color: var(--colors-text);
+  flex-wrap: wrap;
 }
-.accordion .accordion-table .title-accordion .title-icon .icon-acc2,
-button .accordion-table .title-accordion .title-icon .icon-acc2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .title-icon-pool .icon-acc2-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .title-icon-pool .icon-acc2-pool {
   border: 1px solid;
   border-radius: 50%;
 }
-.accordion .accordion-table .title-accordion .title-icon .icon-acc2 img,
-button .accordion-table .title-accordion .title-icon .icon-acc2 img {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .title-icon-pool .icon-acc2-pool img,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .title-accordion-pool .title-icon-pool .icon-acc2-pool img {
   width: 32px;
 }
-.accordion .accordion-table .cont-core-boosted2,
-button .accordion-table .cont-core-boosted2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool {
   display: flex;
   flex-direction: column;
-  width: 190px;
+  min-width: 100px;
   gap: 0px;
 }
-.accordion .accordion-table .cont-core-boosted2 .p1,
-button .accordion-table .cont-core-boosted2 .p1 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool .p1-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool .p1-pool {
   font-size: 12px;
-  color: rgb(126, 121, 173);
+  color: var(--colors-textSubtle);
 }
-.accordion .accordion-table .cont-core-boosted2 .p2,
-button .accordion-table .cont-core-boosted2 .p2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool .p2-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool .p2-pool {
   font-size: 20px;
   font-weight: bold;
-  color: rgb(189, 194, 198);
+  color: var(--colors-textDisabled);
 }
-.accordion .accordion-table .cont-core-boosted2 .p3,
-button .accordion-table .cont-core-boosted2 .p3 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool .p3-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-core-boosted2-pool .p3-pool {
   font-size: 12px;
-  color: rgb(189, 194, 198);
+  color: var(--colors-textDisabled);
 }
-.accordion .accordion-table .cont-earned2,
-button .accordion-table .cont-earned2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-earned-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-earned-pool {
   color: rgb(138, 127, 180);
-  width: 150px;
+  min-width: 150px;
 }
-.accordion .accordion-table .cont-earned2 .earned2,
-button .accordion-table .cont-earned2 .earned2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-earned-pool .earned-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-earned-pool .earned-pool {
   font-size: 12px;
+  color: var(--colors-textSubtle);
 }
-.accordion .accordion-table .cont-earned2 .earned-perc2,
-button .accordion-table .cont-earned2 .earned-perc2 {
-  color: rgb(40, 13, 95);
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-earned-pool .earned-pool-perc,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-earned-pool .earned-pool-perc {
+  color: var(--colors-text);
   font-weight: 600;
 }
-.accordion .accordion-table .cont-apr-up2,
-button .accordion-table .cont-apr-up2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up {
   display: flex;
-  width: 150px;
 }
-.accordion .accordion-table .cont-apr-up2 .cont-apr2,
-button .accordion-table .cont-apr-up2 .cont-apr2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up .cont-apr-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up .cont-apr-pool {
   display: flex;
   flex-direction: column;
-  color: rgb(40, 13, 95);
+  min-width: 70px;
+  color: var(--colors-textSubtle);
   gap: 0px;
+  flex-wrap: wrap;
 }
-.accordion .accordion-table .cont-apr-up2 .cont-apr2 .apr2,
-button .accordion-table .cont-apr-up2 .cont-apr2 .apr2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up .cont-apr-pool .apr-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up .cont-apr-pool .apr-pool {
   display: flex;
-  color: rgb(138, 127, 180);
+  color: var(--colors-text);
   font-size: 12px;
 }
-.accordion .accordion-table .cont-apr-up2 .cont-apr2 .number2,
-button .accordion-table .cont-apr-up2 .cont-apr2 .number2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up .cont-apr-pool .number-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-apr-pool-up .cont-apr-pool .number-pool {
   font-weight: 600;
 }
-.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2,
-button .accordion-table .cont-apr-up2 .cont-n-up-to2 {
-  display: flex;
-  flex-direction: row;
-  color: rgb(64, 212, 176);
-  font-weight: bold;
-  margin-top: 23px;
-  width: 200px;
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-liqui-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-liqui-pool {
+  min-width: 130px;
 }
-.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2,
-button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 {
-  display: flex;
-  gap: 5px;
-}
-.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2,
-button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2 {
-  display: flex;
-  width: 65px;
-}
-.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2,
-button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .up-to2 {
-  display: none;
-}
-.accordion .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .perc2,
-button .accordion-table .cont-apr-up2 .cont-n-up-to2 .up-to-perc2 .perc2 {
-  display: none;
-}
-.accordion .accordion-table .cont-liqui2,
-button .accordion-table .cont-liqui2 {
-  width: 150px;
-}
-.accordion .accordion-table .cont-liqui2 .liquidity2,
-button .accordion-table .cont-liqui2 .liquidity2 {
-  color: rgb(138, 127, 180);
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-liqui-pool .liquidity-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-liqui-pool .liquidity-pool {
   font-size: 12px;
+  color: var(--colors-text);
 }
-.accordion .accordion-table .cont-liqui2 .price-cont2,
-button .accordion-table .cont-liqui2 .price-cont2 {
+.total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header .cont-liqui-pool .price-cont-pool,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header .cont-liqui-pool .price-cont-pool {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  color: rgb(40, 13, 95);
+  color: var(--colors-textSubtle);
   font-weight: bold;
 }
-.accordion .accordion-table .cont-multi2,
-button .accordion-table .cont-multi2 {
-  width: 150px;
-  color: rgb(138, 127, 180);
-  font-weight: bold;
-}
-.accordion .accordion-table .cont-multi2 .n-x-svg2,
-button .accordion-table .cont-multi2 .n-x-svg2 {
-  color: rgb(40, 13, 95);
-}
-.accordion .accordion-collapse,
-button .accordion-collapse {
+.total-cont-back .accordion .accordion-collapse,
+.total-cont-back button .accordion-collapse {
   height: 200px;
   background-color: rgb(246, 246, 246);
 }
-.accordion .accordion-collapse .accordion-body2,
-button .accordion-collapse .accordion-body2 {
+.total-cont-back .accordion .accordion-collapse .accordion-body2,
+.total-cont-back button .accordion-collapse .accordion-body2 {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.accordion .accordion-collapse .accordion-body2 .left-cont2,
-button .accordion-collapse .accordion-body2 .left-cont2 {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .left-cont2,
+.total-cont-back button .accordion-collapse .accordion-body2 .left-cont2 {
   display: flex;
   flex-direction: column;
   width: 350px;
   font-size: 12px;
 }
-.accordion .accordion-collapse .accordion-body2 .left-cont2 .cont-total2,
-button .accordion-collapse .accordion-body2 .left-cont2 .cont-total2 {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .left-cont2 .cont-total2,
+.total-cont-back button .accordion-collapse .accordion-body2 .left-cont2 .cont-total2 {
   display: flex;
   justify-content: space-around;
 }
-.accordion .accordion-collapse .accordion-body2 .left-cont2 .cont-ave,
-button .accordion-collapse .accordion-body2 .left-cont2 .cont-ave {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .left-cont2 .cont-ave,
+.total-cont-back button .accordion-collapse .accordion-body2 .left-cont2 .cont-ave {
   display: flex;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll,
-button .accordion-collapse .accordion-body2 .cont-coll {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 50px;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont,
-button .accordion-collapse .accordion-body2 .cont-coll .double-cont {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .double-cont {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont,
-button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont {
   margin-top: 8px;
   width: 48%;
   border: 1px solid;
@@ -201,15 +196,15 @@ button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned
   color: rgb(125, 113, 172);
   font-weight: bold;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2,
-button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
   justify-content: space-between;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest,
-button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned-cont .cont2 .btn-harvest {
   text-decoration: none;
   border: none;
   background-color: gray;
@@ -218,8 +213,8 @@ button .accordion-collapse .accordion-body2 .cont-coll .double-cont .cake-earned
   font-weight: bold;
   color: lightgrey;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost,
-button .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost {
   display: flex;
   flex-direction: column;
   border: 1px solid;
@@ -230,8 +225,8 @@ button .accordion-collapse .accordion-body2 .cont-coll .double-cont .yield-boost
   width: 49%;
   color: rgb(136, 125, 179);
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn,
-button .accordion-collapse .accordion-body2 .cont-coll .cont-btn {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .cont-btn {
   display: flex;
   flex-direction: column;
   border: 1px solid;
@@ -239,12 +234,12 @@ button .accordion-collapse .accordion-body2 .cont-coll .cont-btn {
   height: 90px;
   gap: 5px;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn .title-cont-btn,
-button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .title-cont-btn {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn .title-cont-btn,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .title-cont-btn {
   padding-left: 10px;
 }
-.accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-coll,
-button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-coll {
+.total-cont-back .accordion .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-coll,
+.total-cont-back button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-coll {
   width: 98%;
   align-self: center;
   background-color: rgb(31, 199, 212);
@@ -253,4 +248,21 @@ button .accordion-collapse .accordion-body2 .cont-coll .cont-btn .btn-wallet-col
   border: none;
   color: white;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .cont-liqui-pool {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .cont-earned-pool {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .total-cont-back .accordion .accordion-item .accordion-table-pool .accordion-header button,
+.total-cont-back button .accordion-item .accordion-table-pool .accordion-header button {
+    gap: 0px;
+  }
 }/*# sourceMappingURL=accordionPool.css.map */

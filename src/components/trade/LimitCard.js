@@ -45,6 +45,7 @@ function LimitCard(props) {
 
 
     // COMMENTATO PER LIMITARE LE CHIAMATE API (MAX 100/MONTH)
+<<<<<<< HEAD
     useEffect( () => {
         fetch(`http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`)
         .then(response => {
@@ -52,6 +53,15 @@ function LimitCard(props) {
                 setError(new Error("error occurred"))
             } 
             return response.json();
+=======
+    // useEffect( () => {
+    //     fetch(`http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`)
+    //     .then(response => {
+    //         if (response.status !== 200) {
+    //             setError(new Error("error occurred"))
+    //         } 
+    //         return response.json();
+>>>>>>> develop
             
         })
         .then(json => {

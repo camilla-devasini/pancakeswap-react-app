@@ -1,9 +1,13 @@
 import NotFound from "../components/UI/NotFound";
+import PageWrapper from "../components/UI/PageWrapper";
 
 function PageNotFound() {
 
     return (
-        <NotFound />
+        <PageWrapper>
+             <NotFound />
+        </PageWrapper>
+       
     )
 }
 export default PageNotFound;

@@ -3,14 +3,15 @@
     margin-right: 10px;
     cursor: pointer;
 
-    & > div {
+    & > div > a {
         display: flex;
+        text-decoration: none;
     }
-
-    & > div > span {
+    
+    & > div > a > span {
         font-size: 16px;
         text-decoration: none;
-        color: #7a6eaa;
+        color: var(--colors-textSubtle);
         margin: 0 8px;
         font-weight: 600;
         line-height: 1.5;
