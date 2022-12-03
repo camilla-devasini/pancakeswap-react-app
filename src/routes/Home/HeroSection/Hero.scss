@@ -25,7 +25,9 @@
 }
 
 .hero-content {
+  height: 800px;
   background: var(--colors-radialGradient);
+
   .background-hero {
     position: absolute;
     width: 100%;
@@ -312,6 +314,7 @@
     .container-1 {
       width: 50%;
       height: 280.8;
+      z-index: 1;
 
       .h2-hero {
         line-height: 1;
@@ -371,6 +374,7 @@
         position: relative;
         width: 90%;
         margin-bottom: -50px;
+        z-index: 1;
 
         .lunar-bunny {
           @include container(0, -9px);
@@ -413,14 +417,14 @@
         }
       }
     }
+  }
 
-    .svg-border {
-      margin-top: 150px;
-      position: absolute;
-      width: 100vw;
-      height: 300px;
-      z-index: 0;
-    }
+  .svg-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 }
 
