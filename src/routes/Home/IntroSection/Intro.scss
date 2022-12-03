@@ -156,6 +156,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
 
     .cards-section1 {
       display: flex;
@@ -218,6 +219,7 @@
     justify-content: center;
     width: 100vw;
     height: 1300px;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
 
     .cards-section1 {
       display: flex;
@@ -284,6 +286,7 @@
     justify-content: center;
     width: 100vw;
     height: fit-content;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
 
     .cards-section1 {
       display: flex;
@@ -330,6 +333,7 @@
       .card-section1:nth-of-type(3) {
         h2 {
           font-size: 35px;
+          color: rgb(40, 13, 95);
 
           &:nth-child(2) {
             color: #ed4b9e;
@@ -349,6 +353,7 @@
     justify-content: center;
     width: 100vw;
     height: fit-content;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
 
     .cards-section1 {
       display: flex;
@@ -395,6 +400,7 @@
       .card-section1:nth-of-type(3) {
         h2 {
           font-size: 35px;
+          color: rgb(40, 13, 95);
 
           &:nth-child(2) {
             color: #ed4b9e;
@@ -414,6 +420,7 @@
     justify-content: center;
     width: 100vw;
     height: fit-content;
+    background: linear-gradient(white, rgb(118, 69, 217, 30%));
 
     .cards-section1 {
       display: flex;

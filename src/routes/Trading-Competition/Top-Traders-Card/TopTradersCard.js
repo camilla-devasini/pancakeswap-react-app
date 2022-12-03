@@ -24,7 +24,7 @@ import flipsie from "../../../assets/images/trading-competition/flipsie-easter-2
 import alien from "../../../assets/images/trading-competition/pancake-squad-315-1000.png";
 import lottie from "../../../assets/images/trading-competition/lottie-1000.png";
 import doubtful from "../../../assets/images/trading-competition/pancake-squad-9565-1000.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const content = [
   {
@@ -143,6 +143,10 @@ export function TopTradersCard() {
     setIndex(3);
     setClasse("total-card-3");
   };
+
+  useEffect(() => {
+    console.log(content[index].number1);
+  }, []);
 
   return (
     <>

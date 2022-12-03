@@ -671,3 +671,330 @@
 .hide {
   display: none;
 }
+
+@media screen and (max-width: 870px) and (min-width: 576px) {
+  .total-card {
+    width: 550px;
+
+    .top-traders {
+      width: 550px;
+    }
+
+    .buttons-box {
+      width: 550px;
+
+      .main-buttons {
+        width: 550px;
+      }
+    }
+
+    .data-box {
+      .box1 {
+        width: 550px;
+      }
+
+      .box2 {
+        width: 550px;
+      }
+
+      .box3 {
+        width: 550px;
+      }
+
+      .box4 {
+        width: 550px;
+      }
+
+      .box5 {
+        width: 550px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) and (min-width: 426px) {
+  .total-card {
+    width: 435px;
+
+    .top-traders {
+      width: 435px;
+    }
+
+    .buttons-box {
+      width: 435px;
+
+      .main-buttons {
+        width: 435px;
+      }
+    }
+
+    .data-box {
+      .box1 {
+        width: 435px;
+        padding-right: 15px;
+        & .skull {
+          display: none;
+        }
+      }
+
+      .box2 {
+        width: 435px;
+        padding-right: 15px;
+        & .bull {
+          display: none;
+        }
+      }
+
+      .box3 {
+        width: 435px;
+        padding-right: 15px;
+
+        & .skull2 {
+          display: none;
+        }
+      }
+
+      .box4 {
+        width: 435px;
+        padding-right: 15px;
+
+        & .skull3 {
+          display: none;
+        }
+      }
+
+      .box5 {
+        width: 435px;
+        padding-right: 15px;
+
+        & .fireball {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .total-card {
+    width: 385px;
+    .top-traders {
+      width: 385px;
+      h2 {
+        font-size: 23px;
+      }
+
+      h5 {
+        font-size: 13px;
+      }
+    }
+
+    .buttons-box {
+      .main-buttons {
+        .total {
+          h2 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 9px;
+          }
+        }
+
+        .storm {
+          margin: 0;
+          font-weight: 600;
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
+          background: #efebf4;
+
+          & h2 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 9px;
+            color: #6c5ba6;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .flippers {
+          margin: 0;
+          font-weight: 600;
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
+          background: #efebf4;
+
+          & h2 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 9px;
+            color: #6c5ba6;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .cakers {
+          margin: 0;
+          font-weight: 600;
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
+          background: #efebf4;
+
+          & h2 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 9px;
+            color: #6c5ba6;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .data-box {
+      .box1 {
+        width: 380px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 23px;
+        }
+
+        & h3 {
+          font-size: 16px;
+        }
+
+        & h4 {
+          font-size: 14px;
+        }
+
+        & .skull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+        }
+      }
+
+      .box2 {
+        width: 385px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 23px;
+        }
+
+        & h3 {
+          font-size: 16px;
+        }
+
+        & h4 {
+          font-size: 14px;
+        }
+
+        & .bull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+        }
+      }
+
+      .box3 {
+        width: 385px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 23px;
+        }
+
+        & h3 {
+          font-size: 16px;
+        }
+
+        & h4 {
+          font-size: 14px;
+        }
+
+        & .skull2 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+        }
+      }
+
+      .box4 {
+        width: 385px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 23px;
+        }
+
+        & h3 {
+          font-size: 16px;
+        }
+
+        & h4 {
+          font-size: 14px;
+        }
+
+        & .skull3 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+        }
+      }
+
+      .box5 {
+        width: 385px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & h2 {
+          margin: 0;
+          font-weight: 600;
+          font-size: 23px;
+          color: #7645d9;
+        }
+
+        & h3 {
+          font-size: 16px;
+        }
+
+        & h4 {
+          font-size: 14px;
+        }
+
+        & .fireball {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
