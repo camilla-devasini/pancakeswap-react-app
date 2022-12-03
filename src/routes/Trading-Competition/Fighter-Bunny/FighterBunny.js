@@ -3,6 +3,7 @@ import dar2 from "../../../assets/images/trading-competition/MoD-banner-dar2.web
 import hero from "../../../assets/images/trading-competition/MoD-hero-bunnies.webp";
 import mesh from "../../../assets/images/trading-competition/mod-mesh.f35f83b0.png";
 import { AlarmClockCard } from "../Alarm-Clock-Card/AlarmClockCard";
+import { AlarmClockCardMobile } from "../Alarm-Clock-Card-Mobile/AlarmClockCardMobile";
 
 export function FighterBunny() {
   return (
@@ -10,7 +11,11 @@ export function FighterBunny() {
       <div className="bg-container">
         <div className="cyber-container">
           <div className="main-hero">
+          <div className="ac-wrapper">
+            <AlarmClockCardMobile />
+            </div>
             <div className="hero-container">
+           
               <img className="mod2" src={dar2} alt="MoD-banner-dar2" />
 
               <div className="text-container">
