@@ -1,9 +1,14 @@
+.cont-total-2 {
+    background: var(--colors-background);
+    padding: 10px;
     .farms_caption2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
         margin: auto;
+        min-height: 90px;
+        align-items: center;
         .farms_caption_order2 {
             display: flex;
             justify-content: flex-start;
@@ -23,6 +28,7 @@
                     opacity: 0;
                     width: 0;
                     height: 0;
+                    background-color: var(--colors-input);
                 }
                 .slider {
                     position: absolute;
@@ -31,7 +37,7 @@
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background-color: #ccc;
+                    background-color: var(--colors-input);
                     -webkit-transition: .4s;
                     transition: .4s;
                 }
@@ -42,7 +48,7 @@
                     width: 15px;
                     top: 2px;
                     left: 0px;
-                    background-color: white;
+                    background-color: var(--colors-backgroundAlt);
                     -webkit-transition: .4s;
                     transition: .4s;
                 }
@@ -63,6 +69,9 @@
                 .slider.round:before {
                     border-radius: 50%;
                 }
+                p {
+                    color: var(--colors-text);
+                }
             }
             .farms_caption_live {
                 display: flex;
@@ -74,36 +83,50 @@
             .farms_caption_sort {
                 display: flex;
                 flex-direction: column;
+                color: var(--colors-text);
             }
             .farms_caption_search {
                 display: flex;
                 flex-direction: column;
+                color: var(--colors-text);
             }
             #sort {
                 border-radius: 15px;
                 width: 130px;
                 height: 35px;
-                background-color: rgb(238, 234, 244);
-                color: rgb(40, 13, 95);
+                background-color: var(--colors-input);
+                color: var(--colors-text);
                 font-weight: bold;
-                border: 1px solid lightgray;
+                border: 1px solid var(--colors-inputSecondary);
             }
             #search {
                 border-radius: 15px;
                 width: 200px;
                 height: 35px;
-                background-color: rgb(238, 234, 244);
+                background-color: var( --colors-input);
                 font-weight: bold;
-                color: rgb(123, 111, 171);
-                border: 1px solid lightgray;
+                color: var(--colors-text);
+                border: 1px solid var(--colors-inputSecondary);
             }
         }
     }
-    
-    $breakpoint-tablet: 768px;
-    @media (max-width: $breakpoint-tablet) {
-        .farms_caption {
-            display: flex;
-            width: 100%;
-        }
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .farms_caption2 {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
     }
+}
+
+$breakpoint-tablet: 500px;
+@media (max-width: $breakpoint-tablet) {
+    .farms_caption_order2 {
+        flex-wrap: wrap;
+    }
+    .cont-input {
+        flex-wrap: wrap;
+    }
+}

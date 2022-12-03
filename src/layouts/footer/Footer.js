@@ -13,7 +13,6 @@ import LanguagePicker from "../header/LanguagePicker"
 import { languageListObj } from "../../components/helpers/languageListObj";
 import TradeButton from "../header/TradeButton";
 import MainButton from "../../components/UI/MainButton";
-import useLocalStorage from "use-local-storage";
 
 
 const Footer = (props) => {
@@ -77,8 +76,7 @@ const Footer = (props) => {
         className="switch-checkbox"
         id={`switch-new`}
         type="checkbox"
-        // onClick={toggleTheme}
-        onClick={props.switchTheme}
+        onClick={props.toggleTheme}
        
       />
       <label

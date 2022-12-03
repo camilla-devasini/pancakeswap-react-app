@@ -1,268 +1,265 @@
 section.container-6 {
-    background: rgb(250, 249, 250);
+  background-color: var(--colors-background);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+  // padding-left: 10px;
+
+  .wrapper-6 {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    position: relative;
-    align-items: center;
-    width: 100vw;
-    padding-bottom: 50px;
-    // padding-left: 10px;
+    // gap: 80px;
+    // padding-left: 20px;
+    width: 100%;
 
-    .wrapper-6 {
+    .top-6 {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      picture {
+        width: 192px;
+        height: 192px;
+        position: relative;
+        align-self: flex-end;
+
+        img {
+          position: absolute;
+          width: 192px;
+          height: 192px;
+          right: 10px;
+          margin-top: 60px;
+
+          &.bottom-right {
+            @include container5(0, -10px);
+            animation-duration: 3000ms;
+            animation-delay: 3000ms;
+            animation-name: balls;
+            animation-iteration-count: infinite;
+          }
+
+          &.top-left {
+            @include container5(0, -5px);
+            animation-duration: 3500ms;
+            animation-delay: 3300ms;
+            animation-name: balls;
+            animation-iteration-count: infinite;
+          }
+
+          &.top-right {
+            @include container2(0, -5px);
+            animation-duration: 3500ms;
+            animation-delay: 2400ms;
+            animation-name: bitcoin-biscuit;
+            animation-iteration-count: infinite;
+          }
+
+          &.coin {
+            @include container2(0, -5px);
+            animation-duration: 3200ms;
+            animation-delay: 2000ms;
+            animation-name: bitcoin-biscuit;
+            animation-iteration-count: infinite;
+          }
+        }
+      }
+
+      .box-cake {
         display: flex;
         flex-direction: column;
-        // gap: 80px;
-        // padding-left: 20px;
-        width: 100vw;
-
-        .top-6 {
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-
-            picture {
-                
-                width: 192px;
-                height: 192px;
-                position: relative;
-                align-self: flex-end;
-
-                img {
-                    position: absolute;
-                    width: 192px;
-                    height: 192px;
-                    right: 10px;
-                    margin-top: 60px;
-
-                    &.bottom-right {
-                        @include container5(0, -10px);
-                        animation-duration: 3000ms;
-                        animation-delay: 3000ms;
-                        animation-name: balls;
-                        animation-iteration-count: infinite;
-                    }
-
-                    &.top-left {
-                        @include container5(0, -5px);
-                        animation-duration: 3500ms;
-                        animation-delay: 3300ms;
-                        animation-name: balls;
-                        animation-iteration-count: infinite;
-                    }
-
-                    &.top-right {
-                        @include container2(0, -5px);
-                        animation-duration: 3500ms;
-                        animation-delay: 2400ms;
-                        animation-name: bitcoin-biscuit;
-                        animation-iteration-count: infinite;
-                    }
-
-                    &.coin {
-                        @include container2(0, -5px);
-                        animation-duration: 3200ms;
-                        animation-delay: 2000ms;
-                        animation-name: bitcoin-biscuit;
-                        animation-iteration-count: infinite;
-                    }
-                }
-            }
-
-
-            .box-cake {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                gap: 20px;
-
-                h2 {
-                    font-weight: 600;
-                    font-size: 32px;
-                    color: rgb(40, 13, 95);
-                    line-height: 1.1;
-                }
-
-                span {
-                    display: inline;
-                    font-size: 32px;
-                    color: rgb(118, 69, 217);
-                }
-
-                p {
-                    font-size: 16px;
-                    color: rgb(122, 110, 170);
-                }
-            }
-
-            .cake-buttons {
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                align-self: flex-start;
-
-                button {
-                    width: 125px;
-                    height: 48px;
-                    background-color: rgb(31, 199, 212);
-                    border: 0px;
-                    border-radius: 16px;
-                    color: white;
-                    font-size: 16px;
-                    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-                    cursor: pointer;
-                    padding: 0px 24px;
-                    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-                    margin-right: 16px;
-                    font-weight: 600;
-
-                }
-
-                button:hover {
-                    opacity: 0.65;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: rgb(31, 199, 212);
-                    font-weight: 600;
-                    line-height: 1.5;
-                    cursor: pointer;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-
-
-    .box-data {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-areas:
-            "a d"
-            "b e"
-            "c f";
-        gap: 16px 8px;
-        align-self: stretch;
-        // padding: 0 20px 60px 20px;
         padding: 10px;
-        overflow: hidden;
+        gap: 20px;
+
+        h2 {
+          font-weight: 600;
+          font-size: 32px;
+          color: var(--colors-text);
+          line-height: 1.1;
+        }
+
+        .ck-btn {
+          font-weight: 600;
+          display: inline;
+          font-size: 32px;
+          color: rgb(118, 69, 217);
+        }
 
         p {
-            font-size: 16px;
-            color: rgb(122, 110, 170);
+          font-size: 16px;
+          color: var(--colors-textSubtle);
+        }
+      }
+
+      .cake-buttons {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        align-self: flex-start;
+
+        button {
+          width: 125px;
+          height: 48px;
+          background-color: rgb(31, 199, 212);
+          border: 0px;
+          border-radius: 16px;
+          color: white;
+          font-size: 16px;
+          box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+          cursor: pointer;
+          padding: 0px 24px;
+          transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+          margin-right: 16px;
+          font-weight: 600;
         }
 
-        span {
-            font-size: 24px;
-            color: rgb(40, 13, 95);
-            font-weight: 600;
-            line-height: 1.1;
+        button:hover {
+          opacity: 0.65;
         }
 
-        .circulating-supply {
-            grid-area: a;
+        a {
+          text-decoration: none;
+          color: rgb(31, 199, 212);
+          font-weight: 600;
+          line-height: 1.5;
+          cursor: pointer;
         }
 
-        .market-cap {
-            grid-area: d;
-            border-left: 1px solid rgb(215, 202, 236);
-            padding: 0px 8px;
+        a:hover {
+          text-decoration: underline;
         }
-
-        .total-supply {
-            grid-area: b;
-        }
-
-        .burned-to-date {
-            grid-area: e;
-            border-left: 1px solid rgb(215, 202, 236);
-            padding: 0px 8px;
-        }
-
-        .max-supply {
-            grid-area: c;
-        }
-
-        .current-emissions {
-            grid-area: f;
-            border-left: 1px solid rgb(215, 202, 236);
-            padding: 0px 8px;
-        }
+      }
     }
+  }
+
+  .box-data {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      "a d"
+      "b e"
+      "c f";
+    gap: 16px 8px;
+    align-self: stretch;
+    // padding: 0 20px 60px 20px;
+    padding: 10px;
+    overflow: hidden;
+
+    p {
+      font-size: 16px;
+      color: var(--colors-textSubtle);
+    }
+
+    span {
+      font-size: 24px;
+      color: var(--colors-text);
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .circulating-supply {
+      grid-area: a;
+    }
+
+    .market-cap {
+      grid-area: d;
+      border-left: 1px solid var(--colors-inputSecondary);
+      padding: 0px 8px;
+    }
+
+    .total-supply {
+      grid-area: b;
+    }
+
+    .burned-to-date {
+      grid-area: e;
+      border-left: 1px solid var(--colors-inputSecondary);
+      padding: 0px 8px;
+    }
+
+    .max-supply {
+      grid-area: c;
+    }
+
+    .current-emissions {
+      grid-area: f;
+      border-left: 1px solid var(--colors-inputSecondary);
+      padding: 0px 8px;
+    }
+  }
 }
 
 @media all and (min-width: 852px) {
-    section.container-6 {
-        height: 700px;
-        padding: 0 24px;
-        align-items: center;
+  section.container-6 {
+    height: 700px;
+    padding: 0 24px;
+    align-items: center;
 
-        .wrapper-6 {
-            padding: 48px 24px;
-            width: 80%;
-            height: 750px;
-            justify-content: center;
+    .wrapper-6 {
+      padding: 48px 24px;
+      width: 80%;
+      height: 750px;
+      justify-content: center;
 
-            .top-6 {
-                // padding-top: 150px;
-                display: flex;
-                flex-direction: row-reverse;
+      .top-6 {
+        // padding-top: 150px;
+        display: flex;
+        flex-direction: row-reverse;
 
-                picture.bunny {
-                    position: relative;
-                    width: 410px;
-                    height: 400px;
-                    bottom: 55px;
-                    right: 40px;
+        picture.bunny {
+          position: relative;
+          width: 410px;
+          height: 400px;
+          bottom: 55px;
+          right: 40px;
 
-                    img {
-                        width: 410px;
-                        height: 400px;
-                    }
-                }
-
-                .box-cake {
-                    align-self: center;
-                    flex: 1 1 0%;
-
-                    h2 {
-                        font-size: 40px;
-
-                        span {
-                            font-size: 40px;
-                        }
-                    }
-                }
-            }
+          img {
+            width: 410px;
+            height: 400px;
+          }
         }
 
-        .box-data {
-            display: grid;
-            grid-template-areas:
-                " a b c"
-                "d e f" !important;
-            grid-template-columns: repeat(3, auto) !important;
-            gap: 32px !important;
-            // padding: 100px;
+        .box-cake {
+          align-self: center;
+          flex: 1 1 0%;
 
-            .max-supply {
-                border-left: 1px solid rgb(215, 202, 236);
-                padding: 0px 8px;
-            }
+          h2 {
+            font-size: 40px;
 
-            .total-supply {
-                border-left: 1px solid rgb(215, 202, 236);
-                padding: 0px 8px;
+            .ck-btn {
+              font-size: 40px;
             }
-
-            .market-cap {
-                border-left: 0px !important;
-                padding: 0 !important;
-            }
+          }
         }
+      }
     }
+
+    .box-data {
+      display: grid;
+      grid-template-areas:
+        " a b c"
+        "d e f" !important;
+      grid-template-columns: repeat(3, auto) !important;
+      gap: 32px !important;
+      // padding: 100px;
+
+      .max-supply {
+        border-left: 1px solid var(--colors-inputSecondary);
+        padding: 0px 8px;
+      }
+
+      .total-supply {
+        border-left: 1px solid var(--colors-inputSecondary);
+        padding: 0px 8px;
+      }
+
+      .market-cap {
+        border-left: 0px !important;
+        padding: 0 !important;
+      }
+    }
+  }
 }
