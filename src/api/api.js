@@ -3,8 +3,9 @@
 
 export const SingleCoin = (searchInput) =>
   `https://api.coingecko.com/api/v3/coins/${searchInput}`;
+export const MultipleCoins = "https://api.coingecko.com/api/v3/coins/";
 
-export const HistoricalChart = (searchInput, days=365, currency="usd") =>
+export const HistoricalChart = (searchInput, days = 365, currency = "usd") =>
   `https://api.coingecko.com/api/v3/coins/${searchInput}/market_chart?vs_currency=${currency}&days=${days}`;
 
 // export const TrendingCoins = (currency) =>

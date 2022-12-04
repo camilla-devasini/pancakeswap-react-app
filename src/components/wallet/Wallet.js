@@ -5,13 +5,11 @@ import { ThemeProvider } from "../../context/ColorThemeContext";
 
 const Wallet = (props) => {
   return (
-    <ThemeProvider>
-      <Modal onClose={props.onClose}>
-        <div>
-          <ConnectYourWallet wallets={wallets} />
-        </div>
-      </Modal>
-    </ThemeProvider>
+    <Modal onClose={props.onClose}>
+      <div>
+        <ConnectYourWallet wallets={wallets} />
+      </div>
+    </Modal>
   );
 };
 
