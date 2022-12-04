@@ -10,63 +10,64 @@ import MainButton from "../../components/UI/MainButton";
 import TradeButton from "./TradeButton";
 import Wallet from "../../components/wallet/Wallet";
 
-
-
-
 const Header = (props) => {
-    //useffect to control the window event resize
-    const [screenSize, setScreenSize] = useState({
-        dynamicWidth: window.innerWidth
-    });
+  //useffect to control the window event resize
+  const [screenSize, setScreenSize] = useState({
+    dynamicWidth: window.innerWidth,
+  });
 
-    const screenSizeHandler = () => {
-        setScreenSize({dynamicWidth: window.innerWidth})
-    }
+  const screenSizeHandler = () => {
+    setScreenSize({ dynamicWidth: window.innerWidth });
+  };
 
-    useEffect(() => {
-        window.addEventListener("resize", screenSizeHandler);
-        
-        return () => {
-            window.removeEventListener("resize", screenSizeHandler);
-        }
+  useEffect(() => {
+    window.addEventListener("resize", screenSizeHandler);
 
-    }, [screenSize])
+    return () => {
+      window.removeEventListener("resize", screenSizeHandler);
+    };
+  }, [screenSize]);
 
+  const [walletShown, setWalletShown] = useState(false);
 
-    const [walletShown, setWalletShown] = useState(false);
-    
-    const showWalletHandler = () => {
-        setWalletShown(true);
-    }
+  const showWalletHandler = () => {
+    setWalletShown(true);
+  };
 
-    const hideWalletHandler = () => {
-        setWalletShown(false);
-    }
+  const hideWalletHandler = () => {
+    setWalletShown(false);
+  };
 
-    useEffect(() => {
-        const body = document.querySelector('body');
-        body.style.overflow = walletShown ? 'hidden' : 'auto';
-      }, [walletShown])
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = walletShown ? "hidden" : "auto";
+  }, [walletShown]);
 
-    return (
-        <Fragment>
-            {walletShown && <Wallet onClose={hideWalletHandler}/>}
-            <div className="header-wrapper">
-                <nav className="main-menu-nav">
-                    <HeaderLogo logo={props.logo} />
-                    {window.innerWidth > 575 ? <Navbar /> : <NavbarMobile />}
-                </nav>
+  return (
+    <Fragment>
+      {walletShown && <Wallet onClose={hideWalletHandler} />}
+      <div className="header-wrapper">
+        <nav className="main-menu-nav">
+          <HeaderLogo logo={props.logo} />
+          {window.innerWidth > 575 ? <Navbar /> : <NavbarMobile />}
+        </nav>
 
-                <div className="icons-container">
-                    {window.innerWidth > 851 ? <TradeButton value="$4.443"/> : null }
-                    <LanguagePicker langList={languageListObj} />
-                    <Settings />
-                    {window.innerWidth > 851 ? <MainButton onShowWallet={showWalletHandler} label="Connect Wallet"/> :  <MainButton onShowWallet={showWalletHandler} label="Connect"/>  }
-                </div>
-            </div>
-           
-        </Fragment>
-    )
-}
+        <div className="icons-container">
+          {window.innerWidth > 851 ? <TradeButton value="$4.443" /> : null}
+          <LanguagePicker langList={languageListObj} />
+          <Settings />
+          {window.innerWidth > 851 ? (
+            <MainButton
+              onShowWallet={showWalletHandler}
+              label="Connect Wallet"
+            />
+          ) : (
+            <MainButton onShowWallet={showWalletHandler} label="Connect" />
+          )}
+        </div>
+      </div>
+    </Fragment>
+  );
+};
 
 export default Header;
