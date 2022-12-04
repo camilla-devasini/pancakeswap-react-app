@@ -80,7 +80,7 @@ export function Hero() {
               </linearGradient>
             </defs>
           </svg>
-
+{/* 
           <svg
             className="lt-svg"
             viewBox="0 0 1660 339"
@@ -111,7 +111,7 @@ export function Hero() {
                 <stop offset="1" stop-color="white"></stop>
               </linearGradient>
             </defs>
-          </svg>
+          </svg> */}
         </div>
       </div>
     </>
