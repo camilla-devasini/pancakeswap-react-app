@@ -1,21 +1,20 @@
-.finished-card-2 {
+.finished-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 355px;
   height: 190px;
-  // position: relative;
+  position: relative;
   z-index: 2;
-  // bottom: 70px;
+  bottom: 70px;
 
   img {
     width: 90px;
-    // position: absolute;
-    // margin-right: 350px;
-    display: none;
+    position: absolute;
+    margin-right: 350px;
   }
 
-  .card-finished {
+  .card-2 {
     display: flex;
     align-items: center;
     justify-content: center;

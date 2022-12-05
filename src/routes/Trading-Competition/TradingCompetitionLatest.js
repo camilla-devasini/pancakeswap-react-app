@@ -1,6 +1,7 @@
 import { CupsSticker } from "./Cups-Sticker/CupsSticker";
 import { DetailsCard } from "./Details-Card/DetailsCard";
 import { FighterBunny } from "./Fighter-Bunny/FighterBunny";
+import { FinishedCard2 } from "./Finished-Card-2/FinishedCard2";
 import { FinishedCard } from "./Finished-Card/FinishedCard";
 import { PrizesByTeamCard } from "./Prizes-By-Team-Card/PrizesByTeamCard";
 import { PrizesCard } from "./Prizes-Card/PrizesCard";
@@ -41,7 +42,7 @@ function TradingCompetitionLatest() {
       </div>
 
       <div className="finished">
-        <FinishedCard />
+        <FinishedCard2 />
       </div>
     </>
   );
