@@ -144,8 +144,8 @@
 
 .wrapper-svg {
   svg {
-    background-color: #201335;
-    fill: #08060b;
+    background-color: var(--colors-svg);
+    fill: var(--colors-background);
     transform: rotate(180deg);
     width: 100%;
     height: 29px;
