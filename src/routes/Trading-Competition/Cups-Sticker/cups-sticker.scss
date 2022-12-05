@@ -13,14 +13,14 @@
     flex-direction: row;
 
     & .left {
-      width: 35px;
+      width: 33px;
       z-index: 1;
       transform: scaleX(-1);
       transform: scaleY(-1);
     }
 
     & .right {
-      width: 35px;
+      width: 33px;
 
       transform: rotate(180deg);
     }

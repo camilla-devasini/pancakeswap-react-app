@@ -775,135 +775,66 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) and (min-width: 376px) {
   .total-card {
-    width: 385px;
-    .top-traders {
-      width: 385px;
-      h2 {
-        font-size: 23px;
-      }
+    width: 360px;
 
-      h5 {
-        font-size: 13px;
-      }
+    .top-traders {
+      width: 360px;
     }
 
     .buttons-box {
+      width: 360px;
+
       .main-buttons {
-        .total {
-          h2 {
-            margin: 0;
-            font-weight: 600;
-            font-size: 15px;
-            padding: 9px;
-          }
-        }
-
-        .storm {
-          margin: 0;
-          font-weight: 600;
-          border-top-left-radius: 18px;
-          border-top-right-radius: 18px;
-          background: #efebf4;
-
-          & h2 {
-            margin: 0;
-            font-weight: 600;
-            font-size: 17px;
-            padding: 9px;
-            color: #6c5ba6;
-          }
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
-        .flippers {
-          margin: 0;
-          font-weight: 600;
-          border-top-left-radius: 18px;
-          border-top-right-radius: 18px;
-          background: #efebf4;
-
-          & h2 {
-            margin: 0;
-            font-weight: 600;
-            font-size: 17px;
-            padding: 9px;
-            color: #6c5ba6;
-          }
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
-        .cakers {
-          margin: 0;
-          font-weight: 600;
-          border-top-left-radius: 18px;
-          border-top-right-radius: 18px;
-          background: #efebf4;
-
-          & h2 {
-            margin: 0;
-            font-weight: 600;
-            font-size: 17px;
-            padding: 9px;
-            color: #6c5ba6;
-          }
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
+        width: 360px;
       }
     }
 
     .data-box {
       .box1 {
-        width: 380px;
-        padding-left: 15px;
+        width: 360px;
         padding-right: 15px;
 
         & h2 {
-          font-size: 23px;
+          font-size: 20px;
         }
 
         & h3 {
-          font-size: 16px;
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
         }
-
         & h4 {
-          font-size: 14px;
+          font-size: 15px;
+          padding-left: 10px;
         }
-
         & .skull {
           display: none;
         }
 
         & .avatar-bunny {
-          width: 30px;
+          width: 33px;
+          border-radius: 50%;
         }
       }
 
       .box2 {
-        width: 385px;
-        padding-left: 15px;
+        width: 360px;
         padding-right: 15px;
-
         & h2 {
-          font-size: 23px;
+          font-size: 20px;
         }
 
         & h3 {
-          font-size: 16px;
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
         }
-
         & h4 {
-          font-size: 14px;
+          font-size: 15px;
+
+          padding-left: 10px;
         }
 
         & .bull {
@@ -911,51 +842,55 @@
         }
 
         & .avatar-bunny {
-          width: 30px;
+          width: 33px;
+          border-radius: 50%;
         }
       }
 
       .box3 {
-        width: 385px;
-        padding-left: 15px;
+        width: 360px;
         padding-right: 15px;
-
         & h2 {
-          font-size: 23px;
+          font-size: 20px;
         }
 
         & h3 {
-          font-size: 16px;
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
         }
 
         & h4 {
-          font-size: 14px;
-        }
+          font-size: 15px;
 
+          padding-left: 10px;
+        }
         & .skull2 {
           display: none;
         }
 
         & .avatar-bunny {
-          width: 30px;
+          width: 33px;
+          border-radius: 50%;
         }
       }
 
       .box4 {
-        width: 385px;
-        padding-left: 15px;
+        width: 360px;
         padding-right: 15px;
-
         & h2 {
-          font-size: 23px;
+          font-size: 20px;
         }
 
         & h3 {
-          font-size: 16px;
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
         }
-
         & h4 {
-          font-size: 14px;
+          font-size: 15px;
+
+          padding-left: 10px;
         }
 
         & .skull3 {
@@ -963,28 +898,27 @@
         }
 
         & .avatar-bunny {
-          width: 30px;
+          width: 33px;
+          border-radius: 50%;
         }
       }
 
       .box5 {
-        width: 385px;
-        padding-left: 15px;
+        width: 360px;
         padding-right: 15px;
-
         & h2 {
-          margin: 0;
-          font-weight: 600;
-          font-size: 23px;
-          color: #7645d9;
+          font-size: 20px;
         }
 
         & h3 {
-          font-size: 16px;
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
         }
 
         & h4 {
-          font-size: 14px;
+          font-size: 15px;
+          padding-left: 10px;
         }
 
         & .fireball {
@@ -992,7 +926,165 @@
         }
 
         & .avatar-bunny {
-          width: 30px;
+          width: 33px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .total-card {
+    width: 320px;
+
+    .top-traders {
+      width: 320px;
+    }
+
+    .buttons-box {
+      width: 320px;
+
+      .main-buttons {
+        width: 320px;
+      }
+    }
+
+    .data-box {
+      .box1 {
+        width: 320px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+          padding-left: 10px;
+        }
+        & .skull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 50%;
+        }
+      }
+
+      .box2 {
+        width: 320px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+        & .bull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 50%;
+        }
+      }
+
+      .box3 {
+        width: 320px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+        & .skull2 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 50%;
+        }
+      }
+
+      .box4 {
+        width: 320px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+
+        & .skull3 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 50%;
+        }
+      }
+
+      .box5 {
+        width: 320px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        & h4 {
+          font-size: 15px;
+          padding-left: 10px;
+        }
+
+        & .fireball {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 50%;
         }
       }
     }

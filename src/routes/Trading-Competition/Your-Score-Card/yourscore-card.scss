@@ -131,3 +131,21 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .yourscore-card {
+    width: 350px;
+    .white-div {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .yourscore-card {
+    width: 350px;
+    .white-div {
+      width: 330px;
+    }
+  }
+}
