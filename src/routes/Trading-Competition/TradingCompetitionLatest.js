@@ -3,6 +3,7 @@ import { DetailsCard } from "./Details-Card/DetailsCard";
 import { FighterBunny } from "./Fighter-Bunny/FighterBunny";
 import { FinishedCard2 } from "./Finished-Card-2/FinishedCard2";
 import { FinishedCard } from "./Finished-Card/FinishedCard";
+import { PodiumCard } from "./Podium-Card/PodiumCard";
 import { PrizesByTeamCard } from "./Prizes-By-Team-Card/PrizesByTeamCard";
 import { PrizesCard } from "./Prizes-Card/PrizesCard";
 import { PurpleBunnyCard } from "./Purple-Bunny-Card/PurpleBunnyCard";
@@ -22,6 +23,7 @@ function TradingCompetitionLatest() {
       </div>
 
       <div className="team-ranks">
+        <PodiumCard />
         <TopTradersCard />
       </div>
 
