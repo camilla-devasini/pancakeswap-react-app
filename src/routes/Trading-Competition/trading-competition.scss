@@ -13,21 +13,18 @@ body {
 }
 
 .team-ranks {
+  background: var(--colors-background);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 900px;
+  height: 1000px;
 }
 
 .prizes {
   width: 100vw;
   height: auto;
-  background: linear-gradient(
-    139.73deg,
-    rgb(230, 253, 255) 0%,
-    rgb(243, 239, 255) 100%
-  );
+  background: var(--colors-prizesByTeam);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -44,7 +41,7 @@ body {
 .rules {
   width: 100vw;
   height: auto;
-  background-color: white;
+  background: var(--colors-background);
   display: flex;
   flex-direction: column;
 

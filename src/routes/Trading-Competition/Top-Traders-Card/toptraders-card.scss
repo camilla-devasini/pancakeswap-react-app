@@ -1,11 +1,11 @@
 .total-card {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background: var(--colors-backgroundAlt);
   width: 640px;
   height: auto;
   border-radius: 24px;
-  box-shadow: 1px 1px 1px 2px rgb(187, 187, 187);
+  box-shadow: 1px 1px 1px 2px var(--colors-cardBorder);
 
   .top-traders {
     font-weight: 600;
@@ -13,7 +13,7 @@
     width: 640px;
     height: 100px;
     padding: 25px;
-    background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+    background: var(--colors-gradientCardHeader);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 
@@ -28,7 +28,7 @@
       font-size: 15px;
       font-weight: 600;
       margin: 0;
-      color: #7b6cab;
+      color: var(--colors-textSubtle);
       font-weight: lighter;
     }
   }
@@ -50,14 +50,14 @@
         font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #7b6cab;
-        color: white;
+        background: var(--colors-textSubtle);
 
         h2 {
           margin: 0;
           font-weight: 600;
           font-size: 17px;
           padding: 9px;
+          color: var(--colors-backgroundAlt);
         }
 
         &:hover {
@@ -70,14 +70,14 @@
         font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           margin: 0;
           font-weight: 600;
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -90,14 +90,14 @@
         font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           margin: 0;
           font-weight: 600;
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -110,14 +110,14 @@
         font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           margin: 0;
           font-weight: 600;
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -134,8 +134,8 @@
       justify-content: space-between;
       width: 640px;
       height: 80px;
-      border-top: 1px solid rgb(187, 187, 187);
-      border-bottom: 1px solid rgb(187, 187, 187);
+      border-top: 1px solid var(--colors-cardBorder);
+      border-bottom: 1px solid var(--colors-cardBorder);
       padding-left: 25px;
       overflow: hidden;
 
@@ -152,7 +152,7 @@
         font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
-        color: #280d5f;
+        color: var(--colors-text);
       }
 
       & h4 {
@@ -179,8 +179,8 @@
       justify-content: space-between;
       width: 640px;
       height: 80px;
-      border-top: 1px solid rgb(187, 187, 187);
-      border-bottom: 1px solid rgb(187, 187, 187);
+      border-top: 1px solid var(--colors-cardBorder);
+      border-bottom: 1px solid var(--colors-cardBorder);
       padding-left: 25px;
       overflow: hidden;
 
@@ -197,7 +197,7 @@
         font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
-        color: #280d5f;
+        color: var(--colors-text);
       }
 
       & h4 {
@@ -224,8 +224,8 @@
       justify-content: space-between;
       width: 640px;
       height: 80px;
-      border-top: 1px solid rgb(187, 187, 187);
-      border-bottom: 1px solid rgb(187, 187, 187);
+      border-top: 1px solid var(--colors-cardBorder);
+      border-bottom: 1px solid var(--colors-cardBorder);
       padding-left: 25px;
       overflow: hidden;
 
@@ -242,7 +242,7 @@
         font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
-        color: #280d5f;
+        color: var(--colors-text);
       }
 
       & h4 {
@@ -269,8 +269,8 @@
       justify-content: space-between;
       width: 640px;
       height: 80px;
-      border-top: 1px solid rgb(187, 187, 187);
-      border-bottom: 1px solid rgb(187, 187, 187);
+      border-top: 1px solid var(--colors-cardBorder);
+      border-bottom: 1px solid var(--colors-cardBorder);
       padding-left: 25px;
       overflow: hidden;
 
@@ -287,7 +287,7 @@
         font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
-        color: #280d5f;
+        color: var(--colors-text);
       }
 
       & h4 {
@@ -314,8 +314,8 @@
       justify-content: space-between;
       width: 640px;
       height: 80px;
-      border-top: 1px solid rgb(187, 187, 187);
-      border-bottom: 1px solid rgb(187, 187, 187);
+      border-top: 1px solid var(--colors-cardBorder);
+      border-bottom: 1px solid var(--colors-cardBorder);
       padding-left: 25px;
       overflow: hidden;
 
@@ -332,7 +332,7 @@
         font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
-        color: #280d5f;
+        color: var(--colors-text);
       }
 
       & h4 {
@@ -452,13 +452,13 @@
       .total {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #e9e5f6;
+        background: var(--colors-input);
 
         h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -469,13 +469,13 @@
       .storm {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #7b6cab;
+        background: var(--colors-textSubtle);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: white;
+          color: var(--colors-backgroundAlt);
         }
 
         &:hover {
@@ -486,13 +486,13 @@
       .flippers {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -503,13 +503,13 @@
       .cakers {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -526,13 +526,13 @@
       .total {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #e9e5f6;
+        background: var(--colors-input);
 
         h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -543,13 +543,13 @@
       .storm {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -560,13 +560,13 @@
       .flippers {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #7b6cab;
+        background: var(--colors-textSubtle);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: white;
+          color: var(--colors-backgroundAlt);
         }
 
         &:hover {
@@ -577,13 +577,13 @@
       .cakers {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -600,13 +600,13 @@
       .total {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #efebf4;
+        background: var(--colors-input);
 
         h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -617,13 +617,13 @@
       .storm {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -634,13 +634,13 @@
       .flippers {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background: #efebf4;
+        background: var(--colors-input);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: #6c5ba6;
+          color: var(--colors-textSubtle);
         }
 
         &:hover {
@@ -651,13 +651,13 @@
       .cakers {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-        background-color: #7b6cab;
+        background: var(--colors-textSubtle);
 
         & h2 {
           font-family: "Kanit";
           font-size: 17px;
           padding: 9px;
-          color: white;
+          color: var(--colors-backgroundAlt);
         }
 
         &:hover {
@@ -936,23 +936,23 @@
 
 @media screen and (max-width: 375px) and (min-width: 321px) {
   .total-card {
-    width: 320px;
+    width: 315px;
 
     .top-traders {
-      width: 320px;
+      width: 315px;
     }
 
     .buttons-box {
-      width: 320px;
+      width: 315px;
 
       .main-buttons {
-        width: 320px;
+        width: 315px;
       }
     }
 
     .data-box {
       .box1 {
-        width: 320px;
+        width: 315px;
         padding-right: 15px;
 
         & h2 {
@@ -979,7 +979,7 @@
       }
 
       .box2 {
-        width: 320px;
+        width: 315px;
         padding-right: 15px;
         & h2 {
           font-size: 20px;
@@ -1006,7 +1006,7 @@
       }
 
       .box3 {
-        width: 320px;
+        width: 315px;
         padding-right: 15px;
         & h2 {
           font-size: 20px;
@@ -1033,7 +1033,7 @@
       }
 
       .box4 {
-        width: 320px;
+        width: 315px;
         padding-right: 15px;
         & h2 {
           font-size: 20px;
@@ -1061,7 +1061,7 @@
       }
 
       .box5 {
-        width: 320px;
+        width: 315px;
         padding-right: 15px;
         & h2 {
           font-size: 20px;
@@ -1084,6 +1084,164 @@
 
         & .avatar-bunny {
           width: 33px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .total-card {
+    width: 290px;
+
+    .top-traders {
+      width: 290px;
+    }
+
+    .buttons-box {
+      width: 290px;
+
+      .main-buttons {
+        width: 290px;
+        padding-left: 3px;
+      }
+    }
+
+    .data-box {
+      .box1 {
+        width: 290px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        & h4 {
+          font-size: 15px;
+          padding-left: 10px;
+        }
+        & .skull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+
+      .box2 {
+        width: 290px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+        & .bull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+
+      .box3 {
+        width: 290px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+        & .skull2 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+
+      .box4 {
+        width: 290px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+
+        & .skull3 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+
+      .box5 {
+        width: 290px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        & h4 {
+          font-size: 15px;
+          padding-left: 10px;
+        }
+
+        & .fireball {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 30px;
           border-radius: 50%;
         }
       }

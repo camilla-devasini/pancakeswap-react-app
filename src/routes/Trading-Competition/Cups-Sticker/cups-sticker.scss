@@ -44,12 +44,12 @@
       }
 
       .leaveLeft {
-        fill: #280d5f;
+        fill: var(--colors-text);
       }
 
       .leaveRight {
         transform: scaleX(-1);
-        fill: #280d5f;
+        fill: var(--colors-text);
       }
     }
   }
@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 375px) and (min-width: 321px) {
   .cups-card {
-    width: 350px;
+    width: 315px;
     .pergamena {
       & .left {
         width: 30px;
@@ -82,26 +82,20 @@
       }
 
       .purple-div {
-
         width: 230px;
-  
-      
-  
+
         h2 {
           font-weight: 600;
           font-size: 28px;
-     
         }
-  
       }
     }
   }
 }
 
-@media screen and (max-width: 320px)  {
-
+@media screen and (max-width: 320px) {
   .cups-card {
-    width: 350px;
+    width: 300px;
     .pergamena {
       & .left {
         width: 30px;
@@ -112,19 +106,13 @@
       }
 
       .purple-div {
-
         width: 230px;
-  
-      
-  
+
         h2 {
           font-weight: 600;
           font-size: 28px;
-     
         }
-  
       }
     }
   }
-
 }

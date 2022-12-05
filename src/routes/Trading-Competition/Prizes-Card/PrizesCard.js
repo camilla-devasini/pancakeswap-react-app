@@ -106,7 +106,7 @@ export function PrizesCard() {
                         d="M96.3875 49.531C93.0919 49.678 91.8848 47.0152 91.7284 43.671C91.5721 40.3269 92.5257 37.5677 95.8213 37.4208C99.1169 37.2738 100.324 39.9365 100.48 43.2807C100.637 46.6248 99.6831 49.384 96.3875 49.531Z"
                         fill="#EB8C00"></path>
                 </svg>
-                <div className="prizes">
+                <div className="prizes-card">
                     <svg viewBox="0 0 32 64" width="32px" class="sc-8a800401-0 fGhPpn sc-a038ebbb-5 jPzWol" color="text"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"

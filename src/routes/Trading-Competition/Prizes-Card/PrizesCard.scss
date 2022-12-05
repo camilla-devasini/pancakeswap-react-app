@@ -5,14 +5,15 @@
     width: 50%;
     align-self: center;
     position: relative;
-    top: -65px;
+    top: -110px;
+  
 
     .medaglie {
         position: relative;
         top: 7px;
     }
 
-    .prizes {
+    .prizes-card {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -29,7 +30,7 @@
             border-top: 1px solid black;
 
             svg {
-                fill: black;
+                fill: var(--colors-text);
             }
 
 

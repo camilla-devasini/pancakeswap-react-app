@@ -43,6 +43,12 @@
     rgb(203, 215, 239) 0%,
     rgb(154, 159, 208) 100%
   );
+  --colors-prizesByTeam: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+
   --colors-winContainer: rgba(255, 255, 255, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #e5fdff, #f3efff);
   --colors-gradientInverseBubblegum: linear-gradient(
@@ -111,6 +117,11 @@
   --colors-yourScore: linear-gradient(
     rgb(67, 69, 117) 0%,
     rgb(102, 87, 141) 100%
+  );
+  --colors-prizesByTeam: linear-gradient(
+    139.73deg,
+    rgb(49, 61, 92) 0%,
+    rgb(61, 42, 84) 100%
   );
   --colors-winContainer: rgba(8, 6, 11, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);

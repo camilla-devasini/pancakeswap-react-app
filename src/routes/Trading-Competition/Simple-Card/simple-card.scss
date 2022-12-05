@@ -1,43 +1,43 @@
 .wrapper-simpleCard {
+  display: flex;
+  flex-direction: column;
+  // margin-left: 20px;
+  // margin-top: 20px;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+
+  .card {
+    width: 100%;
+    max-height: 192px;
+    background: var(--colors-backgroundAlt);
+    border: 1px solid var(--colors-cardBorder);
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
-    // margin-left: 20px;
-    // margin-top: 20px;
-    gap: 20px;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    padding: 24px;
+    box-shadow: 0 2px var(--colors-cardBorder);
+    text-align: center;
+    gap: 10px;
 
-    .card {
-        width: 100%;
-        max-height: 192px;
-        border: 1px solid #e7e3eb;
-        border-radius: 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 24px;
-        box-shadow: 0 2px #e7e3eb;
-        text-align: center;
-        gap: 10px;
-
-
-        h2 {
-            font-size: 20px;
-            color: #7645d9;
-            line-height: 1.1;
-            font-weight: 600;
-        }
-
-        p {
-            // align-self: center;
-            font-size: 14px;
-            text-align: center;
-            color: #7a6eaa;
-            line-height: 1.5;
-            font-weight: 400;
-        }
+    h2 {
+      font-size: 20px;
+      color: #7645d9;
+      line-height: 1.1;
+      font-weight: 600;
     }
+
+    p {
+      // align-self: center;
+      font-size: 14px;
+      text-align: center;
+      color: var(--colors-textSubtle);
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
 }
 
 // @media only screen and (max-width: 768px) and (min-width: 321px) {
@@ -50,21 +50,18 @@
 //     }
 //   }
 
-  @media only screen and (min-width: 1024px) {
-    .wrapper-simpleCard {
-
-        .card {
-            width: 466px;
-        }
+@media only screen and (min-width: 1024px) {
+  .wrapper-simpleCard {
+    .card {
+      width: 466px;
     }
   }
+}
 
-  @media only screen and (min-width: 1440px) {
-    .wrapper-simpleCard {
-
-        .card {
-            width: 368.66px;
-        }
+@media only screen and (min-width: 1440px) {
+  .wrapper-simpleCard {
+    .card {
+      width: 368.66px;
     }
-
   }
+}
