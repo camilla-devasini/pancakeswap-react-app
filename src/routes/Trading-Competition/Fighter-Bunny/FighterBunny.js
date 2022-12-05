@@ -21,14 +21,14 @@ export function FighterBunny() {
               <div className="text-container">
                 <img className="mod1" src={dar} alt="MoD-banner-dar" />
                 <h2 className="uno">May 17-24, 2022</h2>
-                <svg
+                <svg className="font-svg"
                   width="322"
                   height="64"
                   viewBox="0 0 322 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   color="text"
-                  className="sc-8a800401-0 fGhPpn"
+                  
                 >
                   <g
                     clip-path="url(#clip0_2329_330398)"

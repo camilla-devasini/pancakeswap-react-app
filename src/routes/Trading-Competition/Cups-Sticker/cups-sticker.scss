@@ -54,3 +54,77 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .cups-card {
+    .pergamena {
+      & .left {
+        width: 30px;
+      }
+
+      & .right {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .cups-card {
+    width: 350px;
+    .pergamena {
+      & .left {
+        width: 30px;
+      }
+
+      & .right {
+        width: 30px;
+      }
+
+      .purple-div {
+
+        width: 230px;
+  
+      
+  
+        h2 {
+          font-weight: 600;
+          font-size: 28px;
+     
+        }
+  
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px)  {
+
+  .cups-card {
+    width: 350px;
+    .pergamena {
+      & .left {
+        width: 30px;
+      }
+
+      & .right {
+        width: 30px;
+      }
+
+      .purple-div {
+
+        width: 230px;
+  
+      
+  
+        h2 {
+          font-weight: 600;
+          font-size: 28px;
+     
+        }
+  
+      }
+    }
+  }
+
+}

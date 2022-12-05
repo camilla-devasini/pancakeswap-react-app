@@ -101,3 +101,33 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 375px) and (min-width: 321px){
+
+  .alarmclock-mobile {
+    width: 305px;
+
+    .sveglia {
+      width: 55px;
+      height: 55px;
+      position: relative;
+      left: 20px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .alarmclock-mobile {
+    width: 295px;
+
+    .sveglia {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      left: 25px;
+      
+    }
+  }
+}

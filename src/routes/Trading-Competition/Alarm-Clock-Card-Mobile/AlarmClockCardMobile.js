@@ -8,7 +8,7 @@ export function AlarmClockCardMobile() {
         <>
             <div className="alarmclock-mobile">
 
-                <img src={alarmclock} alt="alarmclock"/>
+                <img src={alarmclock} alt="alarmclock" className="sveglia"/>
                 <div className="box">
                 <h2>Finished!</h2>
                 <div className="small-box">
