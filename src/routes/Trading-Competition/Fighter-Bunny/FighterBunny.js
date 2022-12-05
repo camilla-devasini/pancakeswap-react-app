@@ -3,6 +3,7 @@ import dar2 from "../../../assets/images/trading-competition/MoD-banner-dar2.web
 import hero from "../../../assets/images/trading-competition/MoD-hero-bunnies.webp";
 import mesh from "../../../assets/images/trading-competition/mod-mesh.f35f83b0.png";
 import { AlarmClockCard } from "../Alarm-Clock-Card/AlarmClockCard";
+import { AlarmClockCardMobile } from "../Alarm-Clock-Card-Mobile/AlarmClockCardMobile";
 
 export function FighterBunny() {
   return (
@@ -10,20 +11,24 @@ export function FighterBunny() {
       <div className="bg-container">
         <div className="cyber-container">
           <div className="main-hero">
+          <div className="ac-wrapper">
+            <AlarmClockCardMobile />
+            </div>
             <div className="hero-container">
+           
               <img className="mod2" src={dar2} alt="MoD-banner-dar2" />
 
               <div className="text-container">
                 <img className="mod1" src={dar} alt="MoD-banner-dar" />
                 <h2 className="uno">May 17-24, 2022</h2>
-                <svg
+                <svg className="font-svg"
                   width="322"
                   height="64"
                   viewBox="0 0 322 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   color="text"
-                  className="sc-8a800401-0 fGhPpn"
+                  
                 >
                   <g
                     clip-path="url(#clip0_2329_330398)"

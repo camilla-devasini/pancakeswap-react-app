@@ -64,18 +64,13 @@
   }
 }
 
-@media screen and (min-width: 852px) {
-
-  .finished-card-2 {
-
-    width: 500px;
+@media screen and (max-width: 425px) {
+  .finished-card {
+    width: 300px;
 
     img {
-      display: block;
-      width: 182px;
-      height: 214px;
-      position: relative;
-      left: 67px;
+
+      margin-right: 280px;
     }
   }
 }

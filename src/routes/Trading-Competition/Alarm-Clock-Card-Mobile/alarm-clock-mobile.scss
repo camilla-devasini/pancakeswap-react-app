@@ -18,6 +18,7 @@
   }
 
   h2 {
+    font-weight: 600;
     font-size: 24px;
     margin-bottom: 15px;
     color: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
@@ -69,22 +70,64 @@
       height: auto;
 
       .entry {
+        font-size: 13px;
+        margin: 0;
         color: #7a6eaa;
         position: relative;
         right: 3px;
       }
 
       .live {
+        font-size: 13px;
+        margin: 0;
         color: #7a6eaa;
         position: relative;
         right: 7px;
       }
 
       .end {
+        font-size: 13px;
+        margin: 0;
         color: #53dee9;
         position: relative;
         right: 3px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .alarmclock-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px){
+
+  .alarmclock-mobile {
+    width: 305px;
+
+    .sveglia {
+      width: 55px;
+      height: 55px;
+      position: relative;
+      left: 20px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .alarmclock-mobile {
+    width: 295px;
+
+    .sveglia {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      left: 25px;
+      
     }
   }
 }

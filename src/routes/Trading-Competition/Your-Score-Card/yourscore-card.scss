@@ -131,3 +131,112 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .yourscore-card {
+    width: 350px;
+
+    .card-3 {
+      .pergamena {
+        & .left {
+          width: 30px;
+        }
+
+        & .right {
+          width: 30px;
+        }
+      }
+    }
+    .white-div {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .yourscore-card {
+    width: 310px;
+
+    .card-3 {
+
+
+
+      .pergamena {
+        & .left {
+          width: 30px;
+        }
+  
+        & .right {
+          width: 30px;
+        }
+
+        .purple-div{
+
+          width: 230px;
+
+          h2 {
+           
+            font-size: 30px;
+            
+          }
+        }
+      }
+    }
+  
+    .white-div {
+      width: 305px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+
+
+  .yourscore-card {
+    width: 320px;
+
+    .card-3 {
+      width: 320px;
+
+
+      .pergamena {
+        & .left {
+          width: 30px;
+        }
+  
+        & .right {
+          width: 30px;
+        }
+
+        .purple-div {
+  
+          width: 230px;
+          height: 55px;
+   
+       
+  
+          h2 {
+       
+            font-size: 30px;
+          
+          }
+  
+          .leaveLeft {
+            fill: #280d5f;
+          }
+  
+          .leaveRight {
+            transform: scaleX(-1);
+            fill: #280d5f;
+          }
+        }
+      }
+
+  
+    }
+  
+    .white-div {
+      width: 305px;
+    }
+  }
+}
