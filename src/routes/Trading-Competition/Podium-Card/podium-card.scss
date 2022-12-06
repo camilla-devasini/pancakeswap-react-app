@@ -7,7 +7,7 @@
     flex-direction: column;
     // padding-top: 5px;
     align-items: center;
-    padding: 5px 30px 30px 30px;
+    // padding: 5px 30px 30px 30px;
 
     .podio {
 
@@ -83,14 +83,20 @@
             h3 {
                 font-size: 14px;
                 font-weight: 600;
+                color: var(--colors-text);
             }
 
             p {
                 font-size: 12px;
+                color: var(--colors-textSubtle);
             }
 
             .flex {
                 display: flex;
+
+                .participantSvg {
+                    fill: var(--colors-text);
+                }
             }
 
             .top-column {
@@ -104,10 +110,12 @@
             h3 {
                 font-size: 14px;
                 font-weight: 600;
+                color: var(--colors-text);
             }
 
             p {
                 font-size: 12px;
+                color: var(--colors-textSubtle);
             }
 
             & .bottom-column {
@@ -115,50 +123,88 @@
                 .flex {
                     display: flex;
                     flex-direction: row;
+
+                    .participantSvg {
+                        fill: var(--colors-text);
+                    }
                 }
             }
         }
     }
 
-    .total-participants {
+    .participant-wrapper {
+
         display: flex;
         flex-direction: column;
-        width: 70%;
-        font-size: 24px;
-        color: #280d5f;
-        font-weight: 600;
-        line-height: 1.5;
-        background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
-        padding: 24px;
-        border-radius: 24px;
-        margin-top: 20px;
-        // min-width: 330px;
-        // max-width: 450px;
-        margin-right: 40px;
+        width: 100%;
+        max-width: 330px;
 
-        h1 {
+        .total-participants {
+            display: flex;
+            flex-direction: column;
+            // width: 70%;
             font-size: 24px;
-            color: #7645d9;
+            color: #280d5f;
             font-weight: 600;
+            line-height: 1.5;
+            background: var(--colors-gradientCardHeader);
+            padding: 24px;
+            border-radius: 24px;
+            margin-top: 20px;
+            // min-width: 330px;
+            // max-width: 450px;
+            margin-right: 40px;
+
+            h1 {
+                font-size: 24px;
+                color: #7645d9;
+                font-weight: 600;
+            }
+
+            .flex {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+
+                .lastSvg {
+                    fill: var(--colors-text);
+                }
+
+                p {
+                    margin-bottom: 0;
+                    color: var(--colors-text);
+                }
+            }
         }
 
-        .flex {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            align-items: center;
-
-            p {
-                margin-bottom: 0;
-            }
+        .mod-caker {
+            width: 292px;
+            height: 234px;
+            position: relative;
+            left: 60px;
+            bottom: 52px;
         }
     }
 
-    .mod-caker {
-        width: 292px;
-        height: 234px;
-        position: relative;
-        left: 60px;
-        bottom: 52px;
+}
+
+@media screen and (max-width: 851px) {
+
+    .wrapper-podium {
+
+        .participant-wrapper {
+
+            max-width: none;
+            width: 92%;
+
+            .total-participants {
+                margin-right: 0;
+            }
+
+            .mod-caker {
+                display: none;
+            }
+        }
     }
 }
