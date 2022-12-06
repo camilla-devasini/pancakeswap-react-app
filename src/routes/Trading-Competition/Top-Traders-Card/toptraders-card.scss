@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background: var(--colors-backgroundAlt);
-  width: 550px;
+  width: 530px;
   height: auto;
   border-radius: 24px;
   box-shadow: 1px 1px 1px 2px var(--colors-cardBorder);
@@ -10,7 +10,7 @@
   .top-traders {
     font-weight: 600;
     margin: 0;
-    width: 550px;
+    width: 530px;
     height: 100px;
     padding: 25px;
     background: var(--colors-gradientCardHeader);
@@ -34,7 +34,7 @@
   }
 
   .buttons-box {
-    width: 550px;
+    width: 530px;
     height: 100px;
 
     .main-buttons {
@@ -132,7 +132,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 550px;
+      width: 530px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -177,7 +177,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 550px;
+      width: 530px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -222,7 +222,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 550px;
+      width: 530px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -267,7 +267,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 550px;
+      width: 530px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -312,7 +312,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 550px;
+      width: 530px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -672,9 +672,7 @@
   display: none;
 }
 
-
-@media screen and (max-width: 1090px) and (min-width: 871px){
-
+@media screen and (max-width: 1090px) and (min-width: 871px) {
   .total-card {
     width: 350px;
 
@@ -831,11 +829,7 @@
       }
     }
   }
-
-
-
 }
-
 
 @media screen and (max-width: 870px) and (min-width: 576px) {
   .total-card {
