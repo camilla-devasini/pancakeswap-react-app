@@ -15,7 +15,7 @@ function FarmsAccordion(props) {
                 <div className="title-accordion">
                   <div className="title-icon">
                     <img src={props.info.img} alt="" />
-                    <img src="" alt="" />
+                 
                   </div>
                   <h2>{props.info.name}</h2>
                 </div>

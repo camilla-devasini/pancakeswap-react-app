@@ -8,47 +8,50 @@ import xIcon from "../../assets/images/xIcon.png" ;
 import iconpi from "../../assets/images/iconpi.png"
 import iconLeon from "../../assets/images/iconLeon.png"
 import iconsr from "../../assets/images/iconsr.png"
+import { poolsValue } from "../helpers/poolValueObj";
 
 
 function AccordionPool() {
   return (
     <div className="total-cont-back">
       <Accordion>
-        <Accordion.Item eventKey="0">
+        {poolsValue.map((info) =>(
+        <Accordion.Item eventKey={info.eventkey} info= {info}>
+
           <div className="accordion-table-pool">
             <Accordion.Header>
               <div className="title-accordion-pool">
                 <div className="title-icon-pool">
                   <div className="icon-acc2-pool">
-                    <img src={iconFarm1} alt="" />
+                    <img src={info.imgFarm} alt="" />
                   </div>
                   <img src="" alt="" />
                 </div>
                 <div className="cont-title-p-pool">
-                  <div className="title-p-pool">Stake-CAKE</div>
-                  <div className="title-p-pool2">Stake, Earn – And more!</div>
+                  <div className="title-p-pool">{info.title}</div>
+                  <div className="title-p-pool2">{info.paraPool}</div>
                 </div>
               </div>
               <div className="cont-core-boosted2-pool">
-                <div className="p1-pool">CAKE Staked</div>
-                <div className="p2-pool">0.0</div>
-                <div className="p3-pool">0 USD</div>
+                <div className="p1-pool">{info.poolstaked}</div>
+                <div className="p2-pool">{info.poolN}</div>
+                <div className="p3-pool">{info.poolUsd}</div>
               </div>
 
               <div className="cont-earned-pool">
-                <div className="earned-pool">Flexible APY</div>
-                <div className="earned-pool-perc">2,79%</div>
+                <div className="earned-pool">{info.flexPool}</div>
+                <div className="earned-pool-perc">{info.flexPerc}</div>
               </div>
               <div className="cont-apr-pool-up">
                 <div className="cont-apr-pool">
-                  <div className="apr-pool">Locked APY</div>
-                  <div className="number-pool">Up to 59.84%</div>
+                  <div className="apr-pool">{info.locked}</div>
+                  <div className="number-pool">{info.upto}</div>
                 </div>
               </div>
               <div className="cont-liqui-pool">
-                <div className="liquidity-pool">Total staked</div>
+                <div className="liquidity-pool">{info.totalStaked}</div>
                 <div className="price-cont-pool">
-                  <div className="cash-svg-pool">244,762,974 CAKE</div>
+                  <div className="cash-svg-pool">{info.valueStaked} {info.cake}</div>
                 </div>
               </div>
             </Accordion.Header>
@@ -64,7 +67,7 @@ function AccordionPool() {
                 <div className="left-link">
                   
                   <div className="tot-locked">
-                  <div>Total locked: </div>
+                  <div>{info.tLocked}</div>
                   <div>198,171,208 CAKE</div>
                   </div>
                 
@@ -81,7 +84,7 @@ function AccordionPool() {
                   <a href="!*">View Tutorial</a>
                   <a href="!*">View Contract</a>
                   </div>
-                  <button className="btn-cake-acc">Auto</button>
+                  <button className={info.class}>{info.nameBtn}</button>
                 
                 
                 </div>
@@ -110,7 +113,8 @@ function AccordionPool() {
             </div>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
+        ))}
+       {/* <Accordion.Item eventKey="1">
           <div className="accordion-table-pool">
             <Accordion.Header>
               <div className="title-accordion-pool">
@@ -457,7 +461,6 @@ blocks</div>
                   </div>
                   <button>Manuale</button>
                 
-                
                 </div>
                 <div className="cont-coll">
                   <div className="double-cont">
@@ -484,8 +487,8 @@ blocks</div>
             </div>
           </Accordion.Body>
         </Accordion.Item>
-    
-    
+     */}
+
   
       </Accordion>
     </div>

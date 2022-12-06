@@ -136,7 +136,7 @@
                 .left-link {
                     display: flex;
                     flex-direction: column;
-                    width: 90%;
+                    width: 30%;
                     font-size: 14px;
                     gap: 5px;
                     .tot-locked {
@@ -170,7 +170,7 @@
                         border: 2px solid var(--colors-success);
                         margin: 0;
                     }
-                    button {
+                    .btn-cake-2 {
                         background: var(--colors-background);
                         color: var(--colors-secondary);
                         border-radius: 20px;
@@ -219,7 +219,7 @@
                                 h2 {
                                     font-size: 20px;
                                 }
-                                .btn-harvest {
+                                .bnptn-harvest {
                                     text-decoration: none;
                                     border: none;
                                     background-color: var(--colors-backgroundDisabled);
@@ -267,6 +267,9 @@
                         .title-cont-btn {
                             padding-left: 10px;
                             color: var(--colors-textSubtle);
+                            font-size: 12px;
+                            font-weight: 600;
+                            margin-top: 5px;
                         }
                         .btn-wallet-coll {
                             width: 98%;
