@@ -30,7 +30,7 @@ const Login = () => {
       alert(JSON.stringify(values, null, 2));
       const vals = { ...values };
       //chiamata fetch alla root signup
-      await fetch("http://localhost:4000/auth/signup", {
+      await fetch("http://localhost:4000/auth/login", {
         method: "POST",
         mode: "cors", //nemmeno coì supero i controlli cors..
         headers: {
