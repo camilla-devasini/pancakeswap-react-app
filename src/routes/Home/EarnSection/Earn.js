@@ -30,7 +30,7 @@ export function Earn() {
             </h4>
 
             <div className="buttons-earn">
-              {/* <button>Explore</button> */}
+              
               <MainButton
                 style={{ width: 140, margin: 0, padding: 13 }}
                 label="Explore"

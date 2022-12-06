@@ -17,13 +17,14 @@ const [theme, setTheme] = useState(initialTheme);
 
 const toggleTheme = () =>
     setTheme((theme) => (theme === "light" ? "dark" : "light"));
-   
+    
 
     useLayoutEffect(() => { 
         
         localStorage.setItem("myTheme", theme);
         if (theme === "light") {
             document.documentElement.setAttribute("data-theme", "dark");
+           
           
         } else {
             document.documentElement.removeAttribute("data-theme", "dark");

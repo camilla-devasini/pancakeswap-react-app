@@ -1,0 +1,50 @@
+.wrapperBunnyCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    .text {
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--colors-text);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #7645d9;
+            font-weight: 600;
+            line-height: 1.1;
+        }
+
+    }
+
+    .imgBunny {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 852px) {
+
+    .wrapperBunnyCard {
+        padding: 0 40px 30px 40px;
+        width: auto;
+        // margin: auto;
+        margin-left: 0;
+
+        .imgBunny {
+            display: block;
+            width: 270px;
+            height: 293px;
+            align-self: center;
+
+            img {
+                width: 270px;
+                height: 293px;
+            }
+        }
+    }
+}

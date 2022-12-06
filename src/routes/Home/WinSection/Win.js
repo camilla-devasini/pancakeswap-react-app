@@ -74,9 +74,9 @@ export function Win() {
                 </svg>
               </div>
             </div>
-            <div className="card-million purple">
+            <div className="card-million purple-win">
               <p>Lottery</p>
-              <span className="lottery-number">$82,807</span>
+              <span className="lottery-number">$98.647</span>
               <p>in CAKE prizes this round</p>
               <p>Buy tickets with CAKE, win CAKE if your numbers match</p>
               <MainButton

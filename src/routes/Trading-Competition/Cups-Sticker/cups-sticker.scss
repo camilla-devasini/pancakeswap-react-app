@@ -1,0 +1,118 @@
+.cups-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+
+  .pergamena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    & .left {
+      width: 33px;
+      z-index: 1;
+      transform: scaleX(-1);
+      transform: scaleY(-1);
+    }
+
+    & .right {
+      width: 33px;
+
+      transform: rotate(180deg);
+    }
+
+    .purple-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 285px;
+      height: 55px;
+      background-color: rgb(118, 69, 217);
+      z-index: 1;
+      box-shadow: 2px 2px 2px black;
+      gap: 15px;
+
+      h2 {
+        font-weight: 600;
+        color: white;
+        font-size: 37px;
+        text-shadow: 4px 4px 4px black;
+      }
+
+      .leaveLeft {
+        fill: var(--colors-text);
+      }
+
+      .leaveRight {
+        transform: scaleX(-1);
+        fill: var(--colors-text);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .cups-card {
+    .pergamena {
+      & .left {
+        width: 30px;
+      }
+
+      & .right {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .cups-card {
+    width: 315px;
+    .pergamena {
+      & .left {
+        width: 30px;
+      }
+
+      & .right {
+        width: 30px;
+      }
+
+      .purple-div {
+        width: 230px;
+
+        h2 {
+          font-weight: 600;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cups-card {
+    width: 300px;
+    .pergamena {
+      & .left {
+        width: 30px;
+      }
+
+      & .right {
+        width: 30px;
+      }
+
+      .purple-div {
+        width: 230px;
+
+        h2 {
+          font-weight: 600;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
