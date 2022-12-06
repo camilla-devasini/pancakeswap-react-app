@@ -1,210 +1,296 @@
 .wrapper-podium {
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // padding-top: 5px;
+  align-items: center;
+  // padding: 5px 30px 30px 30px;
 
-    max-width: 500px;
-    height: auto;
-    width: 100%;
+  .podio {
     display: flex;
     flex-direction: column;
-    // padding-top: 5px;
-    align-items: center;
-    // padding: 5px 30px 30px 30px;
+    position: relative;
 
-    .podio {
+    .img-podio {
+      // position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 1;
+      width: 320px;
 
-        display: flex;
-        flex-direction: column;
+      img {
+        border-radius: 50%;
+        height: 90.4px;
+        width: 90.4px;
+        // position: absolute;
+        // align-self: flex-end;
+        // position: relative;
+        // top: 12px;
+      }
+
+      & .syrup {
         position: relative;
+        top: 25px;
+        border: 2px solid rgb(31, 199, 212);
+        box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1),
+          0px 1px 1px rgba(25, 19, 38, 0.05);
+      }
 
-        .img-podio {
+      & .cakers {
+        position: relative;
+        top: 45px;
+        border: 2px solid rgb(255, 178, 55);
+        box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1),
+          0px 1px 1px rgba(25, 19, 38, 0.05);
+      }
 
-            // position: absolute;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            position: absolute;
-            z-index: 1;
-            width: 320px;
-
-
-            img {
-                border-radius: 50%;
-                height: 90.4px;
-                width: 90.4px;
-                // position: absolute;
-                // align-self: flex-end;
-                // position: relative;
-                // top: 12px;
-            }
-
-            & .syrup {
-                position: relative;
-                top: 25px;
-                border: 2px solid rgb(31, 199, 212);
-                box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, .1), 0px 1px 1px rgba(25, 19, 38, .05);
-            }
-
-            & .cakers {
-                position: relative;
-                top: 45px;
-                border: 2px solid rgb(255, 178, 55);
-                box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, .1), 0px 1px 1px rgba(25, 19, 38, .05);
-            }
-
-            & .flipper {
-                width: 102.4px;
-                height: 102.4px;
-                border: 2px solid rgb(69, 42, 122);
-                box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, .1), 0px 1px 1px rgba(25, 19, 38, .05);
-            }
-        }
-
-        svg {
-
-            height: auto;
-            width: 320px;
-            position: relative;
-            top: 90px;
-        }
+      & .flipper {
+        width: 102.4px;
+        height: 102.4px;
+        border: 2px solid rgb(69, 42, 122);
+        box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1),
+          0px 1px 1px rgba(25, 19, 38, 0.05);
+      }
     }
 
-    .text-podium {
-        width: 387px;
+    svg {
+      height: auto;
+      width: 320px;
+      position: relative;
+      top: 90px;
+    }
+  }
+
+  .text-podium {
+    width: 387px;
+    display: flex;
+    padding: 100px 20px 5px 20px;
+    justify-content: space-around;
+    color: #280d5f;
+
+    .column-podium {
+      display: flex;
+      flex-direction: column;
+      // gap: 15px;
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--colors-text);
+      }
+
+      p {
+        font-size: 12px;
+        color: var(--colors-textSubtle);
+      }
+
+      .flex {
         display: flex;
-        padding: 100px 20px 5px 20px;
-        justify-content: space-around;
-        color: #280d5f;
 
-        .column-podium {
+        .participantSvg {
+          fill: var(--colors-text);
+        }
+      }
 
-            display: flex;
-            flex-direction: column;
-            // gap: 15px;
+      .top-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
-            h3 {
-                font-size: 14px;
-                font-weight: 600;
-                color: var(--colors-text);
-            }
+    .column {
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--colors-text);
+      }
 
-            p {
-                font-size: 12px;
-                color: var(--colors-textSubtle);
-            }
+      p {
+        font-size: 12px;
+        color: var(--colors-textSubtle);
+      }
 
-            .flex {
-                display: flex;
+      & .bottom-column {
+        .flex {
+          display: flex;
+          flex-direction: row;
 
-                .participantSvg {
-                    fill: var(--colors-text);
-                }
-            }
+          .participantSvg {
+            fill: var(--colors-text);
+          }
+        }
+      }
+    }
+  }
 
-            .top-column {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+  .participant-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 330px;
+
+    .total-participants {
+      display: flex;
+      flex-direction: column;
+      // width: 70%;
+      font-size: 24px;
+      color: #280d5f;
+      font-weight: 600;
+      line-height: 1.5;
+      background: var(--colors-gradientCardHeader);
+      padding: 24px;
+      border-radius: 24px;
+      margin-top: 20px;
+      // min-width: 330px;
+      // max-width: 450px;
+      margin-right: 40px;
+
+      h1 {
+        font-size: 24px;
+        color: #7645d9;
+        font-weight: 600;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+
+        .lastSvg {
+          fill: var(--colors-text);
         }
 
-        .column {
-            h3 {
-                font-size: 14px;
-                font-weight: 600;
-                color: var(--colors-text);
-            }
-
-            p {
-                font-size: 12px;
-                color: var(--colors-textSubtle);
-            }
-
-            & .bottom-column {
-
-                .flex {
-                    display: flex;
-                    flex-direction: row;
-
-                    .participantSvg {
-                        fill: var(--colors-text);
-                    }
-                }
-            }
+        p {
+          margin-bottom: 0;
+          color: var(--colors-text);
         }
+      }
+    }
+
+    .mod-caker {
+      width: 292px;
+      height: 234px;
+      position: relative;
+      left: 60px;
+      bottom: 52px;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) and (min-width: 576px) {
+  .wrapper-podium {
+    .participant-wrapper {
+      max-width: none;
+      width: 550px;
+
+      .total-participants {
+        margin-right: 0;
+      }
+
+      .mod-caker {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) and (min-width: 426px) {
+  .wrapper-podium {
+    .participant-wrapper {
+      max-width: none;
+      width: 400px;
+
+      .total-participants {
+        margin-right: 0;
+      }
+
+      .mod-caker {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .wrapper-podium {
+    .text-podium {
+      width: 350px;
     }
 
     .participant-wrapper {
+      max-width: none;
+      width: 355px;
 
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 330px;
+      .total-participants {
+        margin-right: 0;
+      }
 
-        .total-participants {
-            display: flex;
-            flex-direction: column;
-            // width: 70%;
-            font-size: 24px;
-            color: #280d5f;
-            font-weight: 600;
-            line-height: 1.5;
-            background: var(--colors-gradientCardHeader);
-            padding: 24px;
-            border-radius: 24px;
-            margin-top: 20px;
-            // min-width: 330px;
-            // max-width: 450px;
-            margin-right: 40px;
-
-            h1 {
-                font-size: 24px;
-                color: #7645d9;
-                font-weight: 600;
-            }
-
-            .flex {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                align-items: center;
-
-                .lastSvg {
-                    fill: var(--colors-text);
-                }
-
-                p {
-                    margin-bottom: 0;
-                    color: var(--colors-text);
-                }
-            }
-        }
-
-        .mod-caker {
-            width: 292px;
-            height: 234px;
-            position: relative;
-            left: 60px;
-            bottom: 52px;
-        }
+      .mod-caker {
+        display: none;
+      }
     }
-
+  }
 }
 
-@media screen and (max-width: 851px) {
-
-    .wrapper-podium {
-
-        .participant-wrapper {
-
-            max-width: none;
-            width: 92%;
-
-            .total-participants {
-                margin-right: 0;
-            }
-
-            .mod-caker {
-                display: none;
-            }
-        }
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .wrapper-podium {
+    .podio {
+      .img-podio {
+        width: 290px;
+      }
+      svg {
+        width: 300px;
+      }
     }
+    .text-podium {
+      width: 320px;
+    }
+
+    .participant-wrapper {
+      max-width: none;
+      width: 315px;
+
+      .total-participants {
+        margin-right: 0;
+      }
+
+      .mod-caker {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper-podium {
+    .podio {
+      .img-podio {
+        width: 290px;
+      }
+      svg {
+        width: 290px;
+      }
+    }
+    .text-podium {
+      width: 310px;
+    }
+    .participant-wrapper {
+      max-width: none;
+      width: 290px;
+
+      .total-participants {
+        margin-right: 0;
+      }
+
+      .mod-caker {
+        display: none;
+      }
+    }
+  }
 }
