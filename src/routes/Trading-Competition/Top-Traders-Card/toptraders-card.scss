@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   background: var(--colors-backgroundAlt);
-  width: 570px;
+  width: 550px;
   height: auto;
   border-radius: 24px;
   box-shadow: 1px 1px 1px 2px var(--colors-cardBorder);
 
   .top-traders {
-    font-weight: 570;
+    font-weight: 600;
     margin: 0;
-    width: 570px;
+    width: 550px;
     height: 100px;
     padding: 25px;
     background: var(--colors-gradientCardHeader);
@@ -34,7 +34,7 @@
   }
 
   .buttons-box {
-    width: 570px;
+    width: 550px;
     height: 100px;
 
     .main-buttons {
@@ -47,7 +47,7 @@
 
       .total {
         margin: 0;
-        font-weight: 570;
+        font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
         background: var(--colors-textSubtle);
@@ -67,7 +67,7 @@
 
       .storm {
         margin: 0;
-        font-weight: 570;
+        font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
         background: var(--colors-input);
@@ -87,7 +87,7 @@
 
       .flippers {
         margin: 0;
-        font-weight: 570;
+        font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
         background: var(--colors-input);
@@ -107,7 +107,7 @@
 
       .cakers {
         margin: 0;
-        font-weight: 570;
+        font-weight: 600;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
         background: var(--colors-input);
@@ -132,7 +132,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 570px;
+      width: 550px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -169,7 +169,7 @@
 
       & .avatar-bunny {
         width: 40px;
-        border-radius: 50%;
+        border-radius: 570px;
       }
     }
 
@@ -177,7 +177,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 570px;
+      width: 550px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -214,7 +214,7 @@
 
       & .avatar-bunny {
         width: 40px;
-        border-radius: 50%;
+        border-radius: 570px;
       }
     }
 
@@ -222,7 +222,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 570px;
+      width: 550px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -259,7 +259,7 @@
 
       & .avatar-bunny {
         width: 40px;
-        border-radius: 50%;
+        border-radius: 570px;
       }
     }
 
@@ -267,7 +267,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 570px;
+      width: 550px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -304,7 +304,7 @@
 
       & .avatar-bunny {
         width: 40px;
-        border-radius: 50%;
+        border-radius: 570px;
       }
     }
 
@@ -312,7 +312,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 570px;
+      width: 550px;
       height: 80px;
       border-top: 1px solid var(--colors-cardBorder);
       border-bottom: 1px solid var(--colors-cardBorder);
@@ -349,7 +349,7 @@
 
       & .avatar-bunny {
         width: 40px;
-        border-radius: 50%;
+        border-radius: 570px;
       }
     }
   }
@@ -402,7 +402,7 @@
       .avatars {
         width: 25px;
         height: 25px;
-        border-radius: 50%;
+        border-radius: 570px;
       }
 
       .skull {
@@ -672,6 +672,171 @@
   display: none;
 }
 
+
+@media screen and (max-width: 1090px) and (min-width: 871px){
+
+  .total-card {
+    width: 350px;
+
+    .top-traders {
+      width: 350px;
+    }
+
+    .buttons-box {
+      width: 350px;
+
+      .main-buttons {
+        width: 350px;
+      }
+    }
+
+    .data-box {
+      .box1 {
+        width: 350px;
+        padding-right: 15px;
+
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+          padding-left: 10px;
+        }
+        & .skull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 570px;
+        }
+      }
+
+      .box2 {
+        width: 350px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+
+        & .bull {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 570px;
+        }
+      }
+
+      .box3 {
+        width: 350px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+        & .skull2 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 570px;
+        }
+      }
+
+      .box4 {
+        width: 350px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        & h4 {
+          font-size: 15px;
+
+          padding-left: 10px;
+        }
+
+        & .skull3 {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 570px;
+        }
+      }
+
+      .box5 {
+        width: 350px;
+        padding-right: 15px;
+        & h2 {
+          font-size: 20px;
+        }
+
+        & h3 {
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        & h4 {
+          font-size: 15px;
+          padding-left: 10px;
+        }
+
+        & .fireball {
+          display: none;
+        }
+
+        & .avatar-bunny {
+          width: 33px;
+          border-radius: 570px;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
 @media screen and (max-width: 870px) and (min-width: 576px) {
   .total-card {
     width: 550px;
@@ -815,7 +980,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -843,7 +1008,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -871,7 +1036,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -899,7 +1064,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -927,7 +1092,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
     }
@@ -974,7 +1139,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1001,7 +1166,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1028,7 +1193,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1056,7 +1221,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1084,7 +1249,7 @@
 
         & .avatar-bunny {
           width: 33px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
     }
@@ -1132,7 +1297,7 @@
 
         & .avatar-bunny {
           width: 30px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1159,7 +1324,7 @@
 
         & .avatar-bunny {
           width: 30px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1186,7 +1351,7 @@
 
         & .avatar-bunny {
           width: 30px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1214,7 +1379,7 @@
 
         & .avatar-bunny {
           width: 30px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
 
@@ -1242,7 +1407,7 @@
 
         & .avatar-bunny {
           width: 30px;
-          border-radius: 50%;
+          border-radius: 570px;
         }
       }
     }
