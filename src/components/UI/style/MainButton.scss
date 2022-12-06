@@ -4,7 +4,6 @@ button {
 }
 
 .main-btn {
-
   border-radius: 16px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   font-weight: 600;
@@ -20,16 +19,13 @@ button {
 .btn-primary {
   color: #fff;
   background-color: var(--colors-primary);
-  height: 32px;
-  line-height: 32px;
+  min-height: 32px;
   padding: 0 16px;
 }
 
 .btn-secondary {
-  span{
+  span {
     color: var(--colors-contrast);
-   
-    
   }
   padding: 0 16px;
   background-color: var(--colors-primary);

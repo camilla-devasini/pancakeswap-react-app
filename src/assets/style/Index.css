@@ -49,6 +49,7 @@
     rgb(243, 239, 255) 100%
   );
 
+  --colors-svg: #d8cbed;
   --colors-winContainer: rgba(255, 255, 255, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #e5fdff, #f3efff);
   --colors-gradientInverseBubblegum: linear-gradient(
@@ -123,6 +124,7 @@
     rgb(49, 61, 92) 0%,
     rgb(61, 42, 84) 100%
   );
+  --colors-svg: #201335;
   --colors-winContainer: rgba(8, 6, 11, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --colors-gradientInverseBubblegum: linear-gradient(

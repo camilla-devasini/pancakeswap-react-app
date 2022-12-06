@@ -13,7 +13,9 @@
 
 .background-content-3 {
   .svg-border-grey {
-    fill: rgb(255, 255, 255);
+    fill: var(--colors-background);
+    background-color: var(--colors-earnSection);
+    background-color: var();
     width: 100%;
     position: absolute;
     top: 0;

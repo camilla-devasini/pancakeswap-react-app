@@ -4,19 +4,16 @@ import "./style/NotFound.scss";
 import MainButton from "./MainButton";
 
 function NotFound() {
-
-    return (
-        <div className="error-wrapper">
-            <img src={pancakeSwapLogo}></img>
-            <h2>404</h2>
-            <p>Oops, page not found</p>
-            <Link to="/">
-                <MainButton label="Back Home" />
-            </Link>
-        </div>
-
-    )
-   
+  return (
+    <div className="error-wrapper">
+      <img src={pancakeSwapLogo} alt="PancakeSwap logo"></img>
+      <h2>404</h2>
+      <p>Oops, page not found</p>
+      <Link to="/">
+        <MainButton label="Back Home" />
+      </Link>
+    </div>
+  );
 }
 
 export default NotFound;
