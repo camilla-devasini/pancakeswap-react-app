@@ -1,14 +1,10 @@
 import moment from "moment";
-import { useEffect,  useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Countdown() {
-  const [seconds, setSeconds] = useState(59);
-  const [minutes, setMinutes] = useState(59);
-  const [hour, setHour] = useState(24);
-
-
-
-  
+  const [seconds, setSeconds] = useState([]);
+  const [minutes, setMinutes] = useState([]);
+  const [hour, setHour] = useState([]);
 
   useEffect(() => {
     window.setInterval(() => {
@@ -20,7 +16,7 @@ export function Countdown() {
       setSeconds(_seconds);
       setHour(_hours);
       setMinutes(_minutes);
-    }, 1000);
+    }, [seconds, minutes, hour ], 1000);
   });
 
   return (
