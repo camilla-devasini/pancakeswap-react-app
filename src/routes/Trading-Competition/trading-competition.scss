@@ -1,0 +1,100 @@
+body {
+  overflow-x: hidden;
+}
+
+.your-score {
+  width: 100vw;
+  background: var(--colors-yourScore);
+  height: 700px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-ranks {
+  background: var(--colors-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 1000px;
+
+  @media screen and (max-width: 870px) {
+    height: 1400px;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.prizes {
+  width: 100vw;
+  height: auto;
+  background: var(--colors-prizesByTeam);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  .prizes-sub {
+    @media screen and (min-width: 852px) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 50px 70px 50px 70px;
+    }
+  }
+}
+
+.rules {
+  width: 100vw;
+  height: auto;
+  background: var(--colors-background);
+  display: flex;
+  flex-direction: column;
+
+  .rules-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+    @media screen and (min-width: 852px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 10px;
+      gap: 40px;
+    }
+  }
+}
+
+.finished {
+  width: 100vw;
+  height: 370px;
+  background: radial-gradient(
+    329.58% 50% at 50% 50%,
+    rgb(59, 40, 100) 0%,
+    rgb(25, 19, 38) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@import "./Alarm-Clock-Card/alarm-clock-card.scss";
+@import "./Alarm-Clock-Card-Mobile/alarm-clock-mobile.scss";
+@import "./Finished-Card/finished-card.scss";
+@import "./Fighter-Bunny/fighter-bunny.scss";
+@import "./Your-Score-Card/yourscore-card.scss";
+@import "./Cups-Sticker/cups-sticker.scss";
+@import "./Podium-Card/podium-card.scss";
+@import "./Top-Traders-Card/toptraders-card.scss";
+@import "./Honors-Sticker-Card/honors-sticker.scss";
+@import "./Prizes-By-Team-Card/prizes-by-team.scss";
+@import "./Purple-Bunny-Card/purple-bunny.scss";
+@import "./Rules-Sticker/rules-sticker.scss";
+@import "./Simple-Card/simple-card.scss";
+@import "./Details-Card/details.scss";
+@import "./Prizes-Card/PrizesCard.scss";
+@import "./Finished-Card-2/Finished-Card-2.scss";

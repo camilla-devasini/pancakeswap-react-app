@@ -1,0 +1,133 @@
+.alarmclock-mobile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  width: 350px;
+  height: 150px;
+  padding: 23px;
+  border-radius: 0px 0px 24px 24px;
+
+  .sveglia {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .small-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 190px;
+      height: auto;
+    }
+
+    .small-line {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 27px;
+      height: 2px;
+      background-color: #7a6eaa;
+      margin-top: 10px;
+    }
+
+    .small-line2 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 27px;
+      height: 2px;
+      background-color: #7a6eaa;
+      margin-top: 10px;
+    }
+
+    .box-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 200px;
+      height: auto;
+
+      .entry {
+        font-size: 13px;
+        margin: 0;
+        color: #7a6eaa;
+        position: relative;
+        right: 3px;
+      }
+
+      .live {
+        font-size: 13px;
+        margin: 0;
+        color: #7a6eaa;
+        position: relative;
+        right: 7px;
+      }
+
+      .end {
+        font-size: 13px;
+        margin: 0;
+        color: #53dee9;
+        position: relative;
+        right: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .alarmclock-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px){
+
+  .alarmclock-mobile {
+    width: 305px;
+
+    .sveglia {
+      width: 55px;
+      height: 55px;
+      position: relative;
+      left: 20px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .alarmclock-mobile {
+    width: 295px;
+
+    .sveglia {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      left: 25px;
+      
+    }
+  }
+}

@@ -1,17 +1,10 @@
 import Accordion from "react-bootstrap/Accordion";
 import MainButton from "../UI/MainButton";
 import "./style/farmsAccordion.scss";
-import iconFarm1 from "../../assets/images/iconFarm1.png";
 
-import iconCore from "../../assets/images/iconCore.svg";
-import iconBoosted from "../../assets/images/iconBoosted.svg";
-import iconGold from "../../assets/images/iconGold.png";
-import iconx from "../../assets/images/iconx.png";
-import iconPing from "../../assets/images/iconPing.png";
-import iconLion from "../../assets/images/iconLion.png";
-import iconAr from "../../assets/images/iconAr.png";
 
-function FarmsAccordion() {
+function FarmsAccordion(props) {
+
   return (
     <div className="total-cont">
       <Accordion>
@@ -21,53 +14,53 @@ function FarmsAccordion() {
               <div className="cont-t-c">
                 <div className="title-accordion">
                   <div className="title-icon">
-                    <img src={iconFarm1} alt="" />
+                    <img src={props.info.img} alt="" />
                     <img src="" alt="" />
                   </div>
-                  <h2>CAKE bnb</h2>
+                  <h2>{props.info.name}</h2>
                 </div>
                 <div className="cont-core-boosted">
                   <div className="core">
-                    <img style={{ width: "20px" }} src={iconCore} alt="" />
-                    Core
+                    <img style={{ width: "20px" }} src={props.info.imgCore} alt="" />
+                    {props.info.Core}
                   </div>
                   <div className="boosted">
-                    <img style={{ width: "20px" }} src={iconBoosted} alt="" />
-                    Boosted
+                    <img style={{ width: "20px" }} src={props.info.imgBoosted} alt="" />
+                    {props.info.Boosted}
                   </div>
                 </div>
               </div>
               <div className="cont-media-2">
                 <div className="cont-earned">
-                  <div className="earned">Earned</div>
-                  <div className="earned-perc">0</div>
+                  <div className="earned">{props.info.earned}</div>
+                  <div className="earned-perc">{props.info.number}</div>
                 </div>
                 <div className="cont-apr-up">
                   <div className="cont-apr">
-                    <div className="apr">apr</div>
+                    <div className="apr">{props.info.APR}</div>
 
-                    <div className="number">24%</div>
+                    <div className="number">{props.info.numberApr}</div>
                   </div>
                   <div className="cont-n-up-to">
                     <div className="up-to-perc">
                       <div className="up-to">
-                        <img src={iconBoosted} alt="icon" />
-                        up-to
+                        <img src={props.info.imgBoosted} alt="icon" />
+                        {props.info.upto}
                       </div>
-                      <div className="perc">42%</div>
+                      <div className="perc">{props.info.upPerc}</div>
                     </div>
                   </div>
                 </div>
                 <div className="cont-liqui">
-                  <div className="liquidity">Liquidity</div>
+                  <div className="liquidity">{props.info.liquidity}</div>
                   <div className="price-cont">
-                    <div className="cash-svg">19999999</div>
+                    <div className="cash-svg">{props.info.value}</div>
                   </div>
                 </div>
               </div>
               <div className="cont-multi">
-                <div className="multi">multiplier</div>
-                <div className="n-x-svg">40x</div>
+                <div className="multi">{props.info.multi}</div>
+                <div className="n-x-svg">{props.info.perc}</div>
               </div>
             </Accordion.Header>
           </div>
@@ -81,7 +74,7 @@ function FarmsAccordion() {
               <div className="accordion-body">
                 <div className="left-link">
                   <a href="#">
-                    Get CAKE-BNB LP
+                  {props.info.ancorCake}
                     <svg
                       viewBox="0 0 24 24"
                       color="primary"
@@ -93,7 +86,7 @@ function FarmsAccordion() {
                     </svg>
                   </a>
                   <a href="#">
-                    View Contract
+                    {props.info.ancorContract}
                     <svg
                       viewBox="0 0 24 24"
                       color="primary"
@@ -105,7 +98,7 @@ function FarmsAccordion() {
                     </svg>
                   </a>
                   <a href="#">
-                    See Pair Info
+                   {props.info.ancorInfo}
                     <svg
                       viewBox="0 0 24 24"
                       color="primary"
@@ -121,19 +114,19 @@ function FarmsAccordion() {
                   <div className="double-cont">
                     <div className="cake-earned-cont">
                       <div className="cake-earned-title">
-                        <div className="cake-title">CAKE</div>{" "}
-                        <div className="earned-title">EARNED</div>
+                        <div className="cake-title">{props.info.titleCake}</div>{" "}
+                        <div className="earned-title">{props.info.titleEarned}</div>
                       </div>
                       <div className="cont2">
-                        <h2 className="cont-color">0.00000</h2>
-                        <button className="btn-harvest">Harvest</button>
+                        <h2 className="cont-color">{props.info.numberdEarned}</h2>
+                        <button className="btn-harvest">{props.info.btnHarvest}</button>
                       </div>
                     </div>
                     <div className="yield-boost">
-                      <div className="title-yield">YIELD BOOSTER</div>
+                      <div className="title-yield">{props.info.titleYield}</div>
                       <div>
                         <h2>
-                          Up to x2{" "}
+                        {props.info.uptoh2}{" "}
                           <svg
                             viewBox="0 0 24 24"
                             width="20px"
@@ -146,13 +139,13 @@ function FarmsAccordion() {
                           </svg>
                         </h2>
                         <div className="title-para">
-                          Connect wallet to activate yield booster
+                        {props.info.paraYield}
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="cont-btn">
-                    <div className="title-cont-btn"> START FARMING</div>
+                    <div className="title-cont-btn">{props.info.nameBtn}</div>
                     <button>
                       {" "}
                       <MainButton label="Connect Wallet" />
@@ -163,7 +156,7 @@ function FarmsAccordion() {
             </div>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
+        {/* <Accordion.Item eventKey="1">
           <div className="accordion-table">
             <Accordion.Header>
               <div className="cont-t-c">
@@ -1164,7 +1157,7 @@ function FarmsAccordion() {
               </div>
             </div>
           </Accordion.Body>
-        </Accordion.Item>
+        </Accordion.Item> */}
       </Accordion>
     </div>
   );

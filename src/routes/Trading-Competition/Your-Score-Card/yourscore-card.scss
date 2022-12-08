@@ -1,0 +1,227 @@
+.yourscore-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 570px;
+  width: auto;
+  padding: 20px;
+  position: relative;
+
+  .card-3 {
+    width: auto;
+    height: 150px;
+
+    .honor-bunny {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 5px;
+
+      & .bunny {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 100px;
+      }
+
+      & .left {
+        width: 45px;
+        transform: rotate(30deg);
+        fill: rgb(39, 38, 44);
+      }
+
+      & .right {
+        width: 45px;
+        transform: rotate(-30deg);
+        fill: rgb(39, 38, 44);
+      }
+    }
+
+    .pergamena {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      & .left {
+        
+        width: 35px;
+        z-index: 1;
+      }
+
+      & .right {
+        width: 35px;
+        transform: scaleX(-1);
+      }
+
+      .purple-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 285px;
+        height: 55px;
+        background-color: rgb(118, 69, 217);
+        z-index: 1;
+        box-shadow: 2px 2px 2px black;
+        gap: 15px;
+
+        h2 {
+          font-weight: 600;
+          color: white;
+          font-size: 37px;
+          text-shadow: 4px 4px 4px black;
+        }
+
+        .leaveLeft {
+          fill: var(--colors-text);
+        }
+
+        .leaveRight {
+          transform: scaleX(-1);
+          fill: var(--colors-text);
+        }
+      }
+    }
+  }
+
+  .white-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 410px;
+    height: 205px;
+    background-color: var(--colors-backgroundAlt);
+    border-radius: 24px;
+    gap: 10px;
+    box-shadow: 2px 5px  var(--colors-cardBorder);
+
+    h2 {
+      margin: 0;
+      line-height: 1;
+      font-size: 27px;
+      color: var(--colors-text);
+      font-weight: 600;
+    }
+
+    h5 {
+      margin: 0;
+      font-weight: lighter;
+      font-size: 15px;
+      color: var(--colors-textSubtle)
+    }
+
+    button {
+      margin: 0;
+      width: 180px;
+      height: 48px;
+      color: white;
+      background-color: rgb(31, 199, 212);
+      border: none;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
+      margin-top: 20px;
+
+      &:hover {
+        opacity: 75%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .yourscore-card {
+    width: 350px;
+
+    .card-3 {
+      .pergamena {
+        & .left {
+          width: 30px;
+        }
+
+        & .right {
+          width: 30px;
+        }
+      }
+    }
+    .white-div {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .yourscore-card {
+    width: 310px;
+
+    .card-3 {
+      .pergamena {
+        & .left {
+          width: 30px;
+        }
+
+        & .right {
+          width: 30px;
+        }
+
+        .purple-div {
+          width: 230px;
+
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .white-div {
+      width: 305px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .yourscore-card {
+    width: 320px;
+
+    .card-3 {
+      width: 320px;
+
+      .pergamena {
+        & .left {
+          width: 30px;
+        }
+
+        & .right {
+          width: 30px;
+        }
+
+        .purple-div {
+          width: 230px;
+          height: 55px;
+
+          h2 {
+            font-size: 30px;
+          }
+
+          .leaveLeft {
+            fill: #280d5f;
+          }
+
+          .leaveRight {
+            transform: scaleX(-1);
+            fill: #280d5f;
+          }
+        }
+      }
+    }
+
+    .white-div {
+      width: 305px;
+    }
+  }
+}

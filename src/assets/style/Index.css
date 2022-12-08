@@ -39,6 +39,17 @@
   --colors-textSubtle: #7a6eaa;
   --colors-disabled: #e9eaeb;
   --colors-earnSection: #f2ecf2;
+  --colors-yourScore: linear-gradient(
+    rgb(203, 215, 239) 0%,
+    rgb(154, 159, 208) 100%
+  );
+  --colors-prizesByTeam: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+
+  --colors-svg: #d8cbed;
   --colors-winContainer: rgba(255, 255, 255, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #e5fdff, #f3efff);
   --colors-gradientInverseBubblegum: linear-gradient(
@@ -54,7 +65,7 @@
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
   --colors-gradientPurple: linear-gradient(180deg, #fff 22%, #d7caec 100%);
   --colors-radialGradient: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
-  --colors-winSection: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
+  --colors-winSection: linear-gradient(180deg, #6fb6f1 0%, #eaf2f6 100%);
 
   --size-note: 14px;
   --size-normal: 16px;
@@ -104,6 +115,16 @@
   --colors-textSubtle: #b8add2;
   --colors-disabled: #524b63;
   --colors-earnSection: #3b4155;
+  --colors-yourScore: linear-gradient(
+    rgb(67, 69, 117) 0%,
+    rgb(102, 87, 141) 100%
+  );
+  --colors-prizesByTeam: linear-gradient(
+    139.73deg,
+    rgb(49, 61, 92) 0%,
+    rgb(61, 42, 84) 100%
+  );
+  --colors-svg: #201335;
   --colors-winContainer: rgba(8, 6, 11, 0.6);
   --colors-gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --colors-gradientInverseBubblegum: linear-gradient(
@@ -123,7 +144,7 @@
     #21193a 0%,
     #191326 100%
   );
-  --colors-winSection: linear-gradient(180deg,#0b4576 0%,#091115 100%)
+  --colors-winSection: linear-gradient(180deg, #0b4576 0%, #091115 100%);
 }
 
 * {

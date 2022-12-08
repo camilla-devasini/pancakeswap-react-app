@@ -10,11 +10,16 @@ import Settings from "./Settings";
 import MainButton from "../../components/UI/MainButton";
 import TradeButton from "./TradeButton";
 import Wallet from "../../components/wallet/Wallet";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
   const navigate = useNavigate();
   // const value = useContext(AccountContext);
+=======
+
+const Header = (props) => {
+>>>>>>> develop
   //useffect to control the window event resize
   const [screenSize, setScreenSize] = useState({
     dynamicWidth: window.innerWidth,
