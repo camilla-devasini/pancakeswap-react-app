@@ -21,34 +21,34 @@ function LimitCard(props) {
   const [error, setError] = useState(null);
 
   // COMMENTATO PER LIMITARE LE CHIAMATE API (MAX 100/MONTH)
-  useEffect(() => {
-    fetch(
-      `http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`
-    )
-      .then((response) => {
-        if (response.status !== 200) {
-          setError(new Error("error occurred"));
-        }
-        return response.json();
-      })
-      .then((json) => {
-        setRates(json.rates);
-        console.log(json.rates);
-        console.log(Object.keys(rates));
-      })
-      .catch((error) => {
-        setError(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     `http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`
+  //   )
+  //     .then((response) => {
+  //       if (response.status !== 200) {
+  //         setError(new Error("error occurred"));
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((json) => {
+  //       setRates(json.rates);
+  //       console.log(json.rates);
+  //       console.log(Object.keys(rates));
+  //     })
+  //     .catch((error) => {
+  //       setError(error);
+  //     });
+  // }, []);
 
-  useEffect(() => {
-    if (!!rates) {
-      function init() {
-        handleAmount1Change(1);
-      }
-      init();
-    }
-  }, [rates]);
+  // useEffect(() => {
+  //   if (!!rates) {
+  //     function init() {
+  //       handleAmount1Change(1);
+  //     }
+  //     init();
+  //   }
+  // }, [rates]);
 
   function format(number) {
     return number.toFixed(4);
