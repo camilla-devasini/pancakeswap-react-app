@@ -1,7 +1,7 @@
 import Modal from "../UI/Modal";
 import ConnectYourWallet from "./ConnectYourWallet";
 import { wallets } from "./walletObj";
-import { ThemeProvider } from "../../context/ColorThemeContext";
+import { ThemeProvider, useTheme } from "../../context/ColorThemeContext";
 
 const Wallet = (props) => {
   return (

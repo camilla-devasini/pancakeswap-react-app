@@ -11,27 +11,23 @@ const Backdrop = (props) => {
 
 const ModalOverlay = (props) => {
   return (
-    <ThemeProvider>
-      <div className="modal">
-        <div className="content">{props.children}</div>
-      </div>
-    </ThemeProvider>
+    <div className="modal">
+      <div className="m-content">{props.children}</div>
+    </div>
   );
 };
 
 const Modal = (props) => {
   return (
     <Fragment>
-      <ThemeProvider>
-        {ReactDOM.createPortal(
-          <Backdrop onClose={props.onClose} />,
-          portalElement
-        )}
-        {ReactDOM.createPortal(
-          <ModalOverlay>{props.children}</ModalOverlay>,
-          portalElement
-        )}
-      </ThemeProvider>
+      {ReactDOM.createPortal(
+        <Backdrop onClose={props.onClose} />,
+        portalElement
+      )}
+      {ReactDOM.createPortal(
+        <ModalOverlay>{props.children}</ModalOverlay>,
+        portalElement
+      )}
     </Fragment>
   );
 };

@@ -78,7 +78,9 @@ const Footer = (props) => {
             <label className="switch-label" htmlFor={`switch-new`}>
               <span className={`switch-button`} />
             </label>
-            <LanguagePicker langList={languageListObj} />
+            <LanguagePicker
+            // langList={languageListObj}
+            />
           </div>
           <div className="down">
             {window.innerWidth > 851 ? <TradeButton value="$4.443" /> : null}

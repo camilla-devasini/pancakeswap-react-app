@@ -37,7 +37,7 @@ function Layout(props) {
       ) : null}
 
       {currentPath === "/Prediction" ||
-      currentPath === "/Trading-competition" ||
+      currentPath === "/Trading-Competition" ||
       currentPath === "/Lottery" ? (
         <CommonSubmenu submenuItems={submenuItemsWin} />
       ) : null}
