@@ -1,7 +1,5 @@
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { AccountContext } from "./../../context/AccountContext";
 import "./style/authenticationForm.scss";
 import PageWrapper from "../UI/PageWrapper";
 
@@ -9,7 +7,7 @@ import * as Yup from "yup";
 
 const SignUp = () => {
   const navigate = useNavigate();
-  // const { setUser } = useContext(AccountContext);
+
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -27,7 +25,6 @@ const SignUp = () => {
     }),
 
     onSubmit: async (values) => {
-      alert(JSON.stringify(values, null, 2));
       const vals = { ...values };
       //chiamata fetch alla root signup
       await fetch("http://localhost:4000/auth/signup", {
@@ -49,19 +46,30 @@ const SignUp = () => {
             return;
           }
           //SE TUTTO E' OK:
+
           return res.json();
         })
         .then((data) => {
           if (!data) return;
-          // setUser({ ...data }); //salvo il login come state, questo valore (inizialmente loggedin: null) è condiviso tramite useContext
-          navigate("/welcome"); // se l'utente è loggato correttamente torna alla home
-          console.log(data);
+          if (data.status === "Username taken") {
+            alert(
+              "This username already exists, please choose another username"
+            );
+            console.log(data);
+          }
+          if (data.loggedIn === true) {
+            alert("Your account has been created");
+            console.log(data);
+            navigate("/auth/login");
+          }
         });
     },
   });
 
   return (
     <PageWrapper>
+      <div className="shape shape-one"></div>
+      <div className="shape shape-two"></div>
       <div className="form-container">
         <form onSubmit={formik.handleSubmit}>
           <label className="form-title">

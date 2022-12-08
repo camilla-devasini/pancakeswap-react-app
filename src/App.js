@@ -65,15 +65,9 @@ function App() {
           <Route path="/Activity" element={<Activity />} />
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/signup" element={<SignUp />} />
-          <Route
-            path="/welcome"
-            element={
-              <ProtectedRoute>
-                <Welcome />
-              </ProtectedRoute>
-            }
-          />
-          {/* <Route path="/connect-wallet" element={<ConnectYourWallet/>}></Route> */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="/Welcome" element={<Welcome />} />
+          </Route>
 
           <Route path="*" element={<PageNotFound />} />
         </Route>

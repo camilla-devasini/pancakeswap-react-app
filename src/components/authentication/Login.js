@@ -1,7 +1,5 @@
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { AccountContext } from "./../../context/AccountContext";
 import "./style/authenticationForm.scss";
 import PageWrapper from "../UI/PageWrapper";
 
@@ -9,7 +7,7 @@ import * as Yup from "yup";
 
 const Login = () => {
   const navigate = useNavigate();
-  // const { setUser } = useContext(AccountContext); //PER CONTEXT
+
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -26,8 +24,8 @@ const Login = () => {
         .max(28, "Password too long!"),
     }),
 
-    onSubmit: async (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: async (values, actions) => {
+      // alert(JSON.stringify(values, null, 2));
       const vals = { ...values };
       //chiamata fetch alla root signup
       await fetch("http://localhost:4000/auth/login", {
@@ -54,15 +52,25 @@ const Login = () => {
         })
         .then((data) => {
           if (!data) return;
-          // setUser({ ...data }); //salvo il login come state, questo valore (inizialmente loggedin: null) è condiviso tramite useContext
-          navigate("/Welcome"); // se l'utente è loggato correttamente torna alla home
-          console.log(data);
+          if (!data.loggedIn) {
+            alert("Wrong username or password, please try again");
+            actions.resetForm();
+          }
+
+          localStorage.setItem("user", JSON.stringify(data.username));
+          console.log(
+            "user logged: ",
+            JSON.parse(localStorage.getItem("user"))
+          );
+          navigate("/Welcome"); // se l'utente è loggato correttamente
         });
     },
   });
 
   return (
     <PageWrapper>
+      <div className="shape shape-one"></div>
+      <div className="shape shape-two"></div>
       <div className="form-container">
         <form onSubmit={formik.handleSubmit}>
           <label className="form-title">

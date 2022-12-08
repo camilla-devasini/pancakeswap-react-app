@@ -5,17 +5,17 @@ import { ThemeProvider } from "./context/ColorThemeContext";
 import "./assets/style/Index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import App from "./App";
-import UserContext from "./context/AccountContext";
+import { UserContext } from "./context/AccountContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider>
-        <UserContext>
+      <UserContext>
+        <ThemeProvider>
           <App />
-        </UserContext>
-      </ThemeProvider>
+        </ThemeProvider>
+      </UserContext>
     </BrowserRouter>
   </React.StrictMode>
 );
