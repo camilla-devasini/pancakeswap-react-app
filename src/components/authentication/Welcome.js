@@ -1,5 +1,3 @@
-import { AccountContext } from "../../context/AccountContext";
-import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style/Welcome.scss";
 import PageWrapper from "../UI/PageWrapper";
@@ -7,7 +5,8 @@ import MainButton from "../UI/MainButton";
 import bunny from "./../../assets/images/main-bunny.webp";
 
 function Welcome() {
-  const value = useContext(AccountContext);
+  // const value = useContext(AccountContext);
+  // const value = useContext(AccountContext);
   const navigate = useNavigate();
 
   const logOutHandler = () => {

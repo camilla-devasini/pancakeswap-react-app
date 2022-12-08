@@ -6,11 +6,31 @@ import starT from "../../../assets/images/homepage/star-top-r@2x.webp";
 import MainButton from "../../../components/UI/MainButton";
 import { PurpleDiv } from "./PurpleDiv";
 import { useTheme } from "../../../context/ColorThemeContext";
+import { useState, useEffect } from "react";
+import Wallet from "../../../components/wallet/Wallet";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   const { theme } = useTheme();
+
+  const [walletShown, setWalletShown] = useState(false);
+
+  const showWalletHandler = () => {
+    setWalletShown(true);
+  };
+
+  const hideWalletHandler = () => {
+    setWalletShown(false);
+  };
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = walletShown ? "hidden" : "auto";
+  }, [walletShown]);
+
   return (
     <>
+      {walletShown && <Wallet onClose={hideWalletHandler} />}
       <div className="hero-content">
         <div className="background-hero"></div>
         <PurpleDiv />
@@ -24,16 +44,19 @@ export function Hero() {
 
             <section className="buttons-section">
               <MainButton
+                onShowWallet={showWalletHandler}
                 style={{ width: 170, margin: 0, padding: 13 }}
                 label="Connect Wallet"
                 theme="secondary"
               ></MainButton>
 
-              <MainButton
-                style={{ width: 130, margin: 0, padding: 13 }}
-                label="Trade Now"
-                theme="tertiary"
-              ></MainButton>
+              <Link style={{ "text-decoration": "none" }} to="/Swap">
+                <MainButton
+                  style={{ width: 130, margin: 0, padding: 13 }}
+                  label="Trade Now"
+                  theme="tertiary"
+                ></MainButton>
+              </Link>
             </section>
           </div>
 

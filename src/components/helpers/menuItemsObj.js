@@ -44,12 +44,12 @@ const menuItemsObj = [
   },
   {
     title: "Win",
-    url: "/Prediction",
+    url: "/Trading-Competition",
     img: winIcon,
     submenu: [
       {
-        title: "Trading Competition",
-        url: "Trading-competion",
+        title: "Trading-Competition",
+        url: "Trading-Competition",
       },
       {
         title: "Prediction",
@@ -115,7 +115,7 @@ const menuItemsObj = [
 
 const submenuItemsTrade = ["Swap", "Limit", "Liquidity"];
 const submenuItemsEarn = ["Farms", "Pools"];
-const submenuItemsWin = ["Trading Competition", "Prediction"];
+const submenuItemsWin = ["Trading-Competition", "Prediction"];
 const submenuItemsNft = ["Overview", "Collection"];
 
 export {

@@ -1,8 +1,26 @@
 import MainButton from "../../../components/UI/MainButton";
+import { useState, useEffect } from "react";
+import Wallet from "../../../components/wallet/Wallet";
 
 export function YourScoreCard() {
+  const [walletShown, setWalletShown] = useState(false);
+
+  const showWalletHandler = () => {
+    setWalletShown(true);
+  };
+
+  const hideWalletHandler = () => {
+    setWalletShown(false);
+  };
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = walletShown ? "hidden" : "auto";
+  }, [walletShown]);
+
   return (
     <>
+      {walletShown && <Wallet onClose={hideWalletHandler} />}
       <div class="yourscore-card">
         <div class="card-3">
           <div class="honor-bunny">
@@ -186,6 +204,7 @@ export function YourScoreCard() {
             style={{ width: 170, margin: 0, padding: 13 }}
             label="Connect Wallet"
             theme="secondary"
+            onClick={showWalletHandler}
           ></MainButton>
         </div>
       </div>

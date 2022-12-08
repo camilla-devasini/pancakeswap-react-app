@@ -1,10 +1,28 @@
-// import coin from '../../../assets/images/trading-competition/MoD-banner-dar3.webp';
+// import coin from "../../../assets/images/trading-competition/MoD-banner-dar3.webp";
 import MainButton from "../../../components/UI/MainButton";
 import stormBunny from "../../../assets/images/trading-competition/MoD-storm-bunny.webp";
+import { useState, useEffect } from "react";
+import Wallet from "../../../components/wallet/Wallet";
 
 export function FinishedCard2() {
+  const [walletShown, setWalletShown] = useState(false);
+
+  const showWalletHandler = () => {
+    setWalletShown(true);
+  };
+
+  const hideWalletHandler = () => {
+    setWalletShown(false);
+  };
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = walletShown ? "hidden" : "auto";
+  }, [walletShown]);
+
   return (
     <>
+      {walletShown && <Wallet onClose={hideWalletHandler} />}
       <div className="finished-card-2">
         <img src={stormBunny} alt="coin" />
         <div className="card-2">
@@ -33,6 +51,7 @@ export function FinishedCard2() {
             style={{ width: 170, margin: 0, padding: 13 }}
             label="Connect Wallet"
             theme="secondary"
+            onClick={showWalletHandler}
           ></MainButton>
         </div>
       </div>

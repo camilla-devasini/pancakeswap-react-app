@@ -8,31 +8,10 @@ import TradeCardInput from "./TradeCardInput";
 import bnbIcon from "../../assets/images/bnb-icon.svg";
 import blueLogo from "../../assets/images/light-blue-logo.svg";
 import MainButton from "../UI/MainButton";
-import TradeCardConversionBtn from "./TradeCardConversionBtn";
 
 // .filter(data => moment(data.close).month() === moment().month())
 // data series data di chiusura del giorno.
 
-// sdk.exchange_rates_get_specific_rate("BTC", "USD", t).then(function (Exchange_rates_get_specific_rate) {
-//     console.log('Exchange_rates_get_specific_rate:')
-//     console.log(Exchange_rates_get_specific_rate)
-
-//   });
-// sdk.ohlcv_list_all_periods().then(function (Ohlcv_list_all_periods) {
-//     console.log('Ohlcv_list_all_periods:')
-//     console.log('number: ', Ohlcv_list_all_periods.length)
-//     Ohlcv_list_all_periods.forEach(x=> { console.log(x) })
-
-//   });
-// Patrizio Esposito09:20
-// {
-// open: 13080123,
-// high: 23123939,
-// low: 12238383,
-// close: 31289398213, questo
-// volume: 113.03029392,
-// timestamp: 128913123
-// }
 function LimitCard(props) {
   const [amount1, setAmount1] = useState(1);
   const [amount2, setAmount2] = useState(1);
@@ -42,26 +21,25 @@ function LimitCard(props) {
   const [error, setError] = useState(null);
 
   // COMMENTATO PER LIMITARE LE CHIAMATE API (MAX 100/MONTH)
-  // useEffect( () => {
-  //     fetch(`http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`)
-  //     .then(response => {
-  //         if (response.status !== 200) {
-  //             setError(new Error("error occurred"))
-  //         }
-  //         return response.json();
-
-  // })
-  //     .then(json => {
-
-  //         setRates(json.rates);
-  //         console.log(json.rates);
-  //         console.log(Object.keys(rates));
-  //     })
-  //     .catch(error => {
-  //         setError(error)
-  //     })
-
-  // }, [])
+  useEffect(() => {
+    fetch(
+      `http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`
+    )
+      .then((response) => {
+        if (response.status !== 200) {
+          setError(new Error("error occurred"));
+        }
+        return response.json();
+      })
+      .then((json) => {
+        setRates(json.rates);
+        console.log(json.rates);
+        console.log(Object.keys(rates));
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  }, []);
 
   useEffect(() => {
     if (!!rates) {
@@ -129,8 +107,6 @@ function LimitCard(props) {
             onAmountChange={handleAmount1Change}
             onCurrencyChange={handleCurrency1Change}
           />
-
-          <TradeCardConversionBtn />
 
           <TradeCardInput
             curr="cake"

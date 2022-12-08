@@ -19,6 +19,9 @@ import SignUp from "./components/authentication/SignUp";
 import Login from "./components/authentication/Login";
 import ProtectedRoute from "./components/authentication/ProtectedRoute";
 import Welcome from "./components/authentication/Welcome";
+import Blog from "./routes/Blog";
+import Leaderboard from "./routes/Leaderboard";
+import Voting from "./routes/Voting";
 
 function App() {
   const pathname = window.location.pathname;
@@ -56,7 +59,7 @@ function App() {
           <Route path="/Farms" element={<Farms />} />
           <Route path="/Pools" element={<Pools />} />
           <Route
-            path="/Trading-competion"
+            path="/Trading-Competition"
             element={<TradingCompetitionLatest />}
           />
           <Route path="/Prediction" element={<Prediction />} />
@@ -70,6 +73,10 @@ function App() {
             <Route path="/Welcome" element={<Welcome />} />
           </Route>
 
+          <Route path="/Blog" element={<Blog />} />
+
+          <Route path="/Voting" element={<Voting />} />
+          <Route path="/Leaderboard" element={<Leaderboard />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
