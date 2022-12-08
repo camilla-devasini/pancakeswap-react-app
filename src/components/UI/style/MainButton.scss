@@ -17,7 +17,7 @@ button {
 }
 
 .btn-primary {
-  color: #fff;
+  color: var(--colors-contrast);
   background-color: var(--colors-primary);
   min-height: 32px;
   padding: 0 16px;
