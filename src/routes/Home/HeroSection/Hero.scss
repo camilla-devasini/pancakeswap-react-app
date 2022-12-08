@@ -378,7 +378,7 @@
 
         .lunar-bunny {
           @include container(0, -9px);
-          animation-duration: 9500ms;
+          animation-duration: 6500ms;
           animation-name: lunar-bunny;
           animation-iteration-count: infinite;
         }
