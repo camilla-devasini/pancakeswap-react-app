@@ -355,8 +355,8 @@
   }
 
   .hidden-section {
-    width: 570px;
-    height: 250px;
+    width: 530px;
+    height: auto;
     column-count: 3;
     column-gap: 0;
 
@@ -366,9 +366,9 @@
       align-items: center;
       width: auto;
       height: 50px;
-      border-top: 1px solid rgb(187, 187, 187);
-      border-bottom: 1px solid rgb(187, 187, 187);
-      background-color: white;
+      border-top: 1px solid var(--colors-cardBorder);
+      border-bottom: 1px solid var(--colors-cardBorder);
+      background-color: var(--colors-backgroundAlt);
       position: relative;
       padding: 5px;
 
@@ -376,7 +376,7 @@
         margin: 0;
         font-weight: 570;
         padding-left: 7px;
-        font-size: 18px;
+        font-size: 16px;
         color: #7645d9;
       }
 
@@ -390,19 +390,25 @@
         z-index: 1;
 
         .dollars {
-          color: #280d5f;
+          color: var(--colors-text);
+          font-size: 15px;
+          font-weight: 600;
+          margin: 0;
         }
 
         .blue-data {
           color: rgb(31, 199, 212);
           font-weight: lighter;
+          font-size: 15px;
+          margin: 0;
         }
       }
 
       .avatars {
         width: 25px;
         height: 25px;
-        border-radius: 570px;
+        border-radius: 50%;
+        margin-left: 10px;
       }
 
       .skull {
@@ -828,6 +834,112 @@
         }
       }
     }
+
+    .hidden-section {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: auto;
+      column-count: 3;
+      column-gap: 0;
+      z-index: 1;
+
+      .box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 50px;
+        border-top: 1px solid var(--colors-cardBorder);
+        border-bottom: 1px solid var(--colors-cardBorder);
+        background-color: var(--colors-backgroundAlt);
+        position: relative;
+        padding: 5px;
+
+        .number {
+          margin: 0;
+          font-weight: 570;
+          padding-right: 0px;
+          margin-right: 35px;
+          font-size: 17px;
+          color: #7645d9;
+        }
+
+        .texts-column {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+          padding-left: 10px;
+          padding-right: 95px;
+          z-index: 1;
+
+          .dollars {
+            color: var(--colors-text);
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          .blue-data {
+            color: rgb(31, 199, 212);
+            font-weight: lighter;
+            font-size: 15px;
+            margin: 0;
+            padding-right: 0;
+          }
+        }
+
+        .avatars {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin: 0;
+        }
+
+        .skull {
+          height: 100%;
+          position: absolute;
+          z-index: 0;
+          right: 0;
+        }
+      }
+    }
+
+    .show-more-section {
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      flex-direction: row;
+      padding-bottom: 15px;
+
+      .show-more {
+        margin: 0;
+        font-weight: 570;
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(31, 199, 212);
+        margin-top: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .arrow {
+        margin-top: 13px;
+        fill: rgb(31, 199, 212);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .hide {
+      display: none;
+    }
   }
 }
 
@@ -868,6 +980,105 @@
         width: 550px;
       }
     }
+
+    .hidden-section {
+      width: 530px;
+      height: auto;
+      column-count: 3;
+      column-gap: 0;
+
+      .box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 50px;
+        border-top: 1px solid var(--colors-cardBorder);
+        border-bottom: 1px solid var(--colors-cardBorder);
+        background-color: var(--colors-backgroundAlt);
+        position: relative;
+        padding: 5px;
+
+        .number {
+          margin: 0;
+          font-weight: 570;
+          padding-left: 7px;
+          font-size: 16px;
+          color: #7645d9;
+        }
+
+        .texts-column {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+          padding-left: 7px;
+          padding-right: 30px;
+          z-index: 1;
+
+          .dollars {
+            color: var(--colors-text);
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          .blue-data {
+            color: rgb(31, 199, 212);
+            font-weight: lighter;
+            font-size: 15px;
+            margin: 0;
+          }
+        }
+
+        .avatars {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin-left: 10px;
+        }
+
+        .skull {
+          height: 100%;
+          position: absolute;
+          z-index: 0;
+          right: 0;
+        }
+      }
+    }
+
+    .show-more-section {
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      flex-direction: row;
+      padding-bottom: 15px;
+
+      .show-more {
+        margin: 0;
+        font-weight: 570;
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(31, 199, 212);
+        margin-top: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .arrow {
+        margin-top: 13px;
+        fill: rgb(31, 199, 212);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+   
   }
 }
 

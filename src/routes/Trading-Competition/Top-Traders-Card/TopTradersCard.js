@@ -123,6 +123,7 @@ const content = [
 export function TopTradersCard() {
   const [index, setIndex] = useState(0);
   const [classe, setClasse] = useState("total-card");
+  const [classeHide, setClasseHide] = useState("hide");
 
   const handleIndex = () => {
     setIndex(0);
@@ -144,9 +145,19 @@ export function TopTradersCard() {
     setClasse("total-card-3");
   };
 
-  useEffect(() => {
-    console.log(content[index].number1);
-  }, []);
+  const handlehide = () => {
+    if(classeHide === "hide"){
+      setClasseHide("")
+    }if(classeHide === ""){
+      setClasseHide("hide");
+    } 
+   
+  }
+
+
+  // useEffect(() => {
+  //   console.log(content[index].number1);
+  // }, []);
 
   return (
     <>
@@ -250,7 +261,7 @@ export function TopTradersCard() {
               />
             </div>
           </div>
-          <div className="hidden-section hide" id="hide1">
+          <div className={`hidden-section ${classeHide}`}>
             <div className="box">
               <h5 className="number">#6</h5>
               <img className="avatars" src={rock} alt="rock" />
@@ -388,8 +399,8 @@ export function TopTradersCard() {
             </div>
           </div>
           <div className="show-more-section">
-            <div className="show-more" href="">
-              Show More
+            <div onClick={handlehide} className="show-more" href="">
+              {classeHide === "hide" ? <>Show More</> : <>Hide</> } 
             </div>
             <svg
               viewBox="0 0 24 24"
