@@ -71,9 +71,9 @@ const Header = (props) => {
                   alt="user icon"
                 ></img>
               </button>
-              <p className="user-name">
+              {/* <p className="user-name">
                 {JSON.parse(localStorage.getItem("user"))}
-              </p>
+              </p> */}
             </div>
           ) : null}
           {window.innerWidth > 851 ? <TradeButton value="$4.443" /> : null}
