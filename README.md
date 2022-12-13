@@ -1,5 +1,5 @@
 <h1>PancakeSwap project</h1>
-<h4>This project represents the final project presented for Develhope coding school. It consists of the development of a web application inspired to the real <a href="https://pancakeswap.finance" alt="Pancakeswap official website link">PancakeSwap application</a>
+<h4>This project represents the final project presented for Develhope coding school. It consists of the development of a web application inspired to the real <a href="https://pancakeswap.finance" alt="Pancakeswap official website link">PancakeSwap application</a></h4>
 
 ---
 
@@ -12,13 +12,14 @@
 <li><a href="https://github.com/AlessioSatta">Alessio Satta</a></li>
 </ul>
 </p>
-<p>As project management platform, we have used <a href="https://trello.com">Trello</a></p>.
-<p>The Document Design Components have been realized in <strong>Figma</strong>. Hereby the link to the relevant documentation in Figma:</p>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FT60QiyAf6RB8E8ngbvskJm%2FUntitled%3Fnode-id%3D0%253A1%26t%3DZsp0CQXtOrRp6Kz6-1" allowfullscreen></iframe>
+<p>As project management platform, we have used <a href="https://trello.com">Trello</a></p>
+<p>The Document Design Components have been realized in <strong>Figma</strong> at the following link:
+
+<a href="https://www.figma.com/file/T60QiyAf6RB8E8ngbvskJm/PancakeSwap-Project?node-id=0%3A1&t=8oe4wJoW9fZH0dz8-3">Figma Document file</a>
 
 <p>The project has been fully developed in <strong>React.Js</strong>:</p>
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
