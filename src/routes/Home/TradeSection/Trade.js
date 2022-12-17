@@ -10,7 +10,7 @@ export function Trade() {
         <div className="container-2">
           <div className="container-text">
             <h2>
-              <span>Trade</span> anything. No
+              <span className="trade">Trade</span> anything. No
             </h2>
             <h2>registration, no hassle.</h2>
             <h4>
