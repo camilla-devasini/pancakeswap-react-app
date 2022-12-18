@@ -18,6 +18,7 @@ const ModalOverlay = (props) => {
 };
 
 const Modal = (props) => {
+  console.log(ThemeProvider);
   return (
     <Fragment>
       {ReactDOM.createPortal(

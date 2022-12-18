@@ -21,19 +21,24 @@
   }
 
   & .btn-violet-on-white {
-    color: var(--colors-textSubtle);
-    background-color: var(--colors-input);
+    // color: var(--colors-textSubtle);
+    color: #7a6eaa;
+    // background-color: var(--colors-input);
+    background-color: #eeeaf4;
     margin-left: 25px;
   }
   & .btn-white-on-violet {
-    color: var(--colors-input);
-    background-color: var(--colors-textSubtle);
+    // color: var(--colors-input);
+    color: #eeeaf4;
+    // background-color: var(--colors-textSubtle);
+    background-color: #7a6eaa;
     margin-right: 25px;
   }
 
   .wallets-external {
     z-index: 40;
-    background-color: var(--colors-backgroundDisabled);
+    // background-color: var(--colors-backgroundDisabled);
+    background-color: #e9eaeb;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
@@ -48,18 +53,21 @@
       flex-direction: column;
       width: 100%;
       padding: 32px;
-      background-color: var(--colors-backgroundAlt);
+      // background-color: var(--colors-backgroundAlt);
+      background-color: #fff;
       border-radius: 32px;
       margin-bottom: 10px;
 
       & h4 {
         font-size: 20px;
         font-weight: 600;
-        color: var(--colors-secondary);
+        // color: var(--colors-secondary);
+        color: #7645d9;
       }
 
       & p {
-        color: var(--colors-textSubtle);
+        // color: var(--colors-textSubtle);
+        color: #7a6eaa;
         font-weight: 400;
         line-height: 1.5;
         padding-top: 24px;
@@ -83,7 +91,8 @@
             height: 50px;
           }
           & h6 {
-            color: var(--colors-text);
+            // color: var(--colors-text);
+            color: #280d5f;
             font-weight: 400;
             line-height: 1.5;
             font-size: 12px;

@@ -19,7 +19,7 @@ function TradeCard(props) {
   const [currency2, setCurrency2] = useState();
   const [rates, setRates] = useState([]);
   const [error, setError] = useState(null);
-
+  // vecchio code  `http://api.coinlayer.com/api/live?access_key=9327ae11e2eba3086a7ae3a0887483d9`
   // COMMENTATO PER LIMITARE LE CHIAMATE API (MAX 100/MONTH)
   // useEffect(() => {
   //   fetch(
